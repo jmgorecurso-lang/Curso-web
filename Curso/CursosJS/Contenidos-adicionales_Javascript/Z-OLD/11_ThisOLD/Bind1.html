@@ -1,0 +1,37 @@
+<!doctype html>
+
+<html lang="it">
+
+<head>
+    <meta charset="utf-8">
+    <title>This</title>
+    <meta name="description" content="Oggetti">
+</head>
+
+<body>
+
+    <div id='output'></div>
+    <div id='output1'></div>
+    <div id='output2'></div>
+
+    <script type="text/javascript">
+        this.numero = 9;    // this su riferisce all'oggetto globale "window" 
+        let oggetto = {
+            numero: 10,
+            leggiNumero: function () {
+                return this.numero;
+            }
+        };
+        document.getElementById('output').innerHTML = oggetto.leggiNumero(); // 10
+        let recuperaNumero = oggetto.leggiNumero;
+        //console.log(recuperaNumero()); //le variabile recuperaNumero contiene una funzione con le parentesi tonde la eseguo
+        document.getElementById('output1').innerHTML = recuperaNumero();
+        // restituisce  9 - La funzione è chiamata a livello globale
+        //Creo una nuova funzione con 'this' legato (bound) a oggetto
+        let recuperaNumero_bind = recuperaNumero.bind(oggetto);
+        document.getElementById('output2').innerHTML = recuperaNumero_bind(); // 10
+    </script>
+
+</body>
+
+</html>

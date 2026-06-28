@@ -1,0 +1,79 @@
+body {
+    background-color: #f0f0f0;  /* Establece el color de fondo del cuerpo de la página a un gris claro. */
+    color: #333;  /* Establece el color del texto a un gris oscuro. */
+}
+
+.calculator {
+    width: 320px;  /* Define el ancho de la calculadora. */
+    background-color: #fff;  /* Establece el color de fondo de la calculadora a blanco. */
+    border-radius: 10px;  /* Redondea las esquinas de la calculadora. */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Aplica una sombra alrededor de la calculadora para darle un efecto de elevación. */
+    padding: 20px;  /* Agrega espacio interno alrededor del contenido de la calculadora. */
+    margin: 20px auto;  /* Centra la calculadora horizontalmente y agrega un margen vertical. */
+}
+
+.calculator-display {
+    font-size: 2em;  /* Establece el tamaño de fuente grande para la pantalla de la calculadora. */
+    padding: 10px;  /* Agrega espacio interno alrededor del texto de la pantalla. */
+    background-color: #222;  /* Establece el color de fondo de la pantalla de la calculadora a negro. */
+    color: #fff;  /* Establece el color del texto de la pantalla a blanco. */
+    border-radius: 5px;  /* Redondea las esquinas de la pantalla. */
+    margin-bottom: 20px;  /* Agrega un margen inferior para separar la pantalla de los botones. */
+    text-align: right;  /* Alinea el texto de la pantalla a la derecha. */
+}
+
+.calculator-buttons {
+    display: grid;  /* Utiliza un layout de cuadrícula para los botones. */
+    grid-template-columns: repeat(4, 1fr);  /* Define una cuadrícula de 4 columnas con igual ancho. */
+    grid-gap: 10px;  /* Agrega un espacio de 10px entre los botones. */
+}
+
+.button {
+    padding: 20px;  /* Agrega espacio interno alrededor del texto del botón. */
+    font-size: 1.2em;  /* Establece el tamaño de fuente para los botones. */
+    background-color: #f0f0f0;  /* Establece el color de fondo de los botones a un gris claro. */
+    border: none;  /* Elimina el borde predeterminado de los botones. */
+    border-radius: 5px;  /* Redondea las esquinas de los botones. */
+    cursor: pointer;  /* Cambia el cursor al pasar sobre los botones para indicar que son interactivos. */
+    transition: background-color 0.3s;  /* Añade una transición suave para el cambio de color de fondo al hacer hover. */
+}
+
+.button:hover {
+    background-color: #ddd;  /* Cambia el color de fondo de los botones al pasar el cursor por encima. */
+}
+
+.operator {
+    background-color: #ff9f00;  /* Establece el color de fondo de los botones de operador a naranja. */
+    color: #fff;  /* Establece el color del texto de los botones de operador a blanco. */
+}
+
+.operator:hover {
+    background-color: #e08e00;  /* Cambia el color de fondo de los botones de operador al pasar el cursor por encima. */
+}
+
+.fluorescent {
+    color: #000;  /* Establece el color del texto a negro. */
+    font-weight: bold;  /* Establece el texto en negrita. */
+    animation: glow 1s infinite;  /* Aplica una animación de resplandor infinita al texto. */
+    text-shadow: 0 0 3px #00ff00, 0 0 5px #00ff00, 0 0 7px #00ff00;  /* Añade un efecto de resplandor verde alrededor del texto. */
+}
+
+@keyframes glow {
+    0%, 100% {
+        text-shadow: 0 0 3px #00ff00, 0 0 5px #00ff00, 0 0 7px #00ff00;  /* Define el resplandor inicial y final de la animación. */
+    }
+    50% {
+        text-shadow: 0 0 5px #00ff00, 0 0 7px #00ff00, 0 0 9px #00ff00;  /* Define el resplandor intermedio de la animación. */
+    }
+}
+
+footer .social-icons a {
+    color: #333;  /* Establece el color de los íconos de redes sociales a gris oscuro. */
+    font-size: 1.5em;  /* Aumenta el tamaño de los íconos de redes sociales. */
+    transition: color 0.3s;  /* Añade una transición suave para el cambio de color de los íconos al hacer hover. */
+}
+
+footer .social-icons a:hover {
+    color: #555;  /* Cambia el color de los íconos de redes sociales al pasar el cursor por encima. */
+}
+        

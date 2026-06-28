@@ -1,0 +1,64 @@
+<!doctype html>
+
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>JSON 3</title>
+    <meta name="description" content="JSON 3">
+</head>
+
+<body>
+
+    <p id="output"></p>
+
+    <script type="text/Javascript">
+
+      // URL del servicio consultado: https://www.visittuscany.com/api/strutture
+      // El sitio crossorigin.me permite superar la protección (Cross Origin Resource Share)
+      // que no permite acceder a recursos de otros sitios. es un mecanismo de seguridad 
+      // https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
+
+      const urlServicio = 'https://crossorigin.me/https://www.visittuscany.com/api/strutture';
+      console.log('dataURL:' + urlServicio);
+
+      const strutture = [];
+
+      // Creo un objeto XMLHttpRequest para llamar al servicio
+        // véase https://developer.mozilla.org/es/docs/Web/API/XMLHttpRequest
+        const request = new XMLHttpRequest();
+
+      // Defino el servicio (urlServicio) y cómo denominarlo (comando GET)
+      request.open('GET', urlServicio);
+
+      // Defino qué hacer cuando el servicio me responda
+        // la función onload se llamará al recibir la respuesta
+        // la función onload es una función callback
+      request.onload = function () {
+          // Transforma el texto en la respuesta (responseText) de JSON en un objeto JavaScript
+          const dato = JSON.parse(this.responseText);
+          dato.forEach(s => {
+              console.log('struttura: ' + JSON.stringify(s));
+              strutture.push(`${s.nombre} (${s.población})`);
+          });
+          // muestra toda la estructura en una línea
+          muestraResultado(strutture.join(' <br> '));
+      };
+
+      // Defino qué hacer cuando la llamada al servicio falla
+        // es una función callback llamada en caso de error (pasado como argumento)
+        request.onerror = error => muestraResultado(`<pre>ERROR: ${error}</pre>`);
+
+        // Llama al servicio. Inicia la llamada que procede como proceso en segundo plano
+        // la función send() termina SIN esperar la finalización de la llamada que 
+        // se produce en modo ASÍNCRONO
+        request.send(null);
+
+        // muestra el texto pasado como argumento como inner HTML de un elemento del DOM
+        const muestraResultado = texto => document.getElementById('output').innerHTML = texto;
+
+  </script>
+
+</body>
+
+</html>

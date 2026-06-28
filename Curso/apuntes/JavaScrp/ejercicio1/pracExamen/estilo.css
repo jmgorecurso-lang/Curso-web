@@ -1,0 +1,26 @@
+body {
+    width:800px;
+
+}
+.container {
+    background-color: grey;
+}
+.cabecera {
+    height: 50px;
+    text-align: center;
+}
+.menu {
+    background-color: aquamarine;
+}
+.main {
+    height:500px;
+    background-color: rgb(60, 61, 61);
+    margin-top: 30px;
+}
+.marco {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+
+}

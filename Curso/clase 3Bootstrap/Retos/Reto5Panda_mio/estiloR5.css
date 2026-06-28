@@ -1,0 +1,76 @@
+ h1 {
+      margin-top: 90px;
+    }
+
+    .cuerpo {
+      margin-top: 25px;
+      margin-left: 50px;
+    }
+
+    #persiana {
+      margin-top: 15px;
+    }
+
+    li:hover {
+      background-color: rgba(230, 7, 7, 0.473);
+      font-weight: bold;
+    }
+
+    li a:hover {
+      background: rgba(230, 7, 7, 0.473);
+      font-weight: bold;
+    }
+
+    .contenedor {
+      display: flex;
+      justify-items: center;
+      flex-direction: column;
+      margin-bottom: 20px;
+
+    }
+
+    .carousel {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 850px;
+      height:500px;
+    }
+    .carousel-inner {
+      border: 2px groove transparent;
+      border-radius: 10px;
+      width: 850px;
+    }
+    .carousel-inner img {
+
+      width: 100%;
+      object-fit: cover;
+      transition: 0.7 ease;
+      overflow: hidden;
+    }
+
+    p {
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      margin-top: 450px;
+      margin-left: 380px;
+    }
+
+    .accordion-item {
+      display: flex;
+      justify-self: center;
+      max-width: 850px;
+      margin-top: 30px;
+      flex-direction: column;
+      align-content: center;
+    }
+    .accordion-item img {
+      object-fit: contain;
+      width: 100%;
+    }
+   .accordion-header{
+    width: 850px;
+    display: flex;
+    justify-content: center;
+   }

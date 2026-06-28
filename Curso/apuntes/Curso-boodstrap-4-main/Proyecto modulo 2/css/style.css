@@ -1,0 +1,9 @@
+
+body {
+  padding-top: 70px;
+}
+
+.tabla-scroll {
+  max-height: 300px;
+  overflow-y: auto;
+}

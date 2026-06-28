@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team de Diseñadores Web</title>
+
+<style>
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.main-container{
+  display: flex;
+  flex-wrap: wrap; /* Esto permite que los elementos se envuelvan en pantallas pequeñas */
+  gap: 10px;
+  justify-content: center;
+
+}
+.container {
+  flex: 1;
+  position: relative;
+  min-width: 300px;
+
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #F0A4ED;
+  opacity: 0.7;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  width: 100%;
+}
+
+.text {
+  white-space: nowrap;
+  color: #D0051D;
+  font-weight: 800;
+  font-size: 30px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+
+</style>
+</head>
+<body>
+
+<h2>Reto 3 ||Team de Diseñadores Web</h2>
+<div class="main-container">
+  <div class="container">
+    <img src="images/avatar1.jpg" alt="Avatar1" class="image">
+    <div class="overlay">
+      <div class="text">Soy Ana</div>
+    </div>
+  </div>
+
+  <div class="container">
+    <img src="images/avatar2.jpg" alt="Avatar2" class="image">
+    <div class="overlay">
+      <div class="text">Soy Carlos</div>
+    </div>
+  </div>
+
+  <div class="container">
+    <img src="images/avatar3.jpg" alt="Avatar3" class="image">
+    <div class="overlay">
+      <div class="text">Soy Karina</div>
+    </div>
+  </div>
+
+  <div class="container">
+    <img src="images/avatar4.jpg" alt="Avatar4" class="image">
+    <div class="overlay">
+      <div class="text">Soy Lisa</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+
+

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
+  <title>Reto_1</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      max-width: 800px;
+      margin: 0 auto; /* Centramos */
+      background: linear-gradient(215deg,rgba(211, 228, 235, 1) 0%, rgba(87, 199, 133, 1) 43%, rgba(237, 221, 83, 1) 100%);
+    }
+    h1 {
+      text-align: center;
+      font-family:  "Carter One", system-ui;
+    }
+    form {
+      margin-top: 25px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin: 10px;
+      background: rgba(176, 174, 174, 0.86);
+      border-radius:25px;
+      box-shadow: 0 0 10px 6px #000000;
+    }
+    
+    label {
+      margin: 12px;
+      font-size: large;
+      font-weight: bold;
+    }
+    input {
+      margin: 12px;
+      padding: 5px;
+      border:groove 1px black;
+    }
+    .age {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    #submit {
+        margin: 0 auto;
+      width: 50%;
+      margin-top:15px;
+      margin-bottom: 15px;
+      padding: 15px;
+      font-size: large;
+      border-radius: 10px;
+      background: rgb(123, 234, 86);
+    }
+    #submit:hover {
+      transform: scale(92%);
+      box-shadow: 0 0 10px 6px #343434;
+      font-weight: bold;
+
+    }
+     /* para validar */
+    input:user-valid {
+      border-color: green;
+    }
+
+    input:user-invalid {
+      border-color: red;
+    }
+
+
+    @media (max-width:500px){
+      body {
+        padding:10px;
+        background: rgb(91, 72, 72);
+      }
+      form {
+      margin-top: 25px;
+      display: flex;
+      flex-direction: column;
+
+      margin: 10px;
+    }
+    .age {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+    }
+    .age label {
+      width: 100%;
+    }
+    .age input {
+      width: 100%;
+    }
+    .age .born {
+      display: flex;
+      flex: 1;
+      flex-direction: row;
+    }
+    .age .edas {
+      display: flex;
+      flex: 1;
+      flex-direction: row;
+    }
+
+    }
+
+  </style>
+</head>
+
+<body>
+  <h1>Reto 1 /\Formulario - Tipos de Input (1)</h1>
+  <form action="" method="get" onsubmit="alert ('Todo correcto, enviado')">
+    <label for="nombre">Nombre:</label>
+    <input type="text" placeholder="Tu nombre" id="nombre" required autofocus>
+    <label for="apellido">Apellido:</label>
+    <input type="text" placeholder="Apellido" id="apellido" required>
+    <label for="email">Email:</label>
+    <input type="email" required>
+    <label for="pass">Contraseña:</label>
+    <input type="password" id="pass" required>
+    <div class="age">
+      <div class="born">
+        <label for="fecha">Fecha de Nacimiento:</label>
+        <input type="date" id="fecha" required>
+      </div>
+      <div class="edas">
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" required maxlength="2" min="18" placeholder="18">
+      </div>
+
+
+    </div>
+    <label for="direccion">Direccion:</label>
+    <input type="text" id="direccion" required>
+    <input type="submit" name="submit" id="submit" value="Enviar">
+  </form>
+
+</body>
+</html>

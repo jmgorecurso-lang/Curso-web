@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <form>
+        <label for='texto'>Escribe el número de tu matrícula:</label>
+        <input type="text" id='texto'>
+        <button type="button" onclick='envía()' id="botón">envía el dato insertado</button>
+    </form>
+    <p id="output"></p>
+    <script>
+        //en la caja de texto debe escribirse un código numérico que podría ser escrito en distintos formatos nella casella di testo deve essere scritto un codice numerico che potrebbe essere scritto in diversi formati
+        //X 0000 XX, 0000 XXX, XX 0000 XX
+        //Es preciso extraer solo los números y combinarlos sin utilizar espacios ni separadores
+        function envía() {
+            let codigoMatricula = document.getElementById('texto').value;
+            let numerosPatron = /\d+/g; //g significa que encuentra todas las coincidencias y no se detiene en la primera
+            let numeros = codigoMatricula.match(numerosPatron);
+            let matriculaCorrecta = numeros.join('');
+            document.getElementById('output').innerHTML = matriculaCorrecta;
+        }
+    </script>
+
+</body>
+
+</html>

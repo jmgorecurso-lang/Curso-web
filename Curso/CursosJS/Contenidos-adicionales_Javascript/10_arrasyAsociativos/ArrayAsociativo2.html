@@ -1,0 +1,28 @@
+<!doctype html>
+
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title>Array asociativo</title>
+  <meta name="description" content="Objetos">
+</head>
+
+<body>
+  <p id="output"></p>
+  <p id="output2"></p>
+
+  <script type="text/javascript">
+    let idiomas = {
+      'es-ES': 'español',
+      'en-US': 'inglés americano',
+      'en-UK': 'inglés británico'
+    };
+    let idiomaNavegador = window.navigator.language;
+    let idioma = idiomas[idiomaNavegador] || 'desconocido';
+    document.getElementById('output').innerHTML = idiomaNavegador;
+    document.getElementById('output2').innerHTML = idioma;
+  </script>
+</body>
+
+</html>

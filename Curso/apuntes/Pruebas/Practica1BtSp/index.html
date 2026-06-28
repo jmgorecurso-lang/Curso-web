@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!-- <link rel="stylesheet" href="estiloR2.css"> -->
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" defer></script>
+  <!-- <script src="script_reto2_bs.js" defer></script> -->
+  <!-- SCRIPTS INDEPENDIENTES (con async - no necesitan orden) -->
+  <title>prueba1</title>
+</head>
+<body>
+  <section class="padre">
+    <h1>Prueba con card Overlay</h1>
+    <div class="card">
+      <!--colocamos la imagen-->
+      <img src="portada.webp" alt="portada" width="500px" class="fluid" id="disco">
+      <!--aplicamos opacidad para que el texto no se vea-->
+      <div class="card-img-overlay text-white opacity-0">
+        <h2>Scordatura</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde fugit officia at delectus repellendus, perferendis ut repellat necessitatibus sit illo maxime ex laborum beatae. Id fugit at vel architecto laboriosam!</p>
+      </div>
+      <!--Boton para el modal-->
+      <a href="#elModal" data-bs-toggle="modal" data-bs-target="#elModal" class="btn btn-lg">Información</a>
+    </div>
+    <button type="button" class="btn-warning smaller" id="abrirModal" onclick="cambio()" data-bs-toggle="modal" data-bs-target="#elModal">Open el Modal</button>
+  </section>
+</body>
+</html>

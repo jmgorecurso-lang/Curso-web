@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-hover: #bdba07;
+    --color-back: linear-gradient(341deg, rgba(22, 23, 23, 1) 0%, rgba(82, 84, 83, 1) 50%, rgba(10, 10, 8, 1) 100%);
+    --color-back2: radial-gradient(circle, rgba(22, 23, 23, 1) 0%, rgba(82, 84, 83, 1) 62%, rgba(10, 10, 8, 1) 94%);
+    --letra-tot: Cambria;
+    --radius-tot: 8px;
+    --letra-tituls: "Eater", serif;
+}
+
+body {
+    font-family: var(--letra-tot);
+    line-height: 1.6;
+    color: black;
+}
+
+h1 {
+    font-weight: 750;
+    font-family: var(--letra-tituls);
+}
+
+h2 {
+    font-family: var(--letra-tot);
+}
+
+nav li {
+    position: relative;
+}
+
+/* Grid Container */
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "nav nav"
+        "main sidebar"
+        "footer footer";
+    grid-template-columns: 3fr 1.2fr;
+    gap: 5px;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1400px;
+    /* height: 60dvh;  */
+
+}
+
+/* HEADER */
+header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(17, 235, 169);
+    color: rgb(88, 88, 88);
+    border-radius: var(--radius-tot);
+}
+
+.logo img {
+    display: inline-block;
+    height: auto;
+    width: 80px;
+}
+
+/* NAVBAR */
+nav {
+    grid-area: nav;
+    background: var(--color-back);
+    border-radius: var(--radius-tot);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    padding: 0px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 20px 20px;
+    /*Controlamos altura de la barra*/
+    display: block;
+    width: 100%;
+}
+
+nav a:hover {
+    color: var(--color-hover);
+}
+
+nav li {
+    position: relative;
+    display: flex;
+    /* Centrado interno */
+    align-items: center;
+}
+
+/* submenu - de momento oculto*/
+nav .submenu-item-recetas {
+    display: none;
+    position: absolute;
+    top: 100%;
+    /*Se pega justo al final del li padre*/
+    left: 0;
+    width: 100%;
+    background: var(--color-back2);
+    /* verde de la imagen*/
+    min-width: auto;
+    border-radius: 0 0 8px 8px;
+    z-index: 1;
+}
+
+/* mostrar submenu al hacer hover*/
+.menu-item-recetas:hover .submenu-item-recetas {
+    display: block;
+}
+
+/* MAIN CONTENT */
+main {
+    grid-area: main;
+}
+.post{
+    display: flex;
+    flex-direction: row;
+}
+.imagen {
+    flex:1;
+
+}
+.post {
+    background: #fff;
+    padding: 20px;
+    border-radius: var(--radius-tot);
+    box-shadow: 0 2px 5px black;
+}
+
+.post img {
+    border-radius: var(--radius-tot);
+    margin: 15px 0;
+    width: 100%;
+}
+.texto {
+    flex: 1;
+    justify-items: center;
+}
+p {
+    flex:1;
+    text-align: justify;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.btn {
+    display: flex;
+    background: rgb(3, 82, 134);
+    color: aliceblue;
+    padding: 10px 20px;
+    border-radius: var(--radius-tot);
+    text-decoration: none;
+    margin-top: 10px;
+
+
+}
+
+/* SIDEBAR */
+aside {
+    flex: 1;
+
+    grid-area: sidebar;
+    background: var(--color-back2);
+    padding: 20px;
+    border-radius: var(--radius-tot);
+    color: white;
+}
+
+aside ul {
+    margin: 20px 0;
+    list-style-position: inside;
+}
+
+aside li {
+    margin-bottom: 10px;
+}
+
+.ad {
+    background: #c45409;
+    color: white;
+    padding: 15px;
+    border-radius: var(--radius-tot);
+    text-align: center;
+}
+
+.ad button {
+    display: flex;
+    background: #494948;
+    padding: 8px 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: var(--radius-tot);
+    cursor: pointer;
+    margin-left: 25%;
+
+}
+
+/*FOOTER*/
+footer {
+    grid-area: footer;
+    background: var(--color-back);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: var(--radius-tot);
+}
+
+.social-icons {
+    margin-bottom: 15px;
+}
+
+.social-icons a {
+    color: greenyellow;
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+@media (max-width:768px) {
+    .grid-container {
+        grid-template:
+            "header"
+            "nav"
+            "main"
+            "sidebar"
+            "footer";
+    }
+    nav ul {
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    gap:10px;
+    width: 100%;
+}
+nav li {
+    width: 100%;
+}
+nav .submenu {
+    left:0;
+    width:100% ;
+}
+}

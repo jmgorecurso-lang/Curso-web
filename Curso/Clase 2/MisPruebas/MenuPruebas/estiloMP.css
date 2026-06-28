@@ -1,0 +1,192 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --radio-todos: 8px;
+    --margin-left: 10px;
+}
+body {
+    background-color: rgb(99, 98, 98);
+}
+
+.container {
+    /* margin-top: 5px;
+    margin-left: 5px; */
+    margin: 0 auto;
+    width: 1200px;
+    background-color: black;
+}
+
+.header {
+    background: white;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    /* border-bottom: 2px solid white; */
+    margin-top: 10px;
+
+}
+
+.logo {
+    width: 30%;
+    background: blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+.emblema {
+
+    font-size: 40px;
+    text-align:start;
+}
+
+h2 {
+    color: white;
+    font-size: 30px;
+    align-content: center;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(50, 49, 49);
+    width: 100%;
+}
+
+.menu a {
+    text-decoration: none;
+    align-content: center;
+    color: white;
+    font-size: 1.6em;
+    padding-left: 10px;
+}
+
+.main {
+    background-color: rgb(8, 8, 8);
+    display: flex;
+    flex-direction: row;
+}
+/* parte izquierda del main, el de la foto */
+.nosotros {
+    display: flex;
+   /* background-color: white; */
+    width: 40%;
+    height: 900px;
+
+    flex: 1;
+}
+
+.nosotros img {
+    width: 600px;
+    object-fit: contain;
+    position: absolute;
+    opacity: 0.8;
+    filter: blur(2px);
+}
+.texto  {
+    position: relative;
+    margin-top: 240px;
+    margin-left: 40px;
+    color: rgb(26, 138, 243);
+    text-align: center;
+    line-height: 1.9;
+    font-size: large;
+    z-index:1;
+}
+/* Formulario de la derecha */
+.miFormulario {
+    /* width: 600px; */
+    display: flex;
+    flex: 1;
+    background-color: aquamarine;
+    flex-direction: column;
+    margin-top: 15%;
+    height: 100%;
+
+}
+
+label {
+    font-size: large;
+    font-weight: bold;
+    color: black;
+}
+
+.datos input, .masDatos input{
+    padding: 5px 15px;
+    width: 100%;
+    border: solid 1px rgb(221, 6, 6);
+    margin-top: 5px;
+}
+
+.datos {
+    display: flex;
+    flex-direction: column;
+    margin-left: var(--margin-left);
+    margin-right: var(--margin-left);
+}
+
+.masDatos {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5px;
+    margin-left: var(--margin-left);
+    margin-right: var(--margin-left);
+}
+
+.masDatos .correo {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.masDatos .phone {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.envio {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.envio .textbox {
+    display: flex;
+    flex-direction: column;
+    margin-left: var(--margin-left);
+    margin-right: var(--margin-left);
+
+}
+.textbox textarea {
+    margin-top: 5px;
+    height: 80px;
+}
+.check{
+    margin-top: 15px;
+    margin-bottom: 35px;
+    margin-left: var(--margin-left);
+
+}
+button {
+    margin-left: var(--margin-left);
+    background: rgb(119, 119, 237);
+    padding: 10px 30px;
+    font-size: large;
+    color:antiquewhite;
+    justify-content: center;
+    width: 70%;
+    margin: auto;
+}
+button:disabled {
+    background: gray;
+    cursor: wait;
+}

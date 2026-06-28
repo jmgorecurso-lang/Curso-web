@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --radius-todo: 10px;
+    --margin-iz:10px;
+    --radio-todo:10px;
+}
+.container {  display: grid;
+    grid-template-columns: 1.5fr 4.7fr;
+    grid-template-rows: 0.5fr 3.5fr 0.3fr;
+    gap: 3px 4px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "logo menu"
+      "lista main"
+      "footer footer";
+  }
+
+  .logo {
+    grid-area: logo;
+    border: solid black;
+    width: 100px;
+    height: 100px;
+ }
+.logo img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+  .menu {
+    grid-area: menu;
+    border: solid black;
+}
+
+  .lista { grid-area: lista; }
+
+  .main { grid-area: main; }
+
+  .footer { grid-area: footer; }

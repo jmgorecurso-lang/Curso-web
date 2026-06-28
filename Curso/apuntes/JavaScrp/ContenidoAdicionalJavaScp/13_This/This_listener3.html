@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <style>
+        .colorPicker {
+            width: 50px;
+            height: 50px;
+            float: left;
+            margin: 5px;
+        }
+    </style>
+    <div class="colorPicker" id="rojo" style="background-color:red"></div>
+    <div class="colorPicker" id="azul" style="background-color:blue"></div>
+    <div class="colorPicker" id="verde" style="background-color:green"></div>
+    <div class="colorPicker" id="amarillo" style="background-color:yellow"></div>
+
+    <script>
+        function dimeElColor() {
+            console.log(this.style.backgroundColor);
+        }
+        let classe = document.getElementsByClassName('colorPicker');
+        // getElementsByClassName devuelve un objeto de tipo HTMLCollection con todos los elementos de la clase 
+        for (var i = 0; i < classe.length; i++) {
+            classe[i].addEventListener('click', dimeElColor);
+        }
+    </script>
+</body>
+
+</html>

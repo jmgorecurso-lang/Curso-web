@@ -1,0 +1,201 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h1 {
+    font-family: "Piedra", serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+   background: linear-gradient(90deg,rgb(41, 46, 43) 0%, rgb(117, 176, 243) 37%, rgba(20, 19, 3, 1) 100%);
+}
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+form {
+    margin-top: 15px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+#activar {
+    margin-top: 20px;
+}
+#activar:checked~form {
+    opacity: 1;
+    visibility: visible;
+}
+button:disabled {
+    background-color: rgb(136, 134, 134) !important;
+    color: rgb(80, 79, 79);
+    cursor:wait
+}
+input[type="mail"]#email{
+    width: 100%;
+    padding: 10px;
+}
+input [type="mail"],#mensaje {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+#contador, #email-feedback {
+    margin-top: 5px;
+    font-size: 13px;
+    display: block;
+}
+input {
+    margin-top: 10px;
+}
+p {
+    margin-top: 15px;
+}
+button {
+    margin-top: 25px;
+    padding: 12px 20px;
+    background-color: rgb(74, 189, 7);
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+/** Estilo del Modal **/
+
+.modal-overlay{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: fondo 0.7s ease;
+    background-color: rgb(56, 56, 56);
+    z-index: 1000;
+    justify-content: center;
+    align-content: center;
+}
+.modal-overlay.active{
+    display: flex;
+}
+.abrir-modal-ejemplo{
+    margin-top: 25px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: large;
+    background: linear-gradient(340deg,rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+}
+.abrir-modal-ejemplo:hover {
+    background: linear-gradient(169deg,rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+    color: #333;
+}
+.abrir-modal-ejemplo:active {
+    transform: scale(95%);
+}
+.modal {
+    background-color: rgb(209, 205, 205);
+    border-radius: 12px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 20px 30px rgb(32, 138, 32);
+    animation: modalFadeIn 0.3s ease;
+    position: relative;
+}
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.modal-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px 10px 20px;
+    border-bottom: 1px solid #eee;
+}
+.modal-header h2{
+    font-family: "Pirata One", system-ui;
+    margin: 0;
+    color:rgb(35, 135, 248);
+    font-size: 2.5rem;
+    text-shadow: -2px 2px black;
+}
+.close-modal {
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #999;
+    transition: color 0.2s;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.close-modal:hover {
+    color: black;
+}
+.modal-body {
+    padding: 20px;
+    text-align: center;
+}
+.modal-body p{
+    margin: 10px 0;
+    font-size: 1.1rem;
+    color: #333;
+}
+.modal-body .emoji{
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+.modal-footer {
+    padding: 15px 20px 20px 20px;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #eee;
+}
+.btn-cerrar-modal {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 6px;
+    cursor:pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s;
+}
+.btn-cerrar-modal:hover{
+    background-color: rgb(53, 202, 103);
+    color: #333;
+}
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 20px;
+    text-align: center;
+}
+/* button .abrir-modal-ejemplo {
+    background-color: green;
+    color: #eee;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-top: 50px;
+
+} */

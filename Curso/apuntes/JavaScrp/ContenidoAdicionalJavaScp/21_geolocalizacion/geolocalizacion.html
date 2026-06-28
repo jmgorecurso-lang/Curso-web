@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title>Geolocalización</title>
+</head>
+
+<body>
+
+  <script>    navigator.geolocation.getCurrentPosition(localízame);    function localízame(posición) {      const latitud = posición.coords.latitude;      const longitud = posición.coords.longitude;      alert(`Latitud: ${latitud}, longitud: ${longitud}`);    }  </script>
+
+</body>
+
+</html>

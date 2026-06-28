@@ -1,0 +1,50 @@
+[
+    {
+  "nome": "Giovanni",
+  "cognome": "Rossi",
+  "sesso": "maschio",
+  "vivente": true,
+  "età": 27,
+  "indirizzo": {
+    "via": "Buonarroti 18",
+    "comune": "Alpette",
+    "provincia": "TO",
+    "CAP": "10080"
+    },
+"numeriTelefono": [
+    {
+      "tipo": "casa",
+      "numero": "0000000"
+    },
+    {
+      "type": "cellulare",
+      "numero": "111111111"
+    }
+  ],
+"titoli": ["sig.", "dott."]
+  },
+ {
+  "nome": "Anna",
+  "cognome": "Verdi",
+  "sesso": "femmina",
+  "vivente": true,
+  "età": 44,
+  "indirizzo": {
+    "via": "Pioppi 18",
+    "comune": "Castelmauro",
+    "provincia": "CB",
+    "CAP": "86031"
+    },
+"numeriTelefono": [
+    {
+      "tipo": "ufficio",
+      "numero": "2222222"
+    },
+    {
+      "type": "cellulare",
+      "numero": "3333333"
+    }
+  ],
+"titoli": []
+  }
+]

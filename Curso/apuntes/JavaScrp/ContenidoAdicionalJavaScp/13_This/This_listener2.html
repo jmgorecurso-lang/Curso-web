@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <style>
+        .colorPicker {
+            width: 50px;
+            height: 50px;
+            float: left;
+            margin: 5px;
+        }
+    </style>
+    <div class="colorPicker" id="rojo" style="background-color:red"></div>
+    <div class="colorPicker" id="azul" style="background-color:blue"></div>
+
+    <script>
+        function dimeElColor() {
+            console.log(this.style.backgroundColor);
+        }
+        document.getElementById('rojo').addEventListener('click', dimeElColor);
+        document.getElementById('azul').addEventListener('click', dimeElColor);
+    </script>
+</body>
+
+</html>

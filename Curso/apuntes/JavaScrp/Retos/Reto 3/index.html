@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reto 3</title>
+  <link rel="stylesheet" href="estilo.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Shojumaru&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+  <h1 class="letra">Reto 3 | Hola a todos !!</h1>
+  <h2 class="letra"> Estamos listos para programar en JavaScript</h2>
+  <div class="cara">
+    <!-- <img src="images/serio.jpg" alt="risa"> -->
+    <img src="images/risa.webp" alt="" class="fade-image">
+  </div>
+  <div class="botonera">
+    <button id="prime" onclick="mensaje()">Mensaje</button>
+    <button id="borra" onclick="borraMensaje()";disabled>Borrar Mensaje</button>
+    <button id="efecto" onclick="cambiaImagen()">Modificar Imagen</button>
+    <button id="oculta_imagen" onclick="ocultaImagen()">Ocultar Imagen</button>
+    <button onclick="reset()">Reset</button>
+    <p></p>
+  </div>
+  <h3 class="letra">Configurar Background</h3>
+  <div class="colores">
+    <button id="naranja" onclick="rojo()">Naranja</button>
+    <button id="gris" onclick="gris()">Gris</button>
+    <button id="azul" onclick="azul()">Azul</button>
+  </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

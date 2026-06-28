@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Canvas</title>
+</head>
+
+<body>
+
+    <canvas width="500" height="500" id="miCanvas" style="border: solid"></canvas>
+
+    <script>
+        const miCanvas = document.getElementById('miCanvas');
+        const context = miCanvas.getContext('2d');
+        context.strokeStyle = '#00ff00';
+        context.beginPath();
+        context.moveTo(50, 70);
+        context.lineTo(20, 125);
+        context.lineTo(50, 170);
+        context.closePath();
+        context.stroke();
+    </script>
+
+
+</body>
+
+</html>

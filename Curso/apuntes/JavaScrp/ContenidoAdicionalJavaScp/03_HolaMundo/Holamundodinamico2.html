@@ -1,0 +1,42 @@
+<!doctype html>
+
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Tiempo</title>
+    <meta name="description" content=“Tiempo”>
+    <meta name="author" content="SitePoint">
+    <style type="text/css">
+        .mañana {
+            background-color: #A0EEF0;
+            color: #971D78;
+        }
+
+        .tarde {
+            background-color: #47B8FE;
+            color: #DCFE24;
+        }
+
+        .noche {
+            background-color: #FA8F6F;
+            color: #971D78;
+        }
+
+        .madrugada {
+            background-color: #0A0D2C;
+            color: #FFFFFF;
+        }
+    </style>
+    <!--<link rel="stylesheet" href="css/styles.css?v=1.0">-->
+</head>
+
+<body class=“mañana”>
+    <p id="output"></p>
+    <script type="text/javascript">
+        // hora del sistema            const hora = new Date().getHours();            let mensaje;            let nombreEstilo;            if (hora < 13) {                mensaje = 'buenos días';                nombreEstilo = 'mañana';            } else if (hora < 21) {                mensaje = 'buenas tardes';                nombreEstilo = 'tarde';            } else if (hora < 24) {                mensaje = 'buenas noches';                nombreEstilo = 'noche';            } else {                mensaje = 'hola';                nombreEstilo = 'madrugada';            }            document.getElementById('output').innerHTML = mensaje;            document.body.className = nombreEstilo;
+    </script>
+
+</body>
+
+</html>

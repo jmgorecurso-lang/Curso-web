@@ -1,0 +1,333 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-gorda: Verdana;
+    --radio-tot: 10px;
+    --fondomenu-tot: rgb(29, 29, 29);
+    --boton-size: 10px 20px;
+    --boton-radio: 15px;
+    --color-mas: rgb(238, 138, 25);
+    --shadow-tot:2px 2px 5px black;
+}
+.container {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "main main aside"
+        "main main aside"
+
+        "footer footer footer";
+    gap: 10px;
+    max-width: 1200px;
+    margin: 10px 10px;
+    font-family: Courier;
+    font-size: 1.em;
+
+}
+/*empezamos con header */
+header {
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(90deg, rgba(194, 33, 60, 1) 0%, rgba(237, 157, 83, 1) 100%);
+    border-radius: var(--radio-tot);
+}
+#headtext {
+    flex: 2;
+    padding-left: 10px;
+    justify-content: left;
+
+}
+#headtext p {
+    color: blanchedalmond;
+}
+#headbuton {
+    flex:1;
+}
+#headbuton button {
+    background: rgb(238, 138, 25);
+    padding: 5px;
+    width:130px;
+    margin-left: 150px;
+}
+#headbuton button:hover{
+    transform: scale(104%);
+}
+h1 {
+    font-family: var(--font-gorda);
+    color: white;
+    font-size: 50px;
+
+}
+.logo img {
+    flex: 1;
+    display: inline-block;
+    height: auto;
+    width: 120px;
+    border-radius: 50%;
+}
+nav{
+    width: 100%;
+    grid-area: nav;
+}
+.menu {
+    background: var(--fondomenu-tot);
+    border-radius: var(--radio-tot);
+    padding: 0px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+.menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+}
+.menu i {
+    margin-right: 8px;
+    /* Espacio entre el icono y el texto */
+}
+/*Main*/
+main{
+    grid-area: main;
+
+}
+.superior{
+    display: flex;
+    flex-direction: row;
+    box-shadow: var(--shadow-tot);
+    border-radius: var(--radio-tot);
+}
+
+h2 {
+    font-family: Arial;
+    font-weight: bolder;
+}
+.texto h2{
+    text-align: center;
+    margin-top: 20px;
+}
+.texto p{
+    margin-top: 20px;
+    margin-left: 15px;
+    text-align: left;
+}
+p{
+    font-weight: bold;
+}
+.superior .burger {
+
+    display: flex;
+    flex: 1;
+    justify-items: center;
+}
+.superior .burger img{
+    width: 400px;
+}
+.boton {
+    display:flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    padding: 5px ;
+
+}
+.boton #precio{
+    padding: 10px 15px;
+    border-radius: 15px;
+    background: yellow;
+    font-weight: bold;
+    font-size: large;
+}
+.boton #precio:hover{
+    transform: scale(104%);
+}
+.boton #pide {
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: large;
+    color: white;
+    background: rgb(218, 37, 37);
+}
+.boton #pide:hover{
+    transform: scale(110%);
+}
+/*parte inferior del main*/
+.inferior {
+    display:flex;
+    /* flex-wrap: wrap; */
+    flex-direction: row;
+    gap:15px;
+    margin-top: 10px;
+    justify-content: space-between;
+
+}
+.inferior_foto {
+    position: relative;
+    width: 250px;
+
+    box-shadow: var(--shadow-tot);
+    border-radius: var(--radio-tot);
+    }
+.inferior_foto:hover{
+    transform: scale(114%);
+   transition: 0.29 ease;
+}
+.inferior_foto .textobox{
+    margin-left: 5px;
+}
+.pedido {
+    display: flex;
+    margin-bottom: auto;
+    justify-content: space-between;
+    color: red;
+    margin-left: 5px;
+    margin-top:10px ;
+}
+.pedido a {
+    text-decoration: none;
+
+
+}
+.pedido a img {
+    width: 30px;
+    margin-right: 10px;
+
+}
+/*encajamos la foto en el contenedor inferior*/
+.inferior_foto img{
+    width: 100%;
+}
+aside .asidearriba{
+    grid-area: aside;
+    background: rgb(97, 97, 231);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    box-shadow: var(--shadow-tot);
+    border-radius: var(--radio-tot);
+}
+.asidearriba h3{
+    font-weight: bold;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 20px;
+}
+.asidearriba p{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.asidearriba h2{
+    text-align: center;
+    margin-top: 25px;
+    font-size: 35px;
+    font-weight: bolder;
+}
+.asidearriba button {
+    padding:var(--boton-size);
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: auto;
+    border-radius: var(--boton-radio);
+    font-weight: bold;
+    font-size: large;
+}
+.asidearriba button:hover{
+    transform: scale(104%);
+}
+aside .asideabajo {
+     grid-area: aside;
+     margin-top: 10px;
+    background: rgb(250, 250, 252);
+    color: rgb(14, 13, 13);
+    display: flex;
+    flex-direction: column;
+    height: 425px;
+    padding:10px;
+    box-shadow: var(--shadow-tot);
+    border-radius: var(--radio-tot);
+}
+aside .asideabajo p {
+    margin-top: 10px;
+}
+
+aside .asideabajo .cobertura {
+    margin-top: 5px;
+    margin-left: 15px;
+    color: rgb(14, 13, 13);
+}
+aside .asideabajo img {
+    display: flex;
+    width:230px;
+    justify-self: center;
+
+}
+footer {
+    grid-area: footer;
+    background: var(--fondomenu-tot);
+    box-shadow: var(--shadow-tot);
+    border-radius: var(--radio-tot);
+}
+.footarriba{
+    display:flex;
+    margin-top: 10px;
+    justify-content: space-between;
+    background: var(--fondomenu-tot);
+    gap:15px;
+   }
+.footarriba .express {
+    flex:1;
+    width: 250px;
+    color:white;
+    margin-left: 5px;
+
+}
+.footarriba .horario {
+    flex:1;
+    align-content: center;
+    justify-content: center;
+    width: 250px;
+    color:white;
+
+
+}
+.footarriba .contacto {
+    flex:1;
+    width: 250px;
+    color:white;
+
+}
+
+
+.footabajo{
+    display: flex;
+    justify-content: center;
+}
+ .footabajo a{
+    text-decoration: none;
+    color: greenyellow;
+    font-size: 24px;
+}
+/*
+.footabajo .icons{
+    margin-bottom: 5px;
+}*/
+#copyrai {
+    text-align: center;
+    color: white;
+    font-size: 0.8em;
+}

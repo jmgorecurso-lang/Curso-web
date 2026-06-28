@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reto 5</title>
+  <link rel="stylesheet" href="estiloR5.css">
+  <link href="https://fonts.googleapis.com/css2?family=Piedra&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Reto 5|| Formulario Inteligente</h1>
+    <input type="checkbox" id="activar">
+    <label for="activar">Quieres dejarnos un mensaje?</label>
+    <form id="miFormulario" class="form-contenido" action="https://formspree.io/f/maqvgzdb"
+  method="POST">
+      <input type="mail" id="email" name="email" placeholder="tu@correo.com" required>
+      <small id="email-feedback" style="color:red;">correo no valido</small>
+
+      <textarea name="mensaje" id="mensaje" placeholder="Escribe al menos 10 caracteres" required></textarea>
+      <p id="contador">Caracteres: 0</p>
+       <button  type="submit" id="btn-enviar" name="submit" disabled>Enviar Comentario</button>
+
+
+    </form>
+
+  </div>
+  <script src="scriptR5.js"></script>
+</body>
+</html>

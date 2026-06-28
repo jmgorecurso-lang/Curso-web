@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reto 2</title>
+  <link rel="stylesheet" href="reto2style.css">
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="logo">
+    <div class="texto">
+  <h1>Suscribete a nuestro Newsletter!</h1>
+  <p>Recibe las ultimas noticias, recursos y consejos para tu aprendizaje Web.</p>
+  </div>
+
+  </header>
+ <form action="" method="post" onsubmit="alert ('Todo correcto, enviado')">
+    <label for="nombre">Nombre:</label>
+    <input type="text" placeholder="pon tu nombre" id="nombre" required autofocus>
+    <label for="email">Email:</label>
+    <input type="email" required>
+    <div class="cursos">
+    <label for="curso">Cursos de interes:</label>
+    <select name="curso" id="curso" required>
+      <option value="" selected disabled>Elige tu curso</option>
+      <option name="curso" value="html">HTML</option>
+      <option name="curso" value="php">PHP</option>
+      <option name="curso" value="css">CSS</option>
+      <option name="curso" value="python" >Python</option>
+      <option name="curso" value="javascript">Java Script</option>
+      <option name="curso" value="todos">Todos los cursos</option>
+    </select>
+    </div>
+   <!-- <button type="submit" id="submit" name="submit" onclick="location.href='confirmado.html'">Susbribete !!!</button> -->
+    <input type="submit" name="submit" id="submit" value="Enviar" onclick="location.href='confirmado.html'">
+
+
+  </form>
+
+</body>
+</html>

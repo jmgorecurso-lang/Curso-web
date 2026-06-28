@@ -1,0 +1,42 @@
+<!doctype html>
+
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>New</title>
+    <meta name="description" content="Objetos">
+</head>
+
+<body>
+
+    <script type="text/javascript">
+        function Libro(título, autor, año, editor, cubierta) {
+            this.título = título;
+            this.autor = autor;
+            this.año = año;
+            this.editor = editor;
+            this.cubierta = cubierta;
+            this.muestraCubierta = function () {
+                document.body.appendChild(this.cubierta);
+            };
+        }
+        function Autor(nombre, apellido) {
+            this.nombre = nombre;
+            this.apellido = apellido;
+        };
+        //una de las propiedades del objeto libro es a su vez un objeto
+        let cubierta1 = new Image();
+        cubierta1.src = 'Cover_AnalisisDatosExcel.jpg';
+        let autor1 = new Autor('Alessandra', 'Salvaggio');
+        let libro1 = new Libro('Analisis de datos con Excel', autor1, '2017', 'LSWR', cubierta1);
+
+        libro1.mmuestraCubierta();
+        //accedo a una propiedad del objeto autor de libro 
+        console.log(libro1.autor.nombre);
+       // console.log(libro2);
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <Title>Web worker</Title>
+</head>
+
+<body>
+    <div id="secuencia"></div>
+
+    <script>
+        const worker = new Worker('worker1.js');
+        worker.onmessage = function(event) {
+            document.getElementById('secuencia').textContent += event.data + ' ';
+        };
+    </script>
+
+</body>
+
+</html>

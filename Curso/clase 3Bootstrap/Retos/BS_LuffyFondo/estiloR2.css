@@ -1,0 +1,48 @@
+
+.container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 40px;
+    }
+h2{
+    font-family:"Irish Grover", system-ui; ;
+}
+/* hacemos que tanto el texto como el boton queden centrados dentro de la imagan*/
+ .card-img-overlay {
+    display:flex;
+    flex-direction:column ;
+    justify-content: center;
+    align-items: center;
+
+ }
+ .card:hover .card-img-overlay{
+    opacity: 1 !important;
+ }
+ .card-img-overlay a{
+    margin-top: 30px;
+ }
+
+ .card-img-overlay a:hover{
+    transform: scale(110%);
+ }
+
+.modal {
+
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+ }
+ ul {
+    list-style: none;
+ }
+ .modal img {
+    border: 15px solid transparent;
+ }
+ .fondoEfecto {
+    .card img{
+      width: 100%;
+    }
+ }

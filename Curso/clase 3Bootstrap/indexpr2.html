@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <title>Practica 2</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    header {
+      text-align: center;
+    }
+
+    .container {
+      margin: 0 auto;
+      display: flex;
+      padding: 25px;
+    }
+    .manolo {
+      width: 150px;
+      height: 150px;
+      margin-left: 15px;
+    }
+
+    .manolo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+    .estrellas_puntos {
+       display: flex;
+      flex-direction: row-reverse;
+      padding: 25px;
+      justify-content: space-around;
+    }
+    .estrellas_puntos  input {
+      display: none;
+    }
+    .estrellas_puntos label {
+      display: block;
+      font-size: 30px;
+      cursor: pointer;
+      color: rgb(34, 34, 34);
+    }
+    .estrellas_puntos input:checked~label, .estrellas_puntos label:hover, .estrellas_puntos label:hover~label {
+      color:goldenrod;
+      transform: scale(1.1);
+    }
+    textarea {
+      width: 300px;
+      height: 100px;
+    }
+    .propina {
+      display: flex;
+      gap:25px;
+    }
+    .propina button {
+      background: black;
+      padding: 0 40px;
+      height: 30px;
+      color: white;
+      align-content: center;
+      font-weight: bold;
+      border-radius: 25px;
+      margin-top: 10px;
+    }
+    .propina button:hover {
+      background: goldenrod;
+      color: black;
+      transform: scale(122%);
+    }
+    .check {
+      margin-top: 20px;
+    }
+    .importe #dinero{
+      opacity: 0.5;
+      pointer-events: none;
+    }
+    input {
+      padding: 10px;
+    }
+.importe #otro:checked~ #dinero {
+  opacity: 1;
+  pointer-events: auto;
+  border: solid rgb(49, 48, 48);
+  border-radius: 12px;
+}
+.envio {
+  margin-top: 25px;
+  display: flex;
+}
+.envio input {
+  flex:1;
+  background: rgb(25, 26, 25);
+  width: 70%;
+  border-radius: 25px;
+  color: antiquewhite;
+  font-size: large;
+}
+.envio input:hover {
+  color:aqua;
+  background: rgb(49, 49, 49);
+}
+#sumatotal {
+  color: black;
+}
+  </style>
+
+</head>
+
+<body>
+  <header>
+    <h1>Como a sido tu viaje con Manolo?</h1>
+  </header>
+  <div class="container">
+    <form action="" method="post">
+      <div class="manolo">
+        <img src="https://plus.unsplash.com/premium_photo-1689539137236-b68e436248de?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cGVyc29uYXxlbnwwfHwwfHx8MA%3D%3D" alt="">
+
+      </div>
+
+      <div class="estrellas_form">
+        <label>Valora tu viaje</label>
+        <div class="estrellas_puntos">
+          <input type="radio" id="star5" name="rating" value="5"><label for="star5"><i class="fa-solid fa-star"></i></label>
+          <input type="radio" id="star4" name="rating" value="4"><label for="star4"><i class="fa-solid fa-star"></i></label>
+          <input type="radio" id="star3" name="rating" value="3"><label for="star3"><i class="fa-solid fa-star"></i></label>
+          <input type="radio" id="star2" name="rating" value="2"><label for="star2"><i class="fa-solid fa-star"></i></label>
+          <input type="radio" id="star1" name="rating" value="1"><label for="star1"><i class="fa-solid fa-star"></i></label>
+        </div>
+
+      </div>
+      <div class="comentario">
+        <textarea name="comentario" id="comentario" placeholder="Escribe tu comentario aqui..." required minlength="20"></textarea>
+      </div>
+      <div class="coste">
+
+        <h3><span>💰</span>
+         Importe del viaje </h3>
+          <p>el total es: <span id="suma"></span></p>
+        <!-- El resultado se mostrará aquí -->
+
+         <script src="script.js"></script>
+        
+        <p>Añade una propina para Manolo</p>
+        <div class="propina">
+          <div class="centimos">
+            <button>0,50 €</button>
+          </div>
+          <div class="uno">
+            <button>1 €</button>
+          </div>
+          <div class="dos">
+            <button>2 €</button>
+          </div>
+          </div>
+          <div class="check">
+            <div class="importe">
+              <input type="checkbox" id="otro" name="otro">
+              <label for="otro">Otro Importe: </label>
+              <input type="number" id="dinero" >
+
+              <!-- <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1"> I have a bike</label><br>-->
+            </div>
+
+          </div>
+          <div class="envio">
+            <input type="submit" value="Enviar Valoracion">
+
+          </div>
+
+
+
+
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>

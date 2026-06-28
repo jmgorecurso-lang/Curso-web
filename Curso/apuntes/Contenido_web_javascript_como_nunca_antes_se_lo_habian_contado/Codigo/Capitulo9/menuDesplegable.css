@@ -1,0 +1,28 @@
+#titulo{
+    text-align: center
+}
+#imagen{
+    float: left;
+    width: 49%;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+#contenido{
+    float: left;
+    width: 49%;
+}
+#menu{
+    display: none;
+    position: absolute;
+    padding: 5px;
+    list-style-type: none;
+    background-color: lightblue;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px 5px lightcyan;
+    cursor: pointer;
+}
+#menu li{
+    margin: 0px;
+    padding: 10px 20px;
+}
+

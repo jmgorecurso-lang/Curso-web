@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reto 6</title>
+  <link rel="stylesheet" href="estiloR6.css">
+  <link href="https://fonts.googleapis.com/css2?family=Piedra&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Reto 6|| Formulario Inteligente Modal</h1>
+    <input type="checkbox" id="activar">
+    <label for="activar">Quieres dejarnos un mensaje?</label>
+    <form id="miFormulario" class="form-contenido" action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="7d625cc9-24f7-4eb2-891a-0791e0a885f0">
+      <!-- Redirige a la pantalla principal-->
+       <input type="hidden" name="redirect" value="http://127.0.0.1:3000/Clase 2/Retos/Reto6FormulModal/indexR6.html?serverWindowId=e2eb7412-3d45-43c9-a281-15683fe75311">
+      <input type="mail" id="email" name="email" placeholder="tu@correo.com" required>
+      <small id="email-feedback" style="color:red;">correo no valido</small>
+
+      <textarea name="mensaje" id="mensaje" placeholder="Escribe al menos 10 caracteres" required></textarea>
+      <p id="contador">Caracteres: 0</p>
+       <button  type="submit" id="btn-enviar" name="btn-enviar" disabled>Enviar Comentario</button>
+
+
+    </form>
+    <!-- creamos el Modal para que aparezca al dar enviar el formulario-->
+    <div id="modalGracias" class="modal-overlay">
+      <div class="modal">
+        <div class="modal-header">
+          <h2>Gracias !!</h2>
+          <button class="close-modal" id="cerrarModalEquis" >&times;</button>
+
+        </div>
+        <div class="modal-body">
+          <div class="emoji">🎉</div>
+          <p><strong>Mensaje enviado con exito !!</strong></p>
+          <p>Gracias por contactarnos. Nos prondremos en contacto contigo muy pronto.</p>
+        </div>
+        <div class="modal-footer">
+          <button class="btn-cerrar-modal" id="cerrarModalBoton">Cerrar </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="scriptR6.js"></script>
+</body>
+</html>

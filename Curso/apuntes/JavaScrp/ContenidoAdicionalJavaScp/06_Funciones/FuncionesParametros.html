@@ -1,0 +1,13 @@
+<!doctype html>
+
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title>HolaMundo</title>
+  <meta name="description" content="Funciones">
+</head>
+
+<body>  <p id="output"></p>  <img id="carita" />  <script type="text/javascript">    function quéDía(nombre) {      const día = new Date().getDay();      const nombreDía = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves',       'Viernes', 'Sábado'];      return `Hola  ${nombre}! Feliz ${nombreDía[día]}`;    }    document.getElementById('output').innerHTML = quéDía('Alessandra');  </script></body>
+
+</html>

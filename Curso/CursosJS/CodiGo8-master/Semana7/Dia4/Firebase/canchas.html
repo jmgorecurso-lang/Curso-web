@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+    <!-- FONT AWESOME 5 -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css'
+        integrity='sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=' crossorigin='anonymous' />
+    <!-- FONT AWESOME 4 -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'
+        integrity='sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=' crossorigin='anonymous' />
+    <!-- ANIMATE CSS -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css'
+        integrity='sha256-PHcOkPmOshsMBC+vtJdVr5Mwb7r0LkSVJPlPrp/IMpU=' crossorigin='anonymous' />
+    <!-- BOOSTRAP CLASICO CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- DATATABLES CSS BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css">
+
+    <title>Document</title>
+    <style>
+        #btnAbrirModal {
+            border-radius: 50%;
+            width: 70px;
+            height: 70px;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <!-- Modal Crear una Cancha -->
+    <div class="modal fade" id="modalCrearCancha" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Formulario de Creación de Cancha</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="frmCrearCancha">
+                        <div class="form-group">
+                            <label for="inputNombre">Nombre:</label>
+                            <input type="text" placeholder="Nombre de la cancha" class="form-control" id="inputNombre">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputDireccion">Dirección:</label>
+                            <input type="text" placeholder="Dirección de la cancha" class="form-control"
+                                id="inputDireccion">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Nro Canchas:</label>
+                            <input type="number" value="1" min="1" class="form-control" id="inputNroCanchas">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputTelefono">Nro Canchas:</label>
+                            <input type="text" placeholder="Teléfono de la cancha" class="form-control"
+                                id="inputTelefono">
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-6">
+                                <label for="">Latitud:</label>
+                                <input type="number" class="form-control" id="inputLatitud">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="">Longitud:</label>
+                                <input type="number" class="form-control" id="inputLongitud">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputFoto">Subir imagen de la cancha</label>
+                            <input type="file" id="inputFoto" class="form-control" accept="image/*">
+                        </div>
+                        <div class="form-group">
+                            <div id="mapa">
+                                AQUI IRA EL MAPA
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-primary" id="btnCrearCancha">
+                                Crear Cancha
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- Modal Editar una Cancha -->
+     <div class="modal fade" id="modalEditarCancha" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+     aria-hidden="true">
+     <div class="modal-dialog" role="document">
+         <div class="modal-content">
+             <div class="modal-header">
+                 <h5 class="modal-title">Formulario de Edicion de Cancha</h5>
+                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">&times;</span>
+                 </button>
+             </div>
+             <div class="modal-body">
+                 <form id="frmEditarCancha">
+                     <label id="idCancha"></label>
+                     <div class="form-group">
+                         <label for="EditinputNombre">Nombre:</label>
+                         <input type="text" placeholder="Nombre de la cancha" class="form-control" id="EditinputNombre">
+                     </div>
+                     <div class="form-group">
+                         <label for="EditinputDireccion">Dirección:</label>
+                         <input type="text" placeholder="Dirección de la cancha" class="form-control"
+                             id="EditinputDireccion">
+                     </div>
+                     <div class="form-group">
+                         <label for="EditinputNroCanchas">Nro Canchas:</label>
+                         <input type="number" value="1" min="1" class="form-control" id="EditinputNroCanchas">
+                     </div>
+                     <div class="form-group">
+                         <label for="EditinputTelefono">Telefono de la cancha:</label>
+                         <input type="text" placeholder="Teléfono de la cancha" class="form-control"
+                             id="EditinputTelefono">
+                     </div>
+                     <div class="form-group row">
+                         <div class="col-md-6">
+                             <label for="EditinputLatitud">Latitud:</label>
+                             <input type="number" class="form-control" id="EditinputLatitud">
+                         </div>
+                         <div class="col-md-6">
+                             <label for="EditinputLongitud">Longitud:</label>
+                             <input type="number" class="form-control" id="EditinputLongitud">
+                         </div>
+                     </div>
+                     <div class="form-group row">
+                         <label for="">Imagen Canchita</label>
+                         <img src="" id="imgCancha" alt="">
+                     </div>
+                     <div class="form-group">
+                         <div id="mapa">
+                             AQUI IRA EL MAPA
+                         </div>
+                     </div>
+                     <div class="form-group">
+                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                         <button type="button" class="btn btn-danger" id="btnEliminarCancha">
+                             Eliminar Cancha
+                         </button>
+                         <button type="button" class="btn btn-success" id="btnEditarCancha">
+                             Editar Cancha
+                         </button>
+                     </div>
+                 </form>
+             </div>
+         </div>
+     </div>
+ </div>
+
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+                data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation"></button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Lista de Canchas</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="#">Action 1</a>
+                            <a class="dropdown-item" href="#">Action 2</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <main class="container-fluid mt-4">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                LISTA DE CANCHAS
+                            </div>
+                            <div class="card-body table-responsive">
+                                <table id="tablaCanchas" class="table table-striped table-bordered table-hover">
+
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <button class="btn btn-primary" id="btnAbrirModal">
+        <i class="fas fa-plus-circle fa-2x"></i>
+    </button>
+
+
+
+
+    <!-- FIREBASE CORE -->
+    <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-app.js"></script>
+    <!-- FIREBASE ANALYTICS -->
+    <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-analytics.js"></script>
+    <!-- FIREBASE REALTIME DATABASE -->
+    <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-database.js"></script>
+    <!-- FIREBASE STORAGE -->
+    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-storage.js"></script>
+    <!-- JQUERY -->
+    <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'
+        integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo'
+        crossorigin='anonymous'></script>
+    <!-- POPPER.JS -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js'
+        integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1'
+        crossorigin='anonymous'></script>
+    <!-- BOOTSTRAP JS -->
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'
+        integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM'
+        crossorigin='anonymous'></script>
+    <!-- SWEETALERT 2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <!-- DATATABLES JS y BOOTSTRAP -->
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+    <!-- JS PROPIO -->
+    <script src="./js/main.js" type="module"></script>
+</body>
+
+</html>

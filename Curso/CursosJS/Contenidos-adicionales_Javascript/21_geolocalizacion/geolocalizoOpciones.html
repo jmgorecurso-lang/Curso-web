@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title>Geolocalización</title>
+</head>
+
+<body>
+
+  <script>navigator.geolocation.getCurrentPosition(localízame,gestionError, {enableHighAccuracy:true});function localízame(posicion) {      const latitud = posicion.coords.latitude;      const longitud = posicion.coords.longitude;      alert(`Latitud: ${latitud}, longitud: ${longitud}`);}function gestionError(error) {      if (error.code === 1) {        alert('como no me has permitido el envío de la información, no sé decirte dónde estás');      } else if (error.code === 2) {        alert('non puedo recuperar y enviar la información necesaria');      } else {        alert('ha surgido un error imprevisto');      }}</script>
+</body>
+
+</html>

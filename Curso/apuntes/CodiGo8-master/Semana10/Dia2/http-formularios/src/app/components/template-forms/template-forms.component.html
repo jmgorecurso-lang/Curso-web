@@ -1,0 +1,52 @@
+<main class="container mt-5">
+    <div class="row">
+        <div class="col-12">
+            <form>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="">Nombre:</label>
+                            <input type="text" class="form-control"
+                                #nombre>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="">Email:</label>
+                            <input type="email" class="form-control"
+                                #email>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="">Edad:</label>
+                            <input type="number" class="form-control"
+                                #edad>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="">Pais:</label>
+                            <select name="" id="" class="form-control"
+                                #pais>
+                                <option value="0">Seleccione...</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <button type="button" class="btn btn-block btn-danger"
+                            (click)="formulario1(pais,edad,nombre,email)">
+                            Registrar Datos
+                        </button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+</main>

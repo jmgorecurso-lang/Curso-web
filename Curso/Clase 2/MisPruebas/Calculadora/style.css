@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --font-pantalla: "Bitcount Single", system-ui;
+    --font-boton: "Audiowide", sans-serif;
+}
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+.contenedor {
+    border: solid black;
+    background:linear-gradient(173deg,rgba(101, 104, 105, 1) 14%, rgba(153, 222, 216, 1) 50%, rgba(20, 20, 20, 1) 85%);
+    padding: 20px;
+    border-radius: 10px;
+}
+.pantalla {
+    background-color: #0e0d0d;
+    color: #fff;
+    font-size: 55px;
+    padding: 10px;
+    text-align: right;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-family: var(--font-pantalla);
+}
+.botones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+.btn {
+    background-color: #555;
+    color: white;
+    border: groove black;
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: var(--font-boton);
+}
+.btn:hover {
+    background-color: #777;
+}
+.btn:active{
+    transform: scale(97%);
+}
+.igual {
+    background-color: #28a745;
+    grid-column: span 2;
+}
+.cero {
+    grid-column: span 2;
+}

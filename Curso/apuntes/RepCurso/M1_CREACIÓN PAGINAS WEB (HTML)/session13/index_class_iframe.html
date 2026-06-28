@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Web con Iframe</title>
+</head>
+<body >
+<header>
+<h1> Tema 13 || Iframe </h1>
+
+
+</header>
+<nav style="display: flex; justify-content: space-evenly; ">
+<h2><a href="https://es.wikipedia.org/wiki/Wikipedia:Portada" target="iframe_main"
+	style="text-decoration: none;" 
+	onmouseover="this.style.color='white';
+	this.style.background='black'";
+
+	onmouseout="this.style.color='blue';
+	this.style.background='white'"
+	> Wikipedia</a></h2>
+<h2><a href="https://mcdonalds.es/" target="iframe_main" style="text-decoration: none;"> Macdonals</a></h2>
+<h2><a href="https://web.sabadell.cat/" target="iframe_main" style="text-decoration: none;"> Ajuntamiento Sabadell</a></h2>
+<!-- <h2><a href="https://es.wikipedia.org/wiki/Wikipedia:Portada" target="iframe_main"> Wikipedia</a></h2> -->
+</nav>
+<iframe name="iframe_main" src="https://ctsformacion.com/" frameborder="0" width="100%" height="800px" style="max-width: 1200px; margin: 0 auto; display: block;"></iframe>
+
+<hr>
+
+<main name="iframe_main" src="https://web.sabadell.cat/" width="100%" height="800px">
+aqui el main
+</main>
+</body>
+
+</html>

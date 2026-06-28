@@ -1,0 +1,42 @@
+<!doctype html>
+
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>AJAX - REST</title>
+    <meta name="description" content="AJAX - REST">
+</head>
+
+<body>
+
+    <p id="output">Ver los mensajes en la consola del navegador</p>
+
+    <script type="text/Javascript">
+
+        const urlServicio = 'https://jsonplaceholder.typicode.com/users';
+        const request = new XMLHttpRequest();
+        request.open('POST', urlServicio);
+        request.setRequestHeader('Content-type', 'application/json; charset=UTF-8');
+        request.onload = function () {
+            console.log(`Respuesta: estado=${this.status} descripción estado=${this.statusText} contenido=${this.responseText}`);
+        };
+        request.onerror = function (error) {
+            console.err(`ERROR: ${error}`);
+        };
+        console.log('Solicitud completada');
+
+        const nuevoUsuario = {
+            'name': 'Mario Rossi',
+            'username': 'm.rossi',
+            'email': 'm.rossi@example.org'
+        };
+
+        request.send(JSON.stringify(nuevoUsuario));
+        console.log('Solicitud enviada');
+
+    </script>
+
+</body>
+
+</html>

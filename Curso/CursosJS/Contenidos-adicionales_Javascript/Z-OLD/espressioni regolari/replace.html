@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+</head>
+
+<body>
+  
+  <p id="output"></p>
+  <script>
+    let pattern = /(\w+)\s(\w+)/;
+    let testo = 'Nome: Alessandra Salvaggio 1973';
+    
+    //let nuovoTesto = testo.replace(pattern, '$2, $1'); //inverte nome e cognome, cioè la prima parte della stringa con la seconda
+    //let nuovoTesto = testo.replace(pattern, '$2'); // tiene solo il cognome
+    // let nuovoTesto = testo.replace(pattern, '$1, Cognome: $2');
+    //let nuovoTesto = testo.replace(pattern, '$$'); //scrive il simbolo di dollaro
+    // let nuovoTesto = testo.replace(pattern, '$& cognome'); 
+    let nuovoTesto = testo.replace(pattern, '$`uffa'); 
+    console.log(nuovoTesto);    
+  </script>
+
+</body>
+
+</html>

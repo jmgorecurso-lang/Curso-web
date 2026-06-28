@@ -1,0 +1,150 @@
+body {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    background-image: url(https://images.unsplash.com/photo-1689005046927-0aa9f398247a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YWJzdHJhY3QlMjB3YWxscGFwZXJ8ZW58MHwxfDB8fHww) ;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+}
+
+#contenedor{
+    background:linear-gradient(338deg,rgba(175, 179, 178, 1) 0%, rgba(152, 185, 250, 1) 54%, rgba(137, 229, 245, 1) 100%);
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+    border: solid;
+}
+
+header {
+    width: 50;
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: solid;
+    box-shadow: 0px 2px rgb(203, 204, 202) ;
+
+}
+
+/* 2. Estilo de las secciones y etiquetas */
+.seccion-form {
+    display: flex;
+    flex-direction: column;
+}
+
+h2, h3 {
+    border-left:  5px solid #f71212;
+    padding-bottom: 5px;
+    color: #1d1c1c;
+
+}
+
+label {
+    margin-top: 2px;
+    font-weight: 600;
+    font-size: 0.9rem;
+
+}
+input{
+    padding: 5px;
+    border-radius: 8px;
+
+}
+small {
+    color: rgb(245, 18, 75);
+}
+.datos, .masdatos, .preferencias {
+    display: flex;
+    flex-direction: column;
+}
+
+/* 3. Los bordes de los inputs */
+.input-borde, select, input[type="date"], input[type="number"], input[type="password"] {
+    border: 1.5px solid #d1d1d1;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s;
+}
+
+.input-borde:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.3);
+}
+input:user-invalid {
+    color: red;
+}
+input:user-valid {
+    color:green;
+}
+ i{
+    color: #4a90e2;
+}
+input[type="file"]::file-selector-button{
+    border: 1px groove black;
+    padding: 10px;
+    background: #040263;
+    border-radius: 6px;
+    color: white;
+}
+input[type="file"]:hover {
+    transform: scale(105%);
+    border: dotted red;
+    transition: 0.4s ease;
+    }
+input[type="file"]::file-selector-button:hover{
+    background: #f71212;
+}
+#termino {
+    margin-top: 25px;
+}
+/* 4. Botones y extras */
+.botones {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+button, #reset {
+    flex: 1;
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button {
+    background-color: #4a90e2;
+    color: white;
+}
+button:hover {
+    transform: scale(102%);
+}
+button:disabled {
+    background-color: #666565;
+    cursor: not-allowed;
+    color: #666565;
+}
+
+#reset {
+    background-color: #e74c3c;
+    color: white;
+}
+#reset:hover{
+    transform: scale(105%);
+}
+#reset:active {
+    transform: scale(95%);
+    background: #ee321e;
+}
+.input-color {
+    height: 40px;
+    width: 100%;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}

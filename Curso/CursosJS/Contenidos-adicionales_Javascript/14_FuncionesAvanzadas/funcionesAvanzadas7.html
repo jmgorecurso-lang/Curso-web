@@ -1,0 +1,27 @@
+<!doctype html>
+
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Funciones avanzadas</title>
+    <meta name="description" content="Funciones avanzadas">
+</head>
+
+<body>
+
+    <script type="text/javascript">
+        let areaRectangulo = (base, altura) => {
+            console.log(`base=${base} altura=${altura}`);
+            return base * altura;
+        };
+        //console.log(`0 argumentos: ${areaRectangulo()}`);  // Nan
+        //console.log(`1 argumentos: ${areaRectangulo(5)}`);  // Nan
+        //console.log(`2 argumentos: ${areaRectangulo(5, 6)}`);  // Escribe en la consola  "El área del rectángulo es 30"
+        //console.log(`3 argumentos: ${areaRectangulo(5, 6, 7)}`);  // Escribe en la consola "El área del rectángulo es 30"
+        console.log(`2 argumentos: ${areaRectangulo('5', 6)}`);
+    </script>
+
+</body>
+
+</html>

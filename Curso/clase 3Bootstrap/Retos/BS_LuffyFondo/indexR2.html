@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+ <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Latest compiled and minified CSS -->
+   <link rel="stylesheet" href="estiloR2.css">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script src="script_reto2_bs.js" defer></script>
+  <!-- SCRIPTS INDEPENDIENTES (con async - no necesitan orden) -->
+  <title>Reto 2</title>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <img src="luffy.jpg" alt="" width="400px" class="fluid" id="fondoLuffy">
+      <!-- aplicamos opacidad para que no se vea el texto -->
+      <div class="card-img-overlay text-white opacity-0">
+        <h2>Monkey D.Luffy</h2>
+        <p>es un personaje de ficción y el protagonista principal del manga One Piece creado por Eiichirō Oda,Es el capitán de la tripulación pirata conocida como los Piratas de Sombrero de Paja, fundada por él mismo para cumplir su sueño de encontrar el One Piece y convertirse en el Rey de los Piratas</p>
+        <a href="#miModal" data-bs-toggle="modal" data-bs-target="#miModal" class="btn btn-danger btn-lg">Su Perfil</a>
+      </div>
+
+    </div>
+    <button type="button" class="btn btn-warning smaller" id="abreModal" onclick="cambio()" data-bs-toggle="modal" data-bs-target="#miModal">Open the Modal</button>
+    <!--EMPIEZA   EL   MODAL -->
+    
+    <div class="modal" id="miModal">
+      <div class="modal-dialog modal-lg bg-secondary">
+        <div class="modal-header">
+          <h2>Monkey D.Luffy</h2>
+          <!-- boton de la x para cerrar-->
+           <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <!--el contenido del modal-->
+        <div class="card-text">
+          <img src="https://img.wattpad.com/cover/244492470-256-k800510.jpg" class="rounded-circle" width="350px" height="350px">
+          <ul class="datos">
+            <li>🗣️Nombre: Monkey D.Luffy 👒</li>
+            <li>🪓Profesion: Pirata ☠</li>
+            <li>♨️Ubicacion: En el mar ⛵</li>
+            <li>🍖Aficiones: Comer y reirse 😁</li>
+            <li>💀Habilidades: Es de goma 😲</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal" onclick="cierra()">Cierra</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+pip install Flask
+pip install Flask-RESTful
+(Descargar el archivo binario e instalarlo antes de flask-mysql sino no funciona https://www.lfd.uci.edu/~gohlke/pythonlibs/#mysqlclient)
+pip install flask-mysqldb
+
+pip install bcrypt => encriptacion python
+pip install flask-cors => MODIFICAR CORS de nuestra api
+pip install Flask-JWT => instala libreria para usar JSON Web Tokens
+pip install flask_sqlalchemy

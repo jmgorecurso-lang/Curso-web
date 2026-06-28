@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="reto5.css">
+  <title>Reto 5</title>
+</head>
+
+<body>
+
+  <div class="form-container">
+    <h1>Solicitud de Cita - Ayuntamiento</h1>
+    
+
+    <form action="" method="get" onsubmit="alert ('Todo correcto, enviado')">
+      <div class="datos">
+        <div class="escribe">
+          <label for="nombre">Nombre </label>
+          <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan" autofocus required pattern="^[A-Za-zñÑáéíóúÁÉÍÓÚüÜ\s]+$" min="3" title="Solo letras y espacios">
+          <small>Solo letras y espacios</small>
+        </div>
+        <div class="escribe">
+          <label for="apellidos">Apellidos </label>
+          <input type="text" id="apellidos" name="apellidos" placeholder="Ej: García Pérez" required pattern="^[A-Za-zñÑáéíóúÁÉÍÓÚüÜ\s]+$" min="3" title="Solo letras y espacios">
+          <small>Solo letras y espacios</small>
+        </div>
+      </div>
+
+      <div class="datos">
+        <div class="escribe">
+          <label for="dni">DNI </label>
+          <input type="text" name="dni" id="dni" placeholder="Ej: 12345678Z" pattern="^[0-9]{8}[A-Z]{1}$" required title="DNI: 8 números + letra">
+          <small>DNI: 8 números + letra</small>
+        </div>
+        <div class="escribe">
+          <label for="telefono">Teléfono </label>
+          <input type="tel" id="telefono" name="telefono" placeholder="Ej: 612345678" pattern="^[6-9]\d{8}$" required title="9 dígitos empezando por 6 o 9">
+          <small>9 dígitos empezando por 6 o 9</small>
+        </div>
+      </div>
+
+      <div class="escribe">
+        <label for="mail">Correo electrónico </label>
+        <input type="email" id="mail" name="mail" placeholder="Ej: usuario@dominio.com" required pattern="^[^@\s]+@[^@\s]+\.[^@\s]{2,}$" title="Formato: usuario@dominio.com">
+        <small>Formato: usuario@dominio.com</small>
+      </div>
+
+      <div class="escribe">
+        <label for="departamento">Departamento </label>
+        <select name="departamento" id="departamento">
+          <option value="" disabled selected>Seleccione un departamento...</option>
+          <option name="departamento" value="padron">Padrón</option>
+          <option name="departamento" value="urbanismo">Urbanismo</option>
+          <option name="departamento" value="tesoreria">Tesorería</option>
+          <option name="departamento" value="cultura">Cultura</option>
+          <option name="departamento" value="deportes">Deportes</option>
+          <option name="departamento" value="social">Bienestar Social</option>
+          <option name="departamento" value="ambiente">Medio Ambiente</option>
+        </select>
+      </div>
+
+      <div class="escribe">
+        <label>Motivo de la cita </label>
+        <textarea rows="4" placeholder="Describa brevemente el motivo de su visita (mínimo 10 caracteres)..."></textarea>
+        <small>Mínimo 10 caracteres, máximo 200</small>
+      </div>
+
+      <div class="datos">
+        <div class="escribe">
+          <label>Fecha preferente </label>
+          <input type="date">
+          <small>Seleccione una fecha entre hoy y 3 meses</small>
+        </div>
+        <div class="escribe">
+          <label>Hora preferente </label>
+          <input type="time">
+          <small>Horario de atención: 9:00 - 14:00 (intervalos de 30 minutos)</small>
+        </div>
+      </div>
+      <h3>Satisfacción con la aplicación</h3>
+
+      <div class="satisfaccion">
+
+          <div class="rating_container">
+            <div class="rating_option">
+              <input type="radio" id="rating-1" name="Satisfaccion" value="1" required>
+              <label for="rating-1">1</label>
+            </div>
+            <div class="rating_option">
+              <input type="radio" id="rating-2" name="Satisfaccion" value="2" required>
+              <label for="rating-2">2</label>
+            </div>
+            <div class="rating_option">
+              <input type="radio" id="rating-3" name="Satisfaccion" value="3" required>
+              <label for="rating-3">3</label>
+            </div>
+            <div class="rating_option">
+              <input type="radio" id="rating-4" name="Satisfaccion" value="4" required>
+              <label for="rating-4">4</label>
+            </div>
+            <div class="rating_option">
+              <input type="radio" id="rating-5" name="Satisfaccion" value="5" required>
+              <label for="rating-5">5</label>
+            </div>
+          </div>
+          <div class="rating_labels">
+            <span>Muy Satisfecho</span>
+            <span>Muy Insatisfecho</span>
+          </div>
+      </div>
+      <div class="checkbox-group">
+        <input type="checkbox" id="privacy">
+        <label for="privacy">Acepto la política de protección de datos </label>
+        <small>Debe aceptar las condiciones para continuar</small>
+      </div>
+      <div class="boton">
+        <input type="submit" name="submit" id="submit" value="Solicita Cita">
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>

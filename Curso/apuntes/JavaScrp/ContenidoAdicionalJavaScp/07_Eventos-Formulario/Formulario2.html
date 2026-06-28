@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <form>    <input type="date" id='fecha'>    <button type="button" onclick='cuantosDías()' id="boton">Calcula cuántos días 			faltan para la fecha seleccionada</button>  </form>  <p id="output"></p>  <script>    let hoy = new Date();    function cuantosDías() {      let fechaEvento = new Date(document.getElementById('fecha').value);      console.log(fechaEvento);      fechaEvento.setHours(0, 0, 0, 0);      document.getElementById("output").innerHTML = fechaEvento;      const milSegEnUnDía = 1000 * 60 * 60 * 24; // los milisegundos en un día      hoy.setHours(0, 0, 0, 0);      const diferenciaHoras = Math.abs(fechaEvento.getTimezoneOffset() / 60)       - Math.abs(hoy.getTimezoneOffset() / 60);      hoy.setHours(hoy.getHours() - diferenciaHoras);      if (fechaEvento > hoy) {        document.getElementById("output").innerHTML = `Faltan         ${(fechaEvento.getTime() - hoy.getTime()) / milSegEnUnDía} días`;      } else {        document.getElementById("output").innerHTML = 'La fecha ya ha pasado'      }    }    let año = hoy.getFullYear();    let mes= hoy.getMonth() + 1;    let día = hoy.getDate();    let fechaActual = `${año}-${mes}-${día}`;    document.getElementById('fecha').value = fechaActual;  </script>
+
+</body>
+
+</html>

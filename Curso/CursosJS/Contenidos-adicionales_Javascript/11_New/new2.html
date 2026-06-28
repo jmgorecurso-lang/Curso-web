@@ -1,0 +1,36 @@
+<!doctype html>
+
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>New</title>
+    <meta name="description" content="Objetos">
+</head>
+
+<body>
+
+    <script type="text/javascript">
+        function Libro(título, autor, año, editor) {
+            this.título = título;
+            this.autor = autor;
+            this.año = año;
+            this.editor = editor;
+        }
+        function Autor(nombre, apellido) {
+            this.nombre = nombre;
+            this.apellido = apellido;
+        };
+        //una de las propiedades del objeto libro es, a su vez, un objeto
+        let autor1 = new Autor('Alessandra', 'Salvaggio');
+        let libro1 = new Libro('Análisis de datos con Excel', autor1, '2017', 'LSWR');
+        let libro2 = new Libro('Scratch Programming Playground: Learn to Program by Making Cool Games', 'Al Sweigart', '2017', 'LSWR');
+        //accedo a una propiedad del objeto autor de libro
+        console.log(libro1);
+        console.log(libro1.autor.nombre);
+        console.log(libro2);
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+.contenedor {
+   background: rgb(86, 86, 245);
+   min-height: 100vh;
+}
+.container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 40px;
+    }
+#ojo,#ojo1,#ojo2{
+   font-size:50px;
+   color: aliceblue;
+   margin-top: 30px;
+   margin-bottom:15px;
+}
+.detalles {
+   font-size: large;
+}
+.badge {
+   cursor: pointer;
+   padding: 10px;
+}
+
+/* hacemos que tanto el texto como el boton queden centrados dentro de la imagan*/
+ .card-img-overlay {
+    display:flex;
+    flex-direction:column ;
+    justify-content:baseline;
+    align-items: center;
+ }
+ .card-text {
+   margin-top: 10px;
+ }
+ img {
+   border-radius: 8px;
+ }
+.card:hover .card-img-overlay{
+    opacity: 1 !important;
+    background: rgba(24, 23, 23, 0.678);
+ }
+ .card-img-overlay a{
+    margin-top: 30px;
+ }
+ .modal {
+    margin-top: 40px;
+ }
+ .boton-cierre{
+   right: 0%;
+}
+ ul {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  align-items: start;
+ }

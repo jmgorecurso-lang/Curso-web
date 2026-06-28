@@ -1,0 +1,34 @@
+<!doctype html>
+
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title>BUCLES 1</title>
+  <meta name="description" content="Bucles 1">
+</head>
+
+<body>
+
+  <ul id="números">
+    <li>uno</li>
+    <li>dos</li>
+    <li>tres</li>
+  </ul>
+  <p id="output"></p>
+
+  <script type="text/Javascript">
+      // Busca en el html, a través del objeto document, todos los elementos (ETIQUETA HTML) de tipo LI
+      // contenidos en la etiqueta UL con id = números
+      const listaLI = document.querySelectorAll('#números li');
+      
+      // Crea un mensaje con el número de elementos LI encontrados
+      const mensaje = `Hay ${listaLI.length} elementos en la lista UL "números"`;
+      
+      // Muestra el mensaje
+      document.getElementById('output').innerHTML = mensaje;
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="estiloreto3.css">
+
+</head>
+
+<body>
+  <h1>Reto 3 /\ Formulario de Registro Técnico</h1>
+  <div class="formulario">
+    <form action="" method="get" onsubmit="return abrirPagina(event)">
+      <h2>Formulario de Registro Técnico</h2>
+      <div class="datos">
+        <h3>Información Personal</h3>
+        <label for="nombre">Nombre:</label>
+        <input type="text" placeholder="Escribe tu nombre completo" id="nombre" name="nombre" autofocus required>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+        <label for="telefono">Telefono:</label>
+        <input type="number" id="telefono" name="telefono">
+      </div>
+      <div class="lenguaje">
+        <fieldset>
+          <legend> Lenguaje Favorito (elije uno)</legend>
+          <input type="radio" name="lenguaje" id="html" value="HTML">
+          <label for="html">HTML</label><br>
+          <input type="radio" name="lenguaje" id="css" value="CSS">
+          <label for="css">CSS</label><br>
+          <input type="radio" name="lenguaje" id="java" value="JavaScript">
+          <label for="java">JavaScript</label><br>
+          <input type="radio" name="lenguaje" id="php" value="PHP">
+          <label for="php">PHP</label><br>
+        </fieldset>
+      </div>
+      <div class="einas">
+        <fieldset>
+          <legend>Herramientas que dominas (puedes escoger varias)</legend>
+          <input type="checkbox" name="herramientas" id="github">
+          <label for="github">Github</label><br>
+          <input type="checkbox" name="herramientas" id="bootstrap">
+          <label for="bootstrap">Bootstrap</label><br>
+          <input type="checkbox" name="herramientas" id="wordpress">
+          <label for="wordpress">Wordpress</label><br>
+        </fieldset>
+      </div>
+      <div class="pais">
+
+        <label for="pais">Cual es tu pais de residencia</label>
+        <input list="paises" name="pais" id="pais" placeholder="Selecciona o escribe tu pais...">
+        <datalist id="paises">
+          <option value="Spain">
+          <option value="Francia">
+          <option value="Argentina">
+          <option value="Brasil">
+          <option value="Colombia">
+          <option value="Rusia">
+
+        </datalist>
+      </div>
+      <div class="texto">
+        <h3>Cuentanos sobre tu experiencia</h3>
+        <textarea name="mensaje" id="mensaje" placeholder="Escribe aqui tu comentarios" maxlength="200" required></textarea>
+      </div>
+      <div class="boton">
+        <input type="submit" name="submit" id="submit" value="Envialo!!">
+      </div>
+
+
+
+
+
+
+    </form>
+
+  </div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

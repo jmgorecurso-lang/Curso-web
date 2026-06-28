@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="stylehamburger.css">
+   <link href="https://fonts.googleapis.com/css2?family=Stalinist+One&display=swap" rel="stylesheet">
+  <title>Contacta</title>
+</head>
+<body id="contacta">
+  <h1>Contactanos</h1>
+  <div class="container">
+
+    <div class="formulario">
+      <form action="" method="POST" onsubmit="alert ('Todo correcto, enviado')" >
+
+        <div class="datos">
+          <div class="escribe">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Introduce tu nombre completo" required autofocus pattern="^[A-Za-zñÑáéíóúÁÉÍÓÚüÜ]+(\s+[A-Za-zñÑáéíóúÁÉÍÓÚüÜ]+)*$">
+          </div>
+
+        </div>
+        <div class="datos">
+          <div class="escribe">
+            <label for="mail">Correo Electrónico:</label>
+            <input type="text" id="mail" name="mail" required pattern="^[^@\s]+@[^@\s]+\.[^@\s]{2,}$">
+          </div>
+        </div>
+        <div class="escribe">
+          <label for="departamento">Servicios de Interes </label>
+          <select name="departamento" id="departamento">
+            <option value="" disabled selected>Selecciona un servicio...</option>
+            <option name="departamento" value="design">Diseño Web</option>
+            <option name="departamento" value="pagina">Paginas Web</option>
+            <option name="departamento" value="java">JavaScript</option>
+            <option name="departamento" value="seo">Posicionamiento Web</option>
+          </select>
+        </div>
+
+
+        <div class="comenta">
+          <div class="escribe">
+            <label for="mensaje">Mensaje:</label>
+            <textarea name="mensaje" id="mensaje" required minlength="20"></textarea>
+          </div>
+
+        </div>
+        <div class="enviar">
+          <input type="submit" name="submit" id="submit" value="Enviar Mensaje">
+        </div>
+      </form>
+
+    </div>
+    <div class="mapa">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1775.2157858746764!2d2.1063773907912933!3d41.557444010201316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4951e0def384f%3A0x77b3d5bb7a370747!2sCreatiu%20i%20T%C3%A8cnic%20Sabadell!5e0!3m2!1ses!2ses!4v1777541954642!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+  </div>
+
+</body>
+</html>

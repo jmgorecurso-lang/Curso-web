@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "main main aside"
+        "main main aside"
+        "footer footer footer";
+}
+.header {
+    grid-area: header;
+    display: flex;
+    background: cornflowerblue;
+}
+header #titulo {
+text-align: center;
+}
+.nav{
+    grid-area:nav;
+    background: rgb(240, 132, 132);
+
+}
+.main {
+    grid-area:main;
+    background: rgb(144, 238, 121);
+}
+.aside {
+    grid-area:aside;
+    background: rgb(3, 105, 136);
+
+}
+.footer {
+    grid-area:footer;
+    background: rgb(82, 83, 82);
+}

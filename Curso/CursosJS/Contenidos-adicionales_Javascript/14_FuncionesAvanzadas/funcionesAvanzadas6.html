@@ -1,0 +1,35 @@
+<!doctype html>
+
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Funciones avanzadas</title>
+    <meta name="description" content="Funciones avanzadas">
+</head>
+
+<body>
+
+    <script type="text/javascript">
+
+        let objeto = {
+            color: 'rojo',
+            descripciónF: () => {
+                console.log(this.color);
+            },
+            descripciónE: function () {
+                console.log(this.color);
+            },
+            descripciónM() {
+                console.log(this.color);
+            }
+        };
+        objeto.descripciónF();
+        objeto.descripciónE();
+        objeto.descripciónM();
+
+    </script>
+
+</body>
+
+</html>

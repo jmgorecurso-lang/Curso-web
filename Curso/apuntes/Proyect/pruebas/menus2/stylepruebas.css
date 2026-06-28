@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-bar: black;
+    --border-tot: 15px;
+
+}
+
+body {
+    font-family: Georgia;
+}
+
+h1 {
+    font-weight: 750;
+}
+
+nav li {
+    position: relative;
+}
+
+/* Container */
+.container {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "nav nav"
+        "main main"
+        "footer footer";
+    grid-template-columns: 2fr;
+    gap: 6px;
+    padding: 15px;
+    margin: 0 auto;
+    /*Con esto centramos*/
+    max-width: 1400px;
+}
+/*Header*/
+header {
+    grid-area:header;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgb(222, 59, 5);
+    color: white;
+    border-radius: var(--border-tot);
+
+}
+.imagen{
+    opacity: 0;
+}

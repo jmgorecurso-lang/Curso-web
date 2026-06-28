@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>Sesion 3 /\ Otros input - atributos y Output</h1>
+  <h2>Datalist - Color - Picker - File - Rango - Image - Output</h2>
+  <form>
+    <h3>Datalist</h3>
+    <label for="navegador">Que navegador prefieres?</label>
+    <input list="navegadores" name="navegador" id="navegador" placeholder="Escribe o selecciona...">
+    <datalist id="navegadores">
+      <option value="Chrome">
+      <option value="Edge">
+      <option value="Opera">
+      <option value="Firefox">
+      <option value="Brave">
+      <option value="Tor">
+    </datalist><br>
+    <h3>Color Picker</h3>
+    <label for="color_favorito">Elige un color de marca</label>
+    <input type="color" id="color_favorito" name="color_favorito"><br>
+    <h3>File</h3>
+    <label for="archivo">sube tu archivo</label>
+    <input type="file" id="archivo" name="archivo" accept=".pdf, .jpg, .png">
+    <small>Formatos permitidos pdf, jpg y png</small><br>
+    <h3>rango</h3>
+    <label for="cantidades">Cantidades</label>
+    <input type="range" id="cantidades" min="2" max="100">
+    <br>
+    <label for="volumen">Nivel de dificultad</label>
+    <input type="range" id="volumen" name="volumen" min="0" max="100" value="50" oninput="resultado.value = parseInt(volumen.value)">
+    <span>valor seleccionado: <output name="resultado" for="volumen">50</output></span>
+
+   
+
+
+  </form>
+
+
+</body>
+</html>

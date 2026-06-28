@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile First - Team de Diseñadores Web </title>
+
+<style>
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.main-container{
+  display: flex;
+  /* Mobile First */
+  flex-direction: column; /* Para que los elementos se apilen en una columna en dispositivos móviles */
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+ 
+}
+.container {
+  flex: 1;
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #F0A4ED;
+  opacity: 0.7;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  width: 100%;
+}
+
+.text {
+  white-space: nowrap; 
+  color: #D0051D;
+  font-weight: 800;
+  font-size: 30px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+
+/* Media Queries - Responsive*/
+/* Tablet */
+@media only screen and (min-width: 680px) {
+  .main-container {
+    flex-direction: row; /* Para que los elementos se alineen en una fila en pantallas grandes */
+   
+  }
+  .container {
+    flex: 48%; /* 2 columnas - 2% del gap*/
+  }
+}
+/* Desktop */
+@media only screen and (min-width: 900px) {
+  .main-container {
+    flex-direction: row; /* Para que los elementos se alineen en una fila en pantallas grandes */
+    }
+  .container {
+    flex: 23%; /* 4 columnas - 2% del gap*/
+  }
+}
+
+
+</style>
+</head>
+<body>
+
+<h2>Reto 3 ||Team de Diseñadores Web</h2>
+<div class="main-container">
+  <div class="container">
+    <img src="../image/avatar2.jpg" alt="Avatar" class="image">
+    <div class="overlay">
+      <div class="text">Soy Ana</div>
+    </div>
+  </div>
+
+  <div class="container">
+    <img src="../image/avatar1.jpg" alt="Avatar" class="image">
+    <div class="overlay">
+      <div class="text">Soy Carlos</div>
+    </div>
+  </div>
+
+  <div class="container">
+    <img src="../image/avatar3.jpg" alt="Avatar" class="image">
+    <div class="overlay">
+      <div class="text">Soy Karina</div>
+    </div>
+  </div>
+
+  <div class="container">
+    <img src="../image/avatar4.jpg" alt="Avatar" class="image">
+    <div class="overlay">
+      <div class="text">Soy Lisa</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+
+

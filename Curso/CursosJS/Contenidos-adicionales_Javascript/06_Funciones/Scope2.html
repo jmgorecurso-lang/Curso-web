@@ -1,0 +1,32 @@
+<!doctype html>
+
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title>Función anónima</title>
+  <meta name="description" content="Funciones">
+</head>
+
+<body>
+
+  <p id="output"></p>
+  <img id="carita" />
+
+  <script type="text/javascript">
+   function mediaConLet(números) {
+    let suma = 0;
+    for (let índice = 0; índice < números.length; índice += 1) {
+        suma += números[índice]; 
+    }
+    let media = suma / números.length;
+    //return `Los ${números.length} números tiene suma=${suma} y media=${media}.     El índice es ${índice}`;
+    return `Los ${números.length} números tiene suma=${suma} y media=${media}`;
+}
+
+console.log(mediaConLet([84, 36, 61, 67, 22, 20, 22, 16, 79, 54]));
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body,
+        html {
+            height: 100%;
+        }
+
+        header {
+            background-color: antiquewhite;
+            height: 10%;
+        }
+
+        main {
+            height: 80%;
+            padding: 1em 2em;
+
+            background-color: aquamarine;
+            display: flex;
+        }
+
+        footer {
+            height: 10%;
+            background-color: brown;
+        }
+
+        section {
+            display: flex;
+            padding: 1em 2em;
+            flex: 2;
+            background-color: cadetblue;
+            flex-wrap: wrap;
+        }
+
+        aside {
+            flex: 1;
+            background-color: chocolate;
+        }
+
+        .art1 {
+            background-color: dodgerblue;
+            flex: 1 1 200px;
+            margin: 0 1em;
+            /* border: 1px solid red; */
+        }
+
+        .art2 {
+            background-color: dodgerblue;
+            flex: 1 1 200px;
+            margin: 0 1em;
+            /* border: 1px solid red; */
+        }
+
+        /* @media (max-width: 1024px) {
+            main {
+                flex-direction: column;
+            }
+        }
+
+        @media (max-width: 768px) {
+            section {
+                flex-direction: column;
+            }
+
+            .art1,
+            .art2 {
+                margin: 1em 0;
+            }
+        }
+
+        @media (max-width: 500px) {
+            section {
+                flex: 3;
+            }
+
+            aside {
+                flex: 1;
+            }
+        } */
+
+        /* @media (orientation: landscape){
+            footer {
+                display: none;
+            }
+        } */
+    </style>
+</head>
+
+
+<body>
+    <header></header>
+    <main>
+        <section>
+            <article class="art1"></article>
+            <article class="art2"></article>
+        </section>
+        <aside></aside>
+    </main>
+
+    <footer></footer>
+
+</body>
+
+</html>

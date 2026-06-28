@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <title>Practica 2</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    header {
+      text-align: center;
+    }
+
+    .container {
+      margin: 0 auto;
+    }
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Como a sido tu viaje con Manolo?</h1>
+  </header>
+  <div class="container">
+    <form action="">
+      <div class="manolo">
+
+      </div>
+
+      <div class="estrellas_form">
+        <label>Valora tu viaje</label>
+        <div class="estrellas_puntos">
+          <input type="radio" id="star5" name="rating" value="5"><label for="star5"><i class="fa-solid fa-star"></i></label>
+          <input type="radio" id="star4" name="rating" value="4"><label for="star4"><i class="fa-solid fa-star"></i></label>
+          <input type="radio" id="star3" name="rating" value="3"><label for="star3"><i class="fa-solid fa-star"></i></label>
+          <input type="radio" id="star2" name="rating" value="2"><label for="star2"><i class="fa-solid fa-star"></i></label>
+          <input type="radio" id="star1" name="rating" value="1"><label for="star1"><i class="fa-solid fa-star"></i></label>
+        </div>
+
+      </div>
+      <div class="comentario">
+        <textarea name="comentario" id="comentario" placeholder="Escribe tu comentario aqui..." required minlength="20"></textarea>
+      </div>
+      <div class="coste">
+        <span>💰</span>
+        <h3> Importe del viaje</h3>
+        <p>Añade una propina para Manolo</p>
+        <div class="propina">
+          <div class="centimos">
+            <button>0,50 €</button>
+          </div>
+          <div class="uno">
+            <button>1 €</button>
+          </div>
+          <div class="dos">
+            <button>2 €</button>
+          </div>
+          <div class="check">
+            <div class="importe">
+              <label for="otro">Otro Importe: </label>
+              <input type="number" id="otro" name="otro">
+            </div>
+
+          </div>
+          <div class="envio">
+            <input type="submit" value="Enviar Valoracion">
+
+          </div>
+
+        </div>
+
+
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>

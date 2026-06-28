@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Canvas</title>
+</head>
+
+<body>
+
+    <canvas width="500" height="500" id="miCanvas" style="border: solid"></canvas>
+
+    <script>
+        const miCanvas = document.getElementById("miCanvas");
+        const context = miCanvas.getContext("2d");
+        context.strokeStyle = "#000000";
+        context.fillStyle = "#ff0000";
+        context.beginPath();
+        context.moveTo(250, 100);
+        context.bezierCurveTo(250, 97, 245, 85, 225, 85);
+        context.bezierCurveTo(195, 85, 195, 122.5, 195, 122.5);
+        context.bezierCurveTo(195, 140, 215, 162, 250, 190);
+        context.bezierCurveTo(285, 162, 305, 140, 305, 122.5);
+        context.bezierCurveTo(305, 122.5, 305, 85, 275, 85);
+        context.bezierCurveTo(260, 85, 250, 97, 250, 100);
+        context.stroke();
+        context.fill();
+        //cola flecha
+        context.beginPath();
+        context.fillStyle = "#000000";
+        context.moveTo(178, 210);
+        context.lineTo(180, 200);
+        context.lineTo(170, 202);
+        //asta flecha
+        context.moveTo(180, 200);
+        context.lineTo(220, 165);
+        context.moveTo(260, 125);
+        context.lineTo(305, 80);
+        context.stroke();
+        //punta flecha
+        context.beginPath();
+        context.moveTo(305, 80);
+        context.lineTo(305, 90);
+        context.lineTo(315, 70);
+        context.lineTo(295, 80);
+        context.lineTo(305, 80);
+        context.stroke();
+        context.fill();
+    </script>
+
+</body>
+
+</html>

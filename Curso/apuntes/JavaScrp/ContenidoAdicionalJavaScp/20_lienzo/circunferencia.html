@@ -1,0 +1,24 @@
+﻿<!doctype html>
+<html lang="it">
+
+<head>
+    <meta charset="utf-8">
+    <title>Canvas</title>
+</head>
+
+<body>
+
+    <canvas width="500" height="500" id="mioCanvas" style="border: solid"></canvas>
+
+    <script>
+        const mioCanvas = document.getElementById("mioCanvas");
+        const context = mioCanvas.getContext("2d");
+        context.strokeStyle = "#0000ff";
+        context.beginPath();
+        context.arc(250, 250, 100, 0, Math.PI * 2, true);
+        context.stroke();
+    </script>
+
+</body>
+
+</html>

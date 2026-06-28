@@ -1,0 +1,34 @@
+<!doctype html>
+
+<html lang=“es”>
+
+<head>
+  <meta charset="utf-8">
+  <title>BUCLES 2</title>
+  <meta name="description" content="Bucles 2">
+</head>
+
+<body>
+
+  <ul id="números">
+    <li>uno</li>
+    <li>dos</li>
+    <li>tres</li>
+  </ul>
+  <p id="output"></p>
+
+  <script type="text/Javascript">
+      // Busca en el html, a través del objeto document, todos los elementos (ETIQUETA HTML) de tipo LI
+      // contenidos en la etiqueta UL con id = números
+      const listaLI = document.querySelectorAll('#números li');
+  
+    for (let i=0; i<listaLI.length; i+=1) {
+      console.log(`i=${i} value=${i + 1} elemento=${listaLI.item(i)}`);
+      // alert(`i=${i} value=${i + 1} elemento=${listaLI.item(i)}`);
+      listaLI.item(i).value = i+1;
+    }
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+<!doctype html>
+
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title>Funciones</title>
+  <meta name="description" content="Funciones">
+</head>
+
+<body>  <p id="output"></p>  <img id="carita" />  <script type="text/javascript">    function esFinDeSemana() {      const día = new Date().getDay();      if (día === 0 || día === 6) return true;      else return false    }    let valorSrc;    if (esFinDeSemana() === true) valorSrc = 'CaritaFeliz.png';    else valorSrc = 'CaritaTriste.png';    document.getElementById('carita').src = valorSrc;  </script></body>
+
+</html>

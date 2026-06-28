@@ -1,0 +1,30 @@
+<!doctype html>
+
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Funciones avanzadas 1</title>
+    <meta name="description" content="Funciones avanzadas">
+</head>
+
+<body>
+
+    <p id="output"></p>
+
+    <script type="text/javascript">
+
+        function calculoGenerico(valor, formula) {
+            return formula(valor);
+        }
+
+        let cuadruple = calculoGenerico(3, function (num) {
+            return num * 4;
+        });  // 12
+
+        document.getElementById('output').innerHTML = cuadruple;
+    </script>
+
+</body>
+
+</html>

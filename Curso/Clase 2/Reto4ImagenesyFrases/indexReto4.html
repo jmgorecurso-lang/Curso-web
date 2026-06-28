@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto: Imágenes y Frases Aleatorias</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin-top: 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .subtitulo {
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .seccion {
+            margin: 30px 0;
+            padding: 20px;
+            border-radius: 15px;
+            background: #f8f9fa;
+        }
+
+        .seccion h2 {
+            color: #007bff;
+            margin-top: 0;
+        }
+
+        img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            margin: 20px 0;
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        .frase {
+            background: #e9ecef;
+            padding: 25px;
+            border-radius: 15px;
+            margin: 20px 0;
+            font-size: 1.2em;
+            font-style: italic;
+            color: #333;
+            border-left: 5px solid #007bff;
+            transition: all 0.3s ease;
+        }
+
+        .autor {
+            margin-top: 15px;
+            font-weight: bold;
+            color: #007bff;
+            font-style: normal;
+        }
+
+        button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 30px;
+            margin: 10px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        .boton-imagen {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+
+        }
+
+        .boton-frase {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+
+        .boton-ambos {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        }
+
+        .info {
+            background: #fff3cd;
+            border: 1px solid #ffc107;
+            color: #856404;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+            font-size: 14px;
+            text-align: left;
+        }
+
+        .info code {
+            background: #f8f9fa;
+            padding: 2px 5px;
+            border-radius: 3px;
+            color: #d63384;
+        }
+
+
+@keyframes lado {
+  0% {
+    transform: translateY(-100%);
+  }
+  50% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+ .lado {animation: lado 1000ms;
+    animation-timing-function: linear;
+}
+
+        @keyframes fraseEfecto {
+            0%{
+                transform: translateX(-280px);
+                            }
+            25%{
+                transform: translateX(-80px);
+            }
+            50%{
+                transform: translateX(180px);
+            }
+            100%{
+                transform: translateX(1px);
+            }
+        }
+        .fraseEfecto {
+             animation: fraseEfecto 0.7s ease;
+        }
+
+
+        @keyframes cambio {
+            0%{
+                opacity: 0;
+                transform: translateX(-80px);
+                background: black;
+                 box-shadow: 2px 0px -18px 28px rgb(252, 67, 67);
+            }
+            25%{
+                opacity: 0;
+                transform: translateX(-40px);
+                background: black;
+                 box-shadow: 2px 0px -18px 18px rgb(175, 62, 62);
+            }
+            50%{
+                opacity: 0.3;
+                transform: translateX(20px);
+                background: black;
+                 box-shadow: 2px 0px 18px 18px rgb(26, 25, 25);
+            }
+            100%{
+                opacity: 1;
+                transform: translateX(10px);
+                background: black;
+                 box-shadow: 2px 2px 2px 2px rgb(12, 12, 12);
+            }
+         }
+        .cambio{
+            animation: cambio 0.7s ease;
+        }
+
+        .aparecer {
+            animation: aparecer 0.5s ease;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>🎯 RETO 4: Generador Aleatorio</h1>
+        <div class="subtitulo">📚 Imágenes + Frases Célebres | Aprende JavaScript con Math.random()</div>
+
+        <!-- Sección de Imágenes -->
+        <div class="seccion">
+            <h2>🖼️ IMAGEN ALEATORIA</h2>
+            <img id="imagen" src="" class="cambio" alt="Imagen aleatoria">
+            <br>
+            <button class="boton-imagen" onclick="cambiarImagen()">🎲 Cambiar Imagen</button>
+        </div>
+
+        <!-- Sección de Frases -->
+        <div class="seccion">
+            <h2>💬 FRASE CÉLEBRE ALEATORIA</h2>
+            <div id="frase" class="frase"></div>
+            <button class="boton-frase" onclick="cambiarFrase()">✨ Nueva Frase</button>
+        </div>
+
+        <!-- Botón para cambiar ambos -->
+        <button class="boton-ambos" onclick="cambiarAmbos()">🎰 ¡Cambiar Imagen y Frase!</button>
+    </div>
+
+    <script src="scriptR4.js"></script>
+</body>
+</html>

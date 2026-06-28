@@ -1,0 +1,9 @@
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.btn:hover {
+    transform: scale(110%);
+    background-color: aquamarine;
+}

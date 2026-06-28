@@ -1,0 +1,30 @@
+<!doctype html>
+
+<html lang=“es”>
+
+<head>
+  <meta charset="utf-8">
+  <title>Tiempo</title>
+  <meta name="description" content=“Hora”>
+  <meta name="author" content="SitePoint">
+  <!--<link rel="stylesheet" href="css/styles.css?v=1.0">-->
+</head>
+
+<body>
+
+  <p id="output"></p>
+
+
+  <script type="text/javascript">
+    // hora del sistema
+    const hora = new Date().getHours();
+    let mensaje;
+
+    if (hora < 13) mensaje = 'buenos días';    else if (hora < 21) mensaje = 'buenas tardes';    else if (hora < 24) mensaje = 'buenas noches';
+
+    // Busco en el DOM la etiqueta con el ID = 'output' y le asigno el contenido    document.getElementById('output').innerHTML = mensaje;
+  </script>
+
+</body>
+
+</html>

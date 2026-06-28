@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estiloModal.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  <h1 id="titulo">Clase 10 || Componente Modal (Ventana emergente)</h1>
+  <button class="abrir-modal-ejemplo" id="btnAbrirEjemplo"> Abrir modal ejemplo
+  </button>
+  <!-- =============Estructura de la Modal ==================-->
+   <div id="modalAgradecimiento" class="modal-overlay">
+    <div class="modal">
+      <div class="modal-header">
+        <h2>Gracias !!</h2>
+        <button class="close-modal" id="cerrarModalEquis" >&times;</button>
+
+      </div>
+      <div class="modal-body">
+        <div class="emoji">🎉</div>
+        <p><strong>Mensaje enviado con exito !!</strong></p>
+        <p>Gracias por contactarnos. Nos prondremos en contacto contigo muy pronto.</p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-cerrar-modal" id="cerrarModalBoton">Cerrar </button>
+
+      </div>
+
+    </div>
+
+   </div>
+<script src="script.js"></script>
+</body>
+</html>

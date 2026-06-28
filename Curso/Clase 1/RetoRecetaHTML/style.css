@@ -1,0 +1,20 @@
+body {
+    margin: 0 auto;
+    max-width:800 ;
+    background: linear-gradient(to right,rgb(106, 107, 105),rgb(19, 55, 70))
+}
+
+header{
+    border: solid 2px green;
+    background-color:rgb(161, 252, 161) ;
+    box-shadow: 0px 12px rgb(255, 47, 75);
+}
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+
+}
+button {
+    
+}

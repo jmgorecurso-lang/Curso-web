@@ -1,0 +1,33 @@
+<!doctype html>
+
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title>Hora</title>
+  <meta name="description" content="Carita">
+  <meta name="author" content="SitePoint">
+  <!--<link rel="stylesheet" href="css/styles.css?v=1.0">-->
+</head>
+
+<body>
+
+  <p id="output"></p>
+  <img id="carita" />
+
+  <script type="text/javascript">
+    const día = new Date().getDay();
+
+    const valorSrc = `Carita${día}.png`;
+    let mensaje;
+    if (día === 0 || día === 6) mensaje = 'Buen fin de semana';
+    else mensaje = `Faltan ${6 - día} días para el fin de semana`;
+    //    else return `Faltan <strong> ${6 - día} </strong> días para el fin de semana`
+
+    document.getElementById('carita').src = valorSrc;
+    document.getElementById('output').innerHTML = mensaje;
+  </script>
+
+</body>
+
+</html>

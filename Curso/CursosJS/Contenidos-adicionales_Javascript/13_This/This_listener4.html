@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <style>
+        .colorPicker {
+            width: 50px;
+            height: 50px;
+            float: left;
+            margin: 5px;
+            border-style: solid;
+        }
+    </style>
+    <div class="colorPicker" id="rojo" style="background-color:red"></div>
+    <div class="colorPicker" id="azul" style="background-color:blue"></div>
+    <div class="colorPicker" id="verde" style="background-color:green"></div>
+    <div class="colorPicker" id="amarillo" style="background-color:yellow"></div>
+
+    <div style="clear:both;"></div>
+    <div id="testo" style="width:400px; height: 400px; border-style:solid">
+        <p>Lorem ipsum dolor sit amet, quod cibo no has, pro ne elaboraret neglegentur, mea malis labitur ne. Eam ad ubique
+            accusata sensibus, nec mazim partem forensibus te, ut vis everti eloquentiam. Semper eleifend recteque no vix,
+            pro an vidisse expetendis, usu delectus corrumpit et. At cum sint velit dictas, ne vel tantas vidisse molestie,
+            habemus dolores sed an.
+        </p>
+        <p>
+            Et usu affert civibus contentiones, eu magna lorem latine vix. Sed id modo omnium impetus. Ea ius rebum primis virtute. Elitr
+            tamquam dolorum ut vim. In putent integre assentior vim.
+        </p>
+        <p>
+            Amet invidunt mei an. Ius no eius ancillae, ei prompta dissentiunt eum. Nobis nominavi theophrastus vel ut. Eam an errem
+            adipiscing.
+        </p>
+    </div>
+    <script>
+        let fondo = 'white';
+
+        // Funciones de soporte
+        function muestrafondo() {
+            document.getElementById('testo').style.backgroundColor = this.style.backgroundColor;
+        }
+        function AjustaRatón(cursore) {
+            document.body.style.cursor = cursore;
+        }
+        function eliminaFondo() {
+            document.getElementById('testo').style.backgroundColor = sfondo;
+            ajustaRatón('auto');
+        }
+        function eventoMouseOver() {
+            fondo = document.getElementById('texto').style.backgroundColor;
+            document.getElementById('texto').style.backgroundColor = this.style.backgroundColor;
+            ajustaRatón('pointer');
+        }
+        function eventoClick() {
+            document.getElementById('texto').style.backgroundColor = this.style.backgroundColor;
+            fondo = document.getElementById('texto').style.backgroundColor;
+        }
+
+        // getElementsByClassName devuelve un objeto de tipo HTMLCollection con todos los elementos de la clase
+        let clase = document.getElementsByClassName('colorPicker');
+
+        // Añade a cada elemento en clase tres listeners, uno para cada tipo de interés
+        for (let i = 0; i < clase.length; i++) {
+            clase[i].addEventListener('mouseover', eventoMouseOver);
+            clase[i].addEventListener('mouseout', eliminaFondo);
+            clase[i].addEventListener('click', eventoClick);
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!doctype html>
+
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>This</title>
+    <meta name="description" content="Objetos">
+</head>
+
+<body>
+
+    <div id='output'></div>
+    <div id='output1'></div>
+    <div id='output2'></div>
+
+    <script type="text/javascript">
+        this.número = 9;    // this se refiere al objeto global "window" 
+        let objeto = {
+            número: 10,
+            leeNúmero: function () {
+                return this.número;
+            }
+        };
+
+        document.getElementById('output').innerHTML = objeto.leeNúmero(); // 10
+
+        let recuperaNúmero = objeto.leeNúmero;
+        //console.log(recuperaNúmero()); //las variables recuperaNúmero contienen una función con paréntesis que ejecuto 
+        document.getElementById('output1').innerHTML = recuperaNúmero();
+
+        // returns 9 - The function gets invoked at the global scope
+
+        // Create a new function with 'this' bound to objeto
+        // New programmers might confuse the
+        // global let número with objeto's property número
+        let recuperaNúmero_bind = recuperaNúmero.bind(objeto);
+        document.getElementById('output2').innerHTML = recuperaNúmero_bind(); // 10
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <form id='miFormulario'>    <input type="date" id='fecha'>
+
+  
+
+  <button type="button" onclick='leeFormulario()' id="boton">Envía</button>
+</form>
+
+  <p id="output"></p>
+
+  <script>    const hoy = new Date();    function leeFormulario() {        document.getElementById("output").innerHTML = `La fecha seleccionada es:         ${document.getElementById('fecha').value}`;    }    const año = hoy.getFullYear();    const mes = hoy.getMonth() + 1;    const día = hoy.getDate();    const fechaActual = `${año}-${mes}-${día}`;    document.getElementById("fecha").value = fechaActual;  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preguntas frecuentes</title>
+  </head>
+
+  <body style="max-width: 800px; margin: 0 auto; padding: 20px;">
+    <h1>FAQs</h1>
+
+    <h2>Details - sumary</h2>
+
+    <section>
+      <h3>Pregunta y te respondemos</h3>
+      <details>
+        <summary>¿Pregunta frecuente 1?</summary>
+        <p>Respuesta a la pregunta frecuente 1.</p>
+      </details>
+      
+      <details>
+        <summary>¿Pregunta frecuente 2?</summary>
+        <p>Respuesta a la pregunta frecuente 2.</p>
+      </details>
+      
+      <details>
+        <summary>¿Pregunta frecuente 3?</summary>
+        <p>Respuesta a la pregunta frecuente 3.</p>
+      </details>
+    </section>
+
+    <section style="margin-top: 30px">
+      <h3>Lo más preguntado</h3>
+
+      <!--EJEMPLO DIDÁCTICO DE FAQ CON CSS EN LÍNEA-->
+
+      <details
+        style="
+          /* Margen inferior para separar esta pregunta de las siguientes */
+          margin-bottom: 20px;
+
+          /* Borde redondeado y sutil alrededor de toda la pregunta */
+          border: 2px solid #e0e0e0;
+          border-radius: 12px;
+
+          /* Sombra suave para dar efecto de profundidad */
+          box-shadow: 0 4px 7px rgba(205, 199, 199, 0.895);
+
+         
+        "
+      >
+        <!-- 
+        SUMMARY: La parte visible de la pregunta (lo que se ve siempre)
+        Cuando el usuario hace clic aquí, se despliega la respuesta
+    -->
+        <summary
+          style="
+            /* Color de fondo suave para distinguir la pregunta */
+            background-color: #f8f9fa;
+
+            /* Espaciado interior para que el texto no esté pegado al borde */
+            padding: 18px 20px;
+
+            /* Borde inferior solo cuando está cerrado */
+            border-bottom: 2px solid transparent;
+
+            /* Letra en negrita para destacar la pregunta */
+            font-weight: bold;
+            font-size: 1.1em;
+            color: #2c3e50;
+
+            /* Quita el triángulo por defecto del details (lo haremos con CSS) */
+            list-style: none;
+
+            /* Cambia el cursor a manita para indicar que es clickeable */
+            cursor: pointer;
+
+            /* Borde redondeado solo arriba*/
+            border-radius: 10px 10px 0 0;
+          
+          "
+        >
+          <!-- 
+            Este span contiene nuestro icono personalizado
+            Lo colocamos al inicio de la pregunta para que sea lo primero que se vea
+        -->
+
+          <!-- Texto de la pregunta -->
+          <span style="font-size: 24px;">👇🏻</span>¿Con qué puedo acompañar la Ensalada César?
+        </summary>
+
+        <!-- 
+        DIV que contiene la respuesta (todo lo que no es summary)
+        Se muestra solo cuando el details está abierto
+    -->
+        <div
+          style="
+            /* Espaciado interior generoso para la respuesta */
+            padding: 25px;
+
+            /* Fondo blanco para la respuesta */
+            background-color: rgb(205, 205, 205);
+
+            /* Línea decorativa verde en el borde superior */
+            border-top: 4px solid #4caf50;
+
+            /* Color del texto ligeramente suave e interlineado*/
+            color: #444;
+            line-height: 1.6;
+
+            /* Borde redondeado solo abajo */
+            border-radius: 0 0 12px 12px;
+          "
+        >
+          <!-- Párrafo introductorio en negrita -->
+          <p
+            style="
+              font-weight: bold;
+              font-size: 1.1em;
+              margin-top: 0;
+              margin-bottom: 20px;
+              color: #2c3e50;
+            "
+          >
+            La Ensalada César combina perfectamente con:
+          </p>
+
+          <!-- 
+            SECCIÓN: Plato principal
+            Cada sección tiene su propio estilo para que sea fácil de identificar
+        -->
+          <h4
+            style="
+              color: #4caf50;
+              margin-bottom: 10px;
+              margin-top: 20px;
+              font-size: 1.1em;
+              border-left: 4px solid #4caf50;
+              padding-left: 10px;
+            "
+          >
+            🍽️ Como plato principal:
+          </h4>
+
+          <!-- Lista de opciones con viñetas personalizadas -->
+          <ul
+            style="
+              margin-top: 5px;
+              margin-bottom: 15px;
+              padding-left: 30px;
+              /* Quitamos las viñetas por defecto */
+              list-style: none;
+            "
+          >
+            <!-- Cada elemento de la lista con su propio margen y estilo -->
+            <li style="margin-bottom: 8px">
+              <span style="color: #4caf50; margin-right: 8px">🍗</span>
+              Pollo a la parrilla o empanado
+            </li>
+            <li style="margin-bottom: 8px">
+              <span style="color: #4caf50; margin-right: 8px">🐟</span>
+              Salmón al horno
+            </li>
+            <li style="margin-bottom: 8px">
+              <span style="color: #4caf50; margin-right: 8px">🍤</span>
+              Gambas salteadas
+            </li>
+            <li style="margin-bottom: 8px">
+              <span style="color: #4caf50; margin-right: 8px">🥩</span>
+              Tiras de ternera a la plancha
+            </li>
+          </ul>
+
+          <!-- 
+            SECCIÓN: Como acompañamiento
+        -->
+          <h4
+            style="
+              color: #4caf50;
+              margin-bottom: 10px;
+              margin-top: 20px;
+              font-size: 1.1em;
+              border-left: 4px solid #4caf50;
+              padding-left: 10px;
+            "
+          >
+            🥖 Como acompañamiento:
+          </h4>
+
+          <ul
+            style="
+              margin-top: 5px;
+              margin-bottom: 15px;
+              padding-left: 30px;
+              list-style: none;
+            "
+          >
+            <li style="margin-bottom: 8px">
+              <span style="color: #4caf50; margin-right: 8px">🥖</span>
+              Pan de ajo
+            </li>
+            <li style="margin-bottom: 8px">
+              <span style="color: #4caf50; margin-right: 8px">🍲</span>
+              Sopa de tomate
+            </li>
+            <li style="margin-bottom: 8px">
+              <span style="color: #4caf50; margin-right: 8px">🍷</span>
+              Vino blanco (Sauvignon Blanc o Chardonnay)
+            </li>
+          </ul>
+
+          <!-- 
+            SECCIÓN: Variaciones vegetarianas
+        -->
+          <h4
+            style="
+              color: #4caf50;
+              margin-bottom: 10px;
+              margin-top: 20px;
+              font-size: 1.1em;
+              border-left: 4px solid #4caf50;
+              padding-left: 10px;
+            "
+          >
+            🌱 Variaciones vegetarianas:
+          </h4>
+
+          <ul
+            style="
+              margin-top: 5px;
+              margin-bottom: 0;
+              padding-left: 30px;
+              list-style: none;
+            "
+          >
+            <li style="margin-bottom: 8px">
+              <span style="color: #4caf50; margin-right: 8px">🥑</span>
+              Añade aguacate en cubos
+            </li>
+            <li style="margin-bottom: 8px">
+              <span style="color: #4caf50; margin-right: 8px">🍄</span>
+              Champiñones salteados
+            </li>
+            <li style="margin-bottom: 8px">
+              <span style="color: #4caf50; margin-right: 8px">🌽</span>
+              Maíz dulce
+            </li>
+            <li style="margin-bottom: 8px">
+              <span style="color: #4caf50; margin-right: 8px">🥚</span>
+              Huevo duro picado
+            </li>
+          </ul>
+
+          <!-- 
+            NOTA INFORMATIVA (opcional, para dar un consejo extra)
+        -->
+          <div
+            style="
+              margin-top: 25px;
+              padding: 15px;
+              background-color: #fff3cd;
+              border-left: 4px solid #ffc107;
+              border-radius: 5px;
+              font-size: 0.95em;
+              color: #856404;
+            "
+          >
+            <strong style="display: block; margin-bottom: 5px"
+              >💡 Consejo del chef:</strong
+            >
+            Para una experiencia completa, combina varias opciones. Por ejemplo:
+            pollo a la parrilla + pan de ajo + un buen vino blanco.
+          </div>
+        </div>
+      </details>
+
+    </section>
+  </body>
+</html>

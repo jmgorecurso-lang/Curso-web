@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+<body>
+    <h2 style="text-align: center;">CARACTERÍSTICAS DE SU NAVEGADOR</h2>
+    <script>
+        document.write(
+            "<p>¿Están activadas las cookies?: " + (navigator.cookieEnabled? "SI":"NO") + "</p>" +
+            "<p>Lenguaje: " + navigator.language + "</p>" +
+            "<p>¿El navegador está conectado a Internet: " +  (navigator.onLine? "SI":"NO") + "</p>" +
+            "<p>Cabecera userAgent: " + navigator.userAgent + "</p>");
+    </script>
+</body>

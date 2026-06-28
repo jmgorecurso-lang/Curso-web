@@ -1,0 +1,26 @@
+<!doctype html>
+
+<html lang="it">
+
+<head>
+    <meta charset="utf-8">
+    <title>This</title>
+    <meta name="description" content="Oggetti">
+</head>
+
+<body>
+
+    <div id='output'></div>
+    <script type="text/javascript">
+        this.colore = 'rosso';
+        let nuovoColore = { colore: 'rosa' };
+        function cheColore() {           
+            console.log (this.colore);
+        }
+        cheColore();
+        let dimmiCheColore = cheColore.bind(nuovoColore);
+        dimmiCheColore(); //rosa
+    </script>
+</body>
+
+</html>

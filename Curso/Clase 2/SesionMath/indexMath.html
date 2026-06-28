@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .parrafo {
+    font-weight: bold;
+    color:blue;
+
+    animation: estilo 0.7s ease;
+  }
+  /* animacion en javascript */
+  @keyframes estilo {
+    0%{
+      transform: translateX(0);
+    }
+    10% {
+      transform:scale(0%);
+    }
+    50%{
+      transform: translateX(30px);
+    }
+    60%{
+      transform: translateX(280px);
+    }
+    65%{
+      transform: scale(150%);
+    }
+    75%{
+      transform: rotate(-5deg);
+    }
+    100%{
+      transform: rotate(5deg), scale(350%);
+    }
+  }
+  @keyframes cambiarImagen {
+    0%{
+      transform: scale(-100%);
+    }
+    10% {
+      transform: scale( 10%), translateY(-150px);
+    }
+    40% {
+      transform: scale( 30%), translateY(-100px);
+    }
+    60% {
+      transform: scale( 50%), translateY(50px);
+    }
+    100% {
+      transform: scale( 100%), translateY(-50px);
+    }
+  }
+  img {
+    animation: cambiarImagen 0.7s ease;
+  }
+</style>
+<body>
+<h1>Sesion 6 || Math.Random() / Math.floor() / Math.round() / Math.ceil\</h1>
+<h2> 🎲 Haz clic para cambiar la imagen</h2>
+<img id="imagen"  src="" alt="">
+<br>
+<button onclick="cambiarImagen()">🖼️ Imagen Aleatoria</button>
+<button onclick="estilo()">🖼️ Estilo Parrafo</button>
+<p >Mensaje Importante 😁</p>
+<script src="scriptMath.js"></script>
+</body>
+</html>

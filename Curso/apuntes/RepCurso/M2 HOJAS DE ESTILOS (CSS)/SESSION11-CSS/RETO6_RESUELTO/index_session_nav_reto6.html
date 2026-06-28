@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  
+  <style>
+    :root {
+      --bg-dark: #2c3e50;
+      --accent: #3498db;
+      --hover-bg: #ecf0f1;
+      --text-light: #ffffff;
+      --text-dark: #333333;
+      --shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f7f6;
+    }
+
+    h2, h3, p {
+      margin: 20px;
+    }
+
+    /* Navbar principal con Flexbox */
+    ul.navbar {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg-dark);
+      display: flex;
+      overflow: visible;
+      /* Permitir que los menús se vean */
+    }
+
+    li a,
+    .dropbtn {
+      display: block;
+      color: var(--text-light);
+      text-align: center;
+      padding: 15px 20px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    /* Estado activo y Hovers */
+    li.active {
+      background-color: var(--accent);
+    }
+
+    li a:hover,
+    .dropdown:hover .dropbtn {
+      background-color: #3e5871;
+    }
+
+    /* Contenedor del Dropdown */
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 180px;
+      box-shadow: var(--shadow);
+      z-index: 1;
+      border-radius: 0 0 4px 4px;
+      top: 100%;
+    }
+
+    .dropdown-content a {
+      color: var(--text-dark);
+      padding: 12px 16px;
+      text-align: left;
+      border-bottom: 1px solid #eee;
+    }
+
+    .dropdown-content a:last-child {
+      border-bottom: none;
+    }
+
+    .dropdown-content a:hover {
+      background-color: var(--hover-bg);
+      color: var(--accent);
+    }
+
+    /* Mostrar primer nivel */
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+
+    .submenu-container {
+      position: relative;
+    }
+
+    .submenu-content {
+      display: none;
+      position: absolute;
+      left: 100%;
+      /* Justo a la derecha */
+      top: 0;
+      background-color: white;
+      min-width: 160px;
+      box-shadow: var(--shadow);
+      border-radius: 4px;
+    }
+
+    .submenu-container:hover .submenu-content {
+      display: block;
+    }
+
+    /* Flechita indicadora */
+    .arrow {
+      float: right;
+      font-size: 12px;
+      margin-left: 10px;
+      color: #999;
+    }
+
+    @media (max-width: 600px) {
+      ul.navbar {
+        flex-direction: column;
+      }
+
+      .dropdown-content,
+      .submenu-content {
+        position: static;
+        /* Desactivamos posición absoluta para móviles */
+        width: 100%;
+        height: auto;
+        max-height: 0;
+        overflow: hidden;
+
+      }
+
+      .dropdown:hover>.dropdown-content,
+      .submenu-container:hover>.submenu-content {
+        max-height: none;
+        display: block
+      }
+
+
+    }
+
+    i{
+      color: rgb(76, 0, 255);
+      font-size: 1.6em
+    }
+</style>
+</head>
+
+<body>
+
+  <ul class="navbar">
+    <li class="active"><a href="#home">Inicio</a></li>
+    <li><a href="#news">Noticias</a></li>
+    <li class="dropdown">
+      <!-- arrow &#9660; -->
+      <a href="#" class="dropbtn">Productos ▼</a>
+      <div class="dropdown-content">
+        <a href="#">Electrónica</a>
+        <a href="#">Ropa</a>
+        <a href="#">Hogar</a>
+        <div class="submenu-container">
+          <!-- arrow &#9654; -->
+          <a href="#">Ofertas <span class="arrow">▶</span></a>
+          <div class="submenu-content">
+            <a href="#">Liquidación</a>
+            <a href="#">2 x 1</a>
+            <a href="#">Ultimas unidades</a>
+          </div>
+        </div>
+      </div>
+
+    <li class="dropdown">
+      <!-- arrow &#9660; -->
+      <a href="#" class="dropbtn">Servicios ▼</a>
+      <div class="dropdown-content">
+        <a href="#">Diseño Web</a>
+        <a href="#">Marketing</a>
+        <div class="submenu-container">
+          <!-- arrow &#9654; -->
+          <a href="#" class="especiales">Especiales <span class="arrow">▶</span></a>
+          <div class="submenu-content">
+            <a href="#">IA Aplicada</a>
+            <a href="#">Big Data</a>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+  <h1>Session 11 - Menú de Navegación Ajustado</h1>
+  <h2>Iconos con fontawesome</h2>
+  <h3>Iconos Sociales</h3>
+  <i class="fa-solid fa-face-smile"></i>
+  <i class="fa-solid fa-eye"></i>
+  <i class="fa-brands fa-github"></i>
+</body>
+
+</html>

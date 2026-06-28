@@ -1,0 +1,27 @@
+<!doctype html>
+
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>This</title>
+    <meta name="description" content="this">
+</head>
+
+<body>
+
+    <script type="text/javascript">
+        //'use strict';
+        let objeto = {
+            número: 123,
+            color: 'rojo',
+            descripción: function () {
+                console.log(this.color);
+            }
+        };
+        objeto.descripción();
+    </script>
+
+</body>
+
+</html>

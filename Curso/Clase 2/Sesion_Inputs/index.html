@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  body {
+    background: linear-gradient(to right, #9a8478, #1e130c);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+  }
+  .cambio {
+    z-index: 100;
+    background-color: black;
+  }
+</style>
+<body>
+  <h1>Sesion 7-8 Validando inputs con JavaScript</h1>
+  <h2>Propiedad .value - Operador ternario - If Else</h2>
+  <p>Ingresa tu nombre y edad</p>
+  <input id="name" placeholder="nombre">
+  <input id="age" placeholder="edad">
+  <button onclick="myFunction()">Validar ✅</button>
+  <button onclick="resetInputs()">Borrar ❌</button>
+  <p id="msg"></p>
+
+  <h2>Funcion Arrow y función con argumentos</h2>
+  <button onclick="saludar('René')">Saludar1</button>
+  <button onclick="saludar('Maria')">Saludar2</button>
+  <button onclick="saludar(prompt('¿Cual es tu nombre?'))">Saludar con prompt</button>
+  <h2>Activar elementos con checkbox</h2>
+  <label for="activar-form">
+    <input type="checkbox" id="activar-form">Quieres enviar un comentario?
+  </label>
+  <div>
+    <textarea name="" id="caja-texto" placeholder="Escribe tu comentario" maxlength="200"></textarea>
+    <br>
+    <button type="button" id="btn-enviar">Enviar</button>
+  </div>
+  <script src="scriptS7.js"></script>
+</body>
+</html>

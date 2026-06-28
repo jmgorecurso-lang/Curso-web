@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+     <form>
+        <label for="texto">Escribe la dirección de la cual quieres extraer el CP:</label>
+        <input type="text" id='texto' style="width: 300px;">
+        <button type="button" onclick='extraeCP()' id="botón">Extrae CP</button>
+    </form>
+    <p id="output"></p>
+    <script>
+        function extraeCP() {
+            // ¿qué ocurre si el número postal tiene 5 números? como  'Calle del Triunfo, 07891 08029 Barcelona';
+            let dirección = document.getElementById('texto').value;
+            let cpPatron = /\d{5}/g; //necesitamos añadir g para evitar que se detenga en la primera coincidencia
+            let cp = dirección.match(cpPatron);
+            console.log(cp);
+            if (!cp) {
+               document.getElementById('output').innerHTML = 'El texto insertado no contiene un CP';
+           } else {
+                document.getElementById('output').innerHTML = `El CP es: ${cp}`;
+           }
+        }
+    </script>
+
+</body>
+
+</html>

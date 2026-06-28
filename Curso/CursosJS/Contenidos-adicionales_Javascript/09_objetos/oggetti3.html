@@ -1,0 +1,33 @@
+<!doctype html>
+
+<html lang="it">
+
+<head>
+  <meta charset="utf-8">
+  <title>Oggetti 3</title>
+  <meta name="description" content="Oggetti">
+</head>
+
+<body>
+
+  <p id="output"></p>
+  <p id="output2"></p>
+
+  <script type="text/javascript">
+    let oggetto = {
+      'numero' : 123,
+      'colore' : 'rosso',
+      descrizione() {
+        return 'Sono un oggetto rosso con numero 123';
+      }
+    };
+    let numeroOggetto = oggetto['numero'];
+    let descrizioneOggetto = oggetto.descrizione();
+
+    document.getElementById('output').innerHTML = `numeroOggetto=${numeroOggetto}` ;
+    document.getElementById('output2').innerHTML = `descrizioneOggetto=${descrizioneOggetto}`;
+  </script>
+
+</body>
+
+</html>

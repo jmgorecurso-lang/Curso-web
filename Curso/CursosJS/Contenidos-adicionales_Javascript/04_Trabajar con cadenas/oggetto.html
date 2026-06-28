@@ -1,0 +1,47 @@
+<!doctype html>
+
+<html lang="it">
+
+<head>
+  <meta charset="utf-8">
+  <title>Time</title>
+  <meta name="description" content="Faccina">
+  <meta name="author" content="SitePoint">
+  <!--<link rel="stylesheet" href="css/styles.css?v=1.0">-->
+</head>
+
+<body>
+
+  <p id="output"></p>
+  <img id="faccina" />
+  <pre id="output1"></pre>
+  <script type="text/javascript">
+
+    let persona = {
+      nome: 'Alessandra',
+      cognome: 'Salvaggio',
+      saluta() {
+        return `Ciao  ${this.nome} ${this.cognome} `;
+      }
+    };
+
+    persona.nome = 'Gualtiero';
+    persona.cognome = 'Testa';
+
+    const giorno = new Date().getDay();
+
+    const valoreSrc = `Faccina${giorno}.png`;
+    let messaggio;
+    if (giorno === 0 || giorno === 6) messaggio = 'Buon fine settimana';
+    else messaggio = `Mancano ${6 - giorno} giorni al fine settimana`;
+
+    const messaggio1 = persona.saluta();
+
+    document.getElementById('faccina').src = valoreSrc;
+    document.getElementById('output').innerHTML = messaggio;
+    document.getElementById('output1').innerHTML = messaggio1;
+  </script>
+
+</body>
+
+</html>

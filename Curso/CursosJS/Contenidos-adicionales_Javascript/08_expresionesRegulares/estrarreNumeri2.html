@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head> <meta charset="utf-8"></head>
+<body>
+  <form>
+    <input type="date" id='data'>
+    <button type="button" onclick='quantiGiorni()' id="pulsante">Calcola quanti giorni mancano alla data scelta</button>
+  </form>
+  <p id="output"></p>
+  <script>
+    // cosa succede se il numero civico ha 5 numeri? 
+    let indirizzo = 'Via Trionfale, 0789 00136 Roma RM';
+   // let indirizzo = '10789 00136 Roma RM';
+    //let numberPattern = /\d+/g; //g significa che trova tutte le occorrenze e non si ferma alla prima
+
+    let capPattern = /\d{5}/g;
+    //let numeri = indirizzo.match(numberPattern);
+    let indice = indirizzo.search(capPattern)
+    console.log(indice);
+    let cap = indirizzo.match(capPattern);
+    //prendere l'ultima occorrenza
+    console.log(cap[cap.length-1]);
+    
+
+  /*   var re = /(\w+)\s(\w+)/;
+var str = 'John Smith';
+var newstr = str.replace(re, '$2, $1'); //inverte nome e cognome, cioè la prima parte della stringa con la seconda
+console.log(newstr); */
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <form>
+        <div style="float:left;">
+            <textarea id='texto1' cols=50 rows=20 float=left></textarea>
+            <button type="button" onclick='EliminaEspacios()' id=“botón”>Elimina espacios</button>
+            <button type="button" onclick='borrarTodo()' id="botón2">Borrar todo</button>
+            <textarea id='texto2' cols=50 rows=20 float=left></textarea>
+        </div>
+    </form>
+    <p id="output"></p>
+    <script>
+        let texto = 'Lorem ipsum dolor   sit amet, novum dignissim                  ea quo, ut unum minim   epicuri sea,      has animal indoctum eu.  At has hinc dictas.    Vel eripuit democritum posidonium an, quo ei nisl vero, no eam intellegat temporibus vituperatoribus. Mei dicam tacimates voluptatum ea, et justo consequat expetendis sea.        Sed eu paulo vidisse fuisset, sit libris viderer vituperata in.';
+
+        document.getElementById('texto1').value = texto;
+        function EliminaEspacios() {
+            texto = document.getElementById('texto1').value;
+            //let re = /\s{2,}/g;
+            let patron = /\s+/g;
+            let textoSinEspacios = texto.replace(patron, ' ');
+            document.getElementById('texto2').value = textoSinEspacios;
+        }
+        function borrarTodo() {
+            document.getElementById('texto2').value = '';
+            document.getElementById('texto1').value = '';
+        }
+    </script>
+
+</body>
+
+</html>

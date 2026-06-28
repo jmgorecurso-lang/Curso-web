@@ -1,0 +1,23 @@
+<!doctype html>
+
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title>HolaMundo</title>
+  <meta name="description" content="Funciones">
+</head>
+
+<body>
+
+  <p id="output"></p>
+  <img id="carita" />
+
+  <script type="text/javascript">
+    
+const día = new Date().getDay();    function esFinDeSemana() {      return día === 0 || día === 6;    }    
+     function queDía() {      const nombreDía = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves',       'Viernes', 'Sábado'];      return nombreDía[día];    }    const valorSrc = esFinDeSemana()  ? ‘CaritaFeliz.png’ : ‘CaritaTriste.png’;    document.getElementById('carita').src = valorSrc;    document.getElementById('output').innerHTML = queDía();  </script>
+
+</body>
+
+</html>

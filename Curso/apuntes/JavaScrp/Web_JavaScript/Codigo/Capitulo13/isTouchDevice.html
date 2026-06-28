@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <script>
+            if ("ontouchstart" in window || window.navigator.maxTouchPoints)
+                document.write("Esta pantalla es táctil");
+            else
+                document.write("Esta pantalla NO es táctil");
+        </script>
+    </div>
+</body>

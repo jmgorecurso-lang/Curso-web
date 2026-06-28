@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #a2b8ca;
+    /* Fondo azul claro */
+}
+
+h1 {
+    text-align: center;
+    color: #0f5faf;
+}
+
+.galeria { /*contenedor*/
+    display: flex;
+
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.libro {
+
+    position: relative;
+    background: white;
+    border-radius: 8px;
+    /* overflow: hidden; */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    transition: all 0.3s;
+
+}
+
+.libro:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    background: #f5f5f5;
+    cursor: pointer;
+}
+
+
+.libro img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+.info {
+    padding: 15px;
+    font-size: 14px;
+}
+
+.info h3 {
+    margin: 0 0 5px 0;
+    color: #2c3e50;
+}
+
+.autor {
+    color: #7f8c8d;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.precio {
+    color: #27ae60;
+    font-weight: bold;
+}
+
+.etiqueta1 {
+    position: absolute;
+    top: -5px;
+    right: -2%;
+    background: red;
+    transform: rotate(-10deg);
+    color: white;
+    font-weight: bold;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.etiqueta2,
+.etiqueta3 {
+    position: absolute;
+    top: -5px;
+    right: -2%;
+    background: rgb(0, 255, 85);
+    transform: rotate(-10deg);
+    color: white;
+    font-weight: bold;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.etiqueta4 {
+    position: absolute;
+    top: -5px;
+    right: -2%;
+    background: rgb(236, 155, 4);
+    transform: rotate(-10deg);
+    color: white;
+    font-weight: bold;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+@media (min-width:480px) {
+    .galeria {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: auto;
+    }
+
+    .libro {
+        flex: 48%;
+    }
+
+}
+
+@media (min-width:768px) {
+    .galeria {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: auto;
+
+
+    }
+
+
+}
+
+.info {
+    font-size: 18px;
+    text-align: center;
+    box-shadow:2px 2px 6px black;
+
+
+}
+
+@media (min-width:900px) {
+    .galeria {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: auto;
+
+    }
+
+    .libro {
+        flex: 10%;
+    }
+
+}

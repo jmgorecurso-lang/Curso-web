@@ -1,0 +1,17 @@
+$amarillo: #ffc107;
+$rojo: #dc3545;
+$verde: #198754;
+
+@mixin formato($margen, $padding, $color){
+  margin: $margen;
+  padding: $padding;
+  color: $color;
+}
+
+body{
+  @include formato(20px, 10px, $verde);
+}
+
+h1{
+  color: $rojo;
+}

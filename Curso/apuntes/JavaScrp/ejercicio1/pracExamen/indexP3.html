@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practica 3</title>
+  <link rel="stylesheet" href="estiloP3.css">
+</head>
+<body>
+  <div class="card-container">
+        <div class="header">
+            <h1>👟 Zapatillas Modernas 2026</h1>
+            <p>✨ Colección Exclusiva - Edición Limitada ✨</p>
+        </div>
+
+        <!-- Visor Principal -->
+        <div class="viewer-container" id="viewer-bg">
+            <button class="nav-btn prev-btn" id="prev-btn">&#10094;</button>
+
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8emFwYXRpbGxhcyUyMG5pa2V8ZW58MHx8MHx8fDA%3D" alt="Zapatilla" class="main-img" id="main-image">
+
+            <div class="info-panel">
+                <h2 id="shoe-title">Nike Air Max Pulse</h2>
+                <p id="shoe-desc">Diseño futurista con amortiguación reactiva. Tecnología Air Max en la suela para máxima comodidad.</p>
+                <div class="price-badge" id="shoe-price">$189.99</div>
+            </div>
+
+            <button class="nav-btn next-btn" id="next-btn">&#10095;</button>
+        </div>
+
+        <!-- Panel Inferior de Miniaturas -->
+        <div class="thumbnails-container">
+            <div class="thumb active" data-index="0">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8emFwYXRpbGxhcyUyMG5pa2V8ZW58MHx8MHx8fDA%3D" alt="Nike Roja">
+            </div>
+            <div class="thumb" data-index="1">
+                <img src="https://images.unsplash.com/photo-1731132198530-e4b2dc51d511?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Njd8fHphcGF0aWxsYXMlMjBuaWtlfGVufDB8MHwyfHx8MA%3D%3D" alt="Nike Jordan">
+            </div>
+            <div class="thumb" data-index="2">
+                <img src="https://images.unsplash.com/photo-1738959142460-ee534d386878?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjV8fHphcGF0aWxsYXMlMjBuZXclMjBiYWxhbmNlfGVufDB8MHwwfHx8MA%3D%3D" alt="New Balance">
+            </div>
+            <div class="thumb" data-index="3">
+                <img src="https://static.chollometro.com/threads/raw/f20l5/1841765_1/re/300x300/qt/60/1841765_1.jpg" alt="Adidas Negras">
+            </div>
+            <div class="thumb" data-index="4">
+                <img src="https://images.unsplash.com/photo-1718220095476-7916e897fc55?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fHphcGF0aWxsYXMlMjBhZGlkYXN8ZW58MHwwfDJ8fHww" alt="Zapatilla Casual">
+            </div>
+        </div>
+    </div>
+
+
+  <script src="scriptP3.js"></script>
+</body>
+</html>

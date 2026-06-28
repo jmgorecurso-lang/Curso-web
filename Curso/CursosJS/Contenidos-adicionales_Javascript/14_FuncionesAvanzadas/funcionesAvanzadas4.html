@@ -1,0 +1,67 @@
+<!doctype html>
+
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Funciones avanzadas 4</title>
+    <meta name="description" content="Funciones avanzadas">
+</head>
+
+<body>
+
+    <script type="text/javascript">
+
+        let sinArgumentos = () => console.log('sin argumentos');
+
+        function configuraColorFondo(colore) {
+            document.body.style.backgroundColor = color;
+        }
+        const configuraColorFondoF = color => document.body.style.backgroundColor = color;
+
+        function numAleatorio() {
+            return Math.floor(Math.random() * 10);
+        }
+        const numAleatorioF = () => Math.floor(Math.random() * 10);
+
+        function areaRectangulo(base, altura) {
+            return base * altura;
+        }
+        const areaRectanguloF = (base, altura) => base * altura;
+
+        function queDia() {
+            const nombreDía = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
+            return nombreDía[día];
+        }
+
+        const queDiaF = g => {
+            const nombreDía = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
+            return nombreDía[g];
+        };
+
+        function yaEsFinDeSemana() {
+            const día = new Date().getDay();
+            if (día === 0 || día === 6) return true;
+            else return false;
+        }
+
+        const yaEsFinDeSemanaF = () => {
+            const día = new Date().getDay();
+            if (día === 0 || día === 6) return true;
+            else return false;
+        };
+
+
+        configuraColorFondoF('azul');
+        sinArgumentos();  // escribe en el navegador "sin argumentos"
+        console.log(`El área del rectángulo es ${areaRectangulo(5, 6)}`);  // Escribe en la consola "El área del rectángulo es 30"
+        console.log(`El área del rectángulo es ${areaRectanguloF(5, 6)}`);
+        console.log(numAleatorio());
+        console.log(numAleatorioF());
+        console.log(`El tercer día de la semana es ${queDiaF(3)}`);
+        console.log(yaEsFinDeSemanaF());
+    </script>
+
+</body>
+
+</html>

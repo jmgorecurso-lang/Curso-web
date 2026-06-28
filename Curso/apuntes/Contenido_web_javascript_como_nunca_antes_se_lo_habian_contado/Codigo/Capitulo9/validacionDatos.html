@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html style="max-height: 400px;">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        label {
+            display: inline-block;
+            width: 55px;
+            text-align: right;
+        }
+        form{
+            width: 400px;
+        }
+        button{
+            float: right;
+        }
+        p{
+            font-weight: bold;color:red;
+        }
+    </style>
+</head>
+<body>
+    <body>
+        <form id="formulario">
+            <fieldset>
+                <legend>DATOS PERSONALES</legend>
+                <label for="nombre">Nombre: </label>
+                <input type="text" id="nombre" required>
+                <br><br>
+                <label for="edad">Edad: </label>
+                <input type="number" id="edad" min="0" max="100" required>
+                <br><br>
+                <label for="pais">País: </label>
+                <select></select>
+                <br><br>
+                <button type="submit">Confirmar</button>
+            </fieldset>
+        </form>
+        <p id="error"></p>
+    <script src="validacionDatos.js"></script>
+</body>
+</html>

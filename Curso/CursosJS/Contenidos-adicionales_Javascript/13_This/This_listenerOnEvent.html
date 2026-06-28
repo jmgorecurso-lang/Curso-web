@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>This</title>
+    <meta name="description" content="this">
+</head>
+
+<body>
+    <style>
+        .colorPicker {
+            width: 50px;
+            height: 50px;
+            float: left;
+            margin: 5px;
+        }
+    </style>
+    <!--red-->
+    <div class="colorPicker" id="rojo" style="background-color:red" onClick="console.log(this.style.backgroundColor)"></div>
+
+    <!--this is undefined-->
+    <div class="colorPicker" id="azul" style="background-color:blue" onClick="dimeElColor()"></div>
+    <script>
+
+        function dimeElColor() {
+            'use strict';
+            //console.log(this.style.backgroundColor); //style no existe para window ni para undefined
+            console.log(this);
+        }
+    </script>
+</body>
+
+</html>

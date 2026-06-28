@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <title>Sesion 5</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    h1 {
+      text-align: center;
+    }
+    .titulo {
+      margin-top: 15px;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+
+    }
+    label {
+      display: block;
+      justify-content: space-evenly;
+      align-content: center;
+    }
+    .rating_container {
+      display: flex;
+      padding: 25px;
+      justify-content: space-evenly;
+    }
+    .rating_option {
+      text-align: center;
+      cursor: pointer;
+    }
+    .rating_option label {
+      display: block;
+      width: 70px;
+      height: 70px;
+      font-size: 1.6em;
+      background: rgb(184, 184, 187);
+      border-radius: 50%;
+      cursor: pointer;
+    }
+    .rating_option input {
+      display: none;
+    }
+    .rating_option label:hover {
+      background: rgb(8, 178, 230);
+      color: white;
+    }
+    .rating_option label:active {
+      transform: scale(95%);
+      box-shadow: 0px 0px 18px 2px rgba(51, 51, 51, 0.808);
+    }
+    /*selector de hermanos adyacentes */
+    .rating_option input:checked+label {
+      background: crimson;
+      color: aliceblue;
+    }
+    .rating-labels {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 5px;
+      font-size: 25px;
+    }
+    .checkbox-group {
+      margin: 15px 0;
+    }
+    /*Estrellitas */
+    .rating_stars {
+      display: flex;
+      flex-direction: row-reverse;
+      padding: 25px;
+      justify-content: space-around;
+    }
+    .rating_stars input {
+      display: none;
+    }
+    .rating_stars label {
+      display: block;
+      font-size: 50px;
+      cursor: pointer;
+      color: rgb(34, 34, 34);
+    }
+    /*<!-- seleccionamos estrella y automaticamente las siguientes-->*/
+    .rating_stars input:checked~label,
+    .rating_stars label:hover,
+    .rating_stars label:hover~label {
+      color: goldenrod;
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Sesion 5 | Hermanos generales y adyacentes</h1>
+    <form action="#" method="post">
+      <div class="form_group">
+        <label class="titulo">Satisfaccion general</label>
+        <div class="rating_container">
+          <div class="rating_option">
+            <input type="radio" id="rating-1" name="Satisfaccion" value="1" required>
+            <label for="rating-1">1</label>
+          </div>
+          <div class="rating_option">
+            <input type="radio" id="rating-2" name="Satisfaccion" value="2" required>
+            <label for="rating-2">2</label>
+          </div>
+          <div class="rating_option">
+            <input type="radio" id="rating-3" name="Satisfaccion" value="3" required>
+            <label for="rating-3">3</label>
+          </div>
+          <div class="rating_option">
+            <input type="radio" id="rating-4" name="Satisfaccion" value="4" required>
+            <label for="rating-4">4</label>
+          </div>
+          <div class="rating_option">
+            <input type="radio" id="rating-5" name="Satisfaccion" value="5" required>
+            <label for="rating-5">5</label>
+          </div>
+        </div>
+        <div class="rating-labels">
+          <span>Muy Satisfecho</span>
+          <span>Muy Insatisfecho</span>
+        </div>
+      </div>
+      <!--Vamos con las estrelitas-->
+      <div class="form_group">
+        <label>Valora nuestro producto</label>
+        <div class="rating_stars">
+            <input type="radio" id="star5" name="rating" value="5"><label for="star5"><i class="fa-solid fa-star"></i></label>
+            <input type="radio" id="star4" name="rating" value="4"><label for="star4"><i class="fa-solid fa-star"></i></label>
+            <input type="radio" id="star3" name="rating" value="3"><label for="star3"><i class="fa-solid fa-star"></i></label>
+            <input type="radio" id="star2" name="rating" value="2"><label for="star2"><i class="fa-solid fa-star"></i></label>
+            <input type="radio" id="star1" name="rating" value="1"><label for="star1"><i class="fa-solid fa-star"></i></label>
+          </div>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

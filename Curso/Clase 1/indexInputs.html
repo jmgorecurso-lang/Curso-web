@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clase 2</title>
+</head>
+
+<body>
+  <h1>Clase 2 || Tipos de Input & Atributos</h1>
+  <h2>Checkboxes | Radio Buttons | Selección | TextArea</h2>
+
+  <form action="">
+    <h3>Checkboxes (Varias opciones)</h3>
+    <fieldset>
+      <legend>Pasatiempos</legend>
+      <input type="checkbox" name="pasatiempos" value="deporte">
+      <label for="">Deporte</label>
+      <input type="checkbox" name="pasatiempos" value="cine">
+      <label for="">Cine</label>
+      <input type="checkbox" name="pasatiempos" value="musica">
+      <label for="">Musica</label>
+      <input type="checkbox" name="pasatiempos" value="lucha" checked disabled>
+      <label for="">Lucha</label>
+    </fieldset>
+    <h3>Radio Buttons (una opcion)</h3>
+    <fieldset>
+      <legend>Elige un  Curso</legend>
+    <input type="radio" name="curso" id="html" value="html">
+    <label for="html">HTML</label>
+    <input type="radio" name="curso" id="php" value="php">
+    <label for="php">PHP</label>
+    <input type="radio" name="curso" id="python" value="python">
+    <label for="python">Python</label>
+    <input type="radio" name="curso" id="rust" value="rust">
+    <label for="rust">Rust</label>
+    </fieldset>
+    <h3>Seleccion</h3>
+    <label for="transporte">Transporte que utilizas</label>
+    <select name="transporte" id="transporte">
+      <option value="" selected disabled>-Elige Transporte-</option>
+      <option name="transporte" value="bicicleta">Bicicleta</option>
+      <option name="transporte" value="coche">Coche</option>
+      <option name="transporte" value="tren">Tren</option>
+      <option name="transporte" value="bus">Autobus</option>
+      <option name="transporte" value="andar" >Andando</option>
+    </select>
+    <h3>TextArea</h3>
+    <label for="sugerencia">Escribe tus sugerencias</label><br>
+    <textarea name="sugerencia" id="sugerencia" cols="40" rows="4" maxlength="100" placeholder="pon algo"></textarea>
+
+  </form>
+
+</body>
+</html>

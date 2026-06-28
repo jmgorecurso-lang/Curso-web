@@ -1,0 +1,1004 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="462222d0-e038-4351-af46-330bf6ab44b4" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/../Da fare Gualti.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.json" afterPath="$PROJECT_DIR$/.eslintrc.json" />
+      <change beforePath="$PROJECT_DIR$/.vscode/tasks.json" afterPath="$PROJECT_DIR$/.vscode/tasks.json" />
+      <change beforePath="$PROJECT_DIR$/01_ComeScrivere/Esterno.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/01_ComeScrivere/Interno.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/01_ComeScrivere/codice.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/02_BuongiornoMondo/BuongiornoMondo.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/02_BuongiornoMondo/BuongiornoMondoDinamico.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/02_BuongiornoMondo/BuongiornoMondoDinamico2.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/03_Lavorare con le stringhe/Faccina.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/03_Lavorare con le stringhe/Faccina0.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/03_Lavorare con le stringhe/Faccina1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/03_Lavorare con le stringhe/Faccina2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/03_Lavorare con le stringhe/Faccina3.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/03_Lavorare con le stringhe/Faccina4.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/03_Lavorare con le stringhe/Faccina5.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/03_Lavorare con le stringhe/Faccina6.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/03_Lavorare con le stringhe/FaccinaMessaggio.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/03_Lavorare con le stringhe/FaccinaMessaggioACapo.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/03_Lavorare con le stringhe/FaccinaMessaggioACapoHTML.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/03_Lavorare con le stringhe/oggetto..html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/04_Cicli/ciclo1.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/04_Cicli/ciclo2.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/05_Funzioni/FaccinaFelice.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/05_Funzioni/FaccinaTriste.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/05_Funzioni/FunzioneAnonima.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/05_Funzioni/Funzioni.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/05_Funzioni/Funzioni1.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/05_Funzioni/FunzioniArray.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/05_Funzioni/FunzioniParametri.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/05_Funzioni/FunzioniParametri1.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/05_Funzioni/FunzioniParametri2.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/06_Eventi-Form/Form.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/06_Eventi-Form/Form1.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/06_Eventi-Form/Form2.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/06_Eventi-Form/Form3_stringhe.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/06_Eventi-Form/Form_listener.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/06_Eventi-Form/Form_listener1.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/06_Eventi-Form/Form_listener2.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/07_espressioni regolari/contieneNumeri.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/07_espressioni regolari/estrarreCAP.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/07_espressioni regolari/estrarreCAP1.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/07_espressioni regolari/estrarreCAP2.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/07_espressioni regolari/estrarreNumeri2.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/07_espressioni regolari/gruppi.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/07_espressioni regolari/replace.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/07_espressioni regolari/replaceCaratteriSpeciali.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/07_espressioni regolari/replaceSpaziEsterni.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/07_espressioni regolari/replaceSpaziMultipli.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/07_espressioni regolari/sticky.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/07_espressioni regolari/sticky2.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/07_espressioni regolari/suddividiParole.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/07_espressioni regolari/suddividiParole2.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/07_espressioni regolari/suddividiParole3.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/07_espressioni regolari/test.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/07_espressioni regolari/unisciNumeri.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/08_oggetti/anno.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/08_oggetti/anno2.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/08_oggetti/anno3.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/08_oggetti/oggetti1.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/08_oggetti/oggetti2.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/08_oggetti/oggetti3.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/09_arrayAssociativi/ArrayAssociativo.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/09_arrayAssociativi/ArrayAssociativo2.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/09_arrayAssociativi/contaParole.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/10_New/Cover_AnalisiDatiExcel.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/10_New/new.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/10_New/new2.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/10_New/new3.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/11_This/Bind.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/11_This/Bind1.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/11_This/Bind2.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/11_This/Call.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/11_This/Nuova cartella/this5.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/11_This/Nuova cartella/this6.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/11_This/Nuova cartella/this7.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/11_This/Nuova cartella/thisA.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/11_This/This_listener.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/11_This/This_listener2.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/11_This/This_listener3.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/11_This/This_listener4.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/11_This/This_listenerOnEvent.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/11_This/this.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/11_This/this2.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/11_This/this3.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/11_This/this4.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/11_This/this5.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/11_This/this6.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/12_FunzioniAvanzate/funzioni-avanzate1.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/12_FunzioniAvanzate/funzioni-avanzate2.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/12_FunzioniAvanzate/funzioni-avanzate3.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/12_FunzioniAvanzate/funzioni-avanzate4.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/12_FunzioniAvanzate/funzioni-avanzate5.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/12_FunzioniAvanzate/funzioni-avanzate6.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/12_FunzioniAvanzate/funzioni-avanzate7.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/4_Cicli/ciclo1.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Lavorare con le stringhe/FaccinaMessaggio.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../Libro/01_ComeScrivere/ComeScrivere.docx" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../Libro/02_Buongiorno Mondo/Buongiorno Mondo.docx" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../Libro/03_Lavorare con le stringhe/Lavorare con le stringhe.docx" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../Libro/03_Lavorare con le stringhe/img/Figura01.tif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../Libro/03_Lavorare con le stringhe/img/Figura02.tif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../Libro/03_Lavorare con le stringhe/img/Figura03.tif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../Libro/04_ciclo for/Ciclo.docx" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../Libro/04_ciclo for/img/Figura01.tif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../Libro/04_ciclo for/img/Figura02.tif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../Libro/04_ciclo for/img/Figura03.tif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../Libro/05_Funzioni/Funzioni.docx" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../Libro/06_Eventi-Form/Eventi-form.docx" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../Libro/06_Eventi-Form/img/Figura01.tif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../Libro/06_Eventi-Form/img/Figura02.tif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../Libro/06_Eventi-Form/img/Figura03.tif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../Libro/06_Eventi-Form/img/Figura04.tif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../Libro/07_espressioniRegolari/espressioniRegolari.docx" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../Libro/07_espressioniRegolari/img/Figura01.tif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../Libro/07_espressioniRegolari/img/Figura02.tif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../Libro/07_espressioniRegolari/img/Figura03.tif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../Libro/07_espressioniRegolari/img/Figura04.tif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../Libro/07_espressioniRegolari/img/Figura05.tif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../Libro/07_espressioniRegolari/img/Figura06.tif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../Libro/07_espressioniRegolari/img/Figura07.tif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../Libro/08_oggetti/08_oggetti.docx" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../Libro/08_oggetti/img/Figura01.tif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../Libro/09_arrayAssociativi/arrayAssociativi.docx" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../Libro/10_New/New.docx" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../Libro/10_New/img/Figura01.tif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../Libro/10_New/img/Figura02.tif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../Libro/11_This/this.docx" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../Libro/11_This/~$this.docx" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../Libro/12_FunzioniAvanzate/funzioni-avanzate.docx" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../Libro/z_Installare Visual Code/VisualCode.docx" afterPath="$PROJECT_DIR$/../Libro/z_Installare Visual Code/VisualCode.docx" />
+      <change beforePath="$PROJECT_DIR$/../Libro/z_Installare Visual Code/img/Figura10.tif" afterPath="$PROJECT_DIR$/../Libro/z_Installare Visual Code/img/Figura10.tif" />
+      <change beforePath="$PROJECT_DIR$/../Libro/z_Installare Visual Code/img/Figura11.tif" afterPath="$PROJECT_DIR$/../Libro/z_Installare Visual Code/img/Figura11.tif" />
+      <change beforePath="$PROJECT_DIR$/../Libro/z_Installare Visual Code/img/Figura12.tif" afterPath="$PROJECT_DIR$/../Libro/z_Installare Visual Code/img/Figura12.tif" />
+      <change beforePath="$PROJECT_DIR$/../Libro/z_Installare Visual Code/img/Figura13.tif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../contenuto.docx" afterPath="$PROJECT_DIR$/../contenuto.docx" />
+      <change beforePath="$PROJECT_DIR$/../indice.docx" afterPath="$PROJECT_DIR$/../indice.docx" />
+      <change beforePath="$PROJECT_DIR$/../spunti-contenuto-libro.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../voci indice.docx" afterPath="$PROJECT_DIR$/../voci indice.docx" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="trascinaLink.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/23_DragDrop/trascinaLink.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>push</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/15_JsonRest/json.html" />
+        <option value="$PROJECT_DIR$/15_JsonRest/json1.html" />
+        <option value="$PROJECT_DIR$/15_JsonRest/json2.html" />
+        <option value="$PROJECT_DIR$/15_JsonRest/json3.html" />
+        <option value="$PROJECT_DIR$/15_JsonRest/persona.json" />
+        <option value="$PROJECT_DIR$/15_JsonRest/persone.json" />
+        <option value="$PROJECT_DIR$/16_AJAX e Promise/ajax1.html" />
+        <option value="$PROJECT_DIR$/16_ajax-rest/ajax1.html" />
+        <option value="$PROJECT_DIR$/19_OggettiAvanzati/oggetti-avanzati3.html" />
+        <option value="$PROJECT_DIR$/19_OggettiAvanzati/oggetti-avanzati4.html" />
+        <option value="$PROJECT_DIR$/19_OggettiAvanzati/rest.html" />
+        <option value="$PROJECT_DIR$/19_OggettiAvanzati/rest1.html" />
+        <option value="$PROJECT_DIR$/19_OggettiAvanzati/rest2.html" />
+        <option value="$PROJECT_DIR$/19_OggettiAvanzati/oggetti-avanzati2.html" />
+        <option value="$PROJECT_DIR$/19_OggettiAvanzati/spread1.html" />
+        <option value="$PROJECT_DIR$/20_canvas/animazione.html" />
+        <option value="$PROJECT_DIR$/20_canvas/animazione2.html" />
+        <option value="$PROJECT_DIR$/20_canvas/animazioneStop.html" />
+        <option value="$PROJECT_DIR$/20_canvas/archiChiusi.html" />
+        <option value="$PROJECT_DIR$/20_canvas/arco.html" />
+        <option value="$PROJECT_DIR$/20_canvas/bezierQuadratica.html" />
+        <option value="$PROJECT_DIR$/20_canvas/bezierCubica.html" />
+        <option value="$PROJECT_DIR$/20_canvas/arco2.html" />
+        <option value="$PROJECT_DIR$/20_canvas/bezierQuadraticaSegmenti.html" />
+        <option value="$PROJECT_DIR$/20_canvas/canvasIE.html" />
+        <option value="$PROJECT_DIR$/20_canvas/circonferenza.html" />
+        <option value="$PROJECT_DIR$/20_canvas/composizione.html" />
+        <option value="$PROJECT_DIR$/20_canvas/cuore.html" />
+        <option value="$PROJECT_DIR$/20_canvas/gradienteLineare.html" />
+        <option value="$PROJECT_DIR$/20_canvas/gradienteLineare1.html" />
+        <option value="$PROJECT_DIR$/20_canvas/gradienteRadiale.html" />
+        <option value="$PROJECT_DIR$/20_canvas/gradienteRadiale2.html" />
+        <option value="$PROJECT_DIR$/20_canvas/gradienteRadiale3.html" />
+        <option value="$PROJECT_DIR$/20_canvas/immagine.html" />
+        <option value="$PROJECT_DIR$/20_canvas/immagine1.html" />
+        <option value="$PROJECT_DIR$/20_canvas/ombra.html" />
+        <option value="$PROJECT_DIR$/20_canvas/percorsoChiuso.html" />
+        <option value="$PROJECT_DIR$/20_canvas/rettangolo.html" />
+        <option value="$PROJECT_DIR$/20_canvas/segmentiNonContigui.html" />
+        <option value="$PROJECT_DIR$/20_canvas/segmento.html" />
+        <option value="$PROJECT_DIR$/20_canvas/stileLinea.html" />
+        <option value="$PROJECT_DIR$/20_canvas/testo.html" />
+        <option value="$PROJECT_DIR$/20_canvas/triangolo.html" />
+        <option value="$PROJECT_DIR$/22_WebWorker/worker2.js" />
+        <option value="$PROJECT_DIR$/22_WebWorker/html3.html" />
+        <option value="$PROJECT_DIR$/22_WebWorker/workerOggetto.js" />
+        <option value="$PROJECT_DIR$/22_WebWorker/html4.html" />
+        <option value="$PROJECT_DIR$/22_WebWorker/html5.html" />
+        <option value="$PROJECT_DIR$/22_WebWorker/worker4.js" />
+        <option value="$PROJECT_DIR$/22_WebWorker/html6.html" />
+        <option value="$PROJECT_DIR$/23_DragDrop/TreImmaginiTreBersagli/spostaImmagine.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="54" />
+    <option name="y" value="-8" />
+    <option name="width" value="1874" />
+    <option name="height" value="1096" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>ECMAScript 6 migration aidsJavaScript</id>
+          </State>
+          <State>
+            <id>Java</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>Properties Files</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Error handlingJavaScript</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="AndroidView" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Esercizi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Esercizi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Esercizi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Esercizi" type="462c0819:PsiDirectoryNode" />
+              <item name="16_ajax-rest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Esercizi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Esercizi" type="462c0819:PsiDirectoryNode" />
+              <item name="23_DragDrop" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Esercizi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Esercizi" type="462c0819:PsiDirectoryNode" />
+              <item name="23_DragDrop" type="462c0819:PsiDirectoryNode" />
+              <item name="TreImmaginiTreBersagli" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="Lombok plugin" />
+    <property name="last_opened_file_path" value="C:/APP/PortableGit/bin/git.exe" />
+    <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\gualtiero.testa\Dropbox\GeA\Libri\JavaScript-EcmaScript\Esercizi\19_OggettiAvanzati" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\gualtiero.testa\Dropbox\GeA\Libri\JavaScript-EcmaScript\Esercizi\16_AJAX e Promise" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.dom3.html">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="dom1.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Esercizi/17_DOM/dom1.html" />
+    <configuration name="dom2.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Esercizi/17_DOM/dom2.html" />
+    <configuration name="dom3.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Esercizi/17_DOM/dom3.html" />
+    <configuration name="dom.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Esercizi/17_DOM/dom.html" />
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
+    <list size="4">
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.dom.html" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.dom1.html" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.dom2.html" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.dom3.html" />
+    </list>
+    <recent_temporary>
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.dom3.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.dom2.html" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.dom1.html" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.dom.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="462222d0-e038-4351-af46-330bf6ab44b4" name="Default" comment="" />
+      <created>1512025761955</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1512025761955</updated>
+      <workItem from="1512025766689" duration="830000" />
+      <workItem from="1512026645427" duration="1166000" />
+      <workItem from="1512112252983" duration="1118000" />
+      <workItem from="1512225985941" duration="768000" />
+      <workItem from="1512226826892" duration="1548000" />
+      <workItem from="1512370483935" duration="1867000" />
+      <workItem from="1512543384792" duration="684000" />
+      <workItem from="1512828690003" duration="2195000" />
+      <workItem from="1512908651660" duration="5660000" />
+      <workItem from="1512975200179" duration="596000" />
+      <workItem from="1513064744612" duration="481000" />
+      <workItem from="1513146111072" duration="3901000" />
+      <workItem from="1513231357445" duration="3022000" />
+      <workItem from="1513666724316" duration="3391000" />
+      <workItem from="1513685491842" duration="3170000" />
+      <workItem from="1513753023694" duration="614000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="31011000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="66" y="-8" width="1862" height="1096" extended-state="6" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32820514" sideWeight="0.50221974" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2508324" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32916668" sideWeight="0.49778023" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1936737" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/19_OggettiAvanzati/oggetti-avanzati3.html" />
+    <entry file="file://$PROJECT_DIR$/20_canvas/animazione.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20_canvas/animazione2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="53" column="22" lean-forward="true" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20_canvas/animazioneStop.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="814">
+          <caret line="70" column="25" lean-forward="false" selection-start-line="70" selection-start-column="25" selection-end-line="70" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20_canvas/archiChiusi.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="47" lean-forward="false" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20_canvas/arco.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="47" lean-forward="false" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20_canvas/bezierQuadratica.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20_canvas/bezierCubica.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20_canvas/arco2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20_canvas/bezierQuadraticaSegmenti.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20_canvas/canvasIE.html" />
+    <entry file="file://$PROJECT_DIR$/20_canvas/composizione.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1025">
+          <caret line="63" column="0" lean-forward="true" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20_canvas/cuore.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="805">
+          <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20_canvas/excanvas.js" />
+    <entry file="file://$PROJECT_DIR$/20_canvas/gradienteLineare.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="682">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20_canvas/gradienteLineare1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="29" column="9" lean-forward="false" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20_canvas/gradienteRadiale.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="47" lean-forward="false" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20_canvas/gradienteRadiale2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="59" lean-forward="false" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20_canvas/gradienteRadiale3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="59" lean-forward="false" selection-start-line="12" selection-start-column="59" selection-end-line="12" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20_canvas/triangolo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="59" lean-forward="false" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20_canvas/testo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="59" lean-forward="false" selection-start-line="12" selection-start-column="59" selection-end-line="12" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20_canvas/stileLinea.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="59" lean-forward="false" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20_canvas/segmento.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="59" lean-forward="false" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20_canvas/segmentiNonContigui.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="59" lean-forward="false" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20_canvas/rettangolo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="59" lean-forward="false" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20_canvas/percorsoChiuso.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="47" lean-forward="false" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20_canvas/ombra.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="59" lean-forward="false" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20_canvas/immagine1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="8" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20_canvas/immagine.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20_canvas/immagine.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20_canvas/circonferenza.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="47" lean-forward="true" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/22_WebWorker/worker1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/22_WebWorker/html1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/22_WebWorker/html2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="16" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/22_WebWorker/html3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="22" column="16" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="31" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/22_WebWorker/workerOggetto.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="15" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/22_WebWorker/htmlOggetto.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="20" column="22" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="27" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/22_WebWorker/html4.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="19" column="28" lean-forward="false" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/22_WebWorker/html5.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="31" column="5" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="36" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/22_WebWorker/worker2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/22_WebWorker/worker3.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="23" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/22_WebWorker/html6.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="16" column="9" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="40" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/22_WebWorker/worker5.js" />
+    <entry file="file://$PROJECT_DIR$/22_WebWorker/worker4.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="2" lean-forward="true" selection-start-line="0" selection-start-column="1" selection-end-line="5" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/22_WebWorker/sharedWorker/pag2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/22_WebWorker/sharedWorker/pag1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="17" lean-forward="false" selection-start-line="6" selection-start-column="1" selection-end-line="21" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/22_WebWorker/sharedWorker - Listener/pag1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/22_WebWorker/sharedWorker/shared.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/23_DragDrop/TreImmaginiTreBersagli/spostaImmagineBersaglioCorretto.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="545">
+          <caret line="133" column="25" lean-forward="false" selection-start-line="133" selection-start-column="8" selection-end-line="133" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/23_DragDrop/TreImmaginiTreBersagli/spostaImmagine.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="68" column="18" lean-forward="true" selection-start-line="68" selection-start-column="18" selection-end-line="68" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/23_DragDrop/trascinaLink.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>IBM 1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Esercizi</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>Oracle 1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

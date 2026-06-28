@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+
+    <script>
+
+        let testo = '1. mela 2. pera 3. banana 4. arancia'
+        let pattern = /\d\.\s[a-zA-Z]+(\s|$)/y;
+        let prova = testo.match(pattern);
+        console.log(`prova: ${prova}`);
+        console.log(`lastIndex: ${pattern.lastIndex}`);
+        prova = testo.match(pattern);
+        console.log(`prova: ${prova}`);
+        console.log(`lastIndex: ${pattern.lastIndex}`);
+        prova = testo.match(pattern);
+        console.log(`prova: ${prova}`);
+        console.log(`lastIndex: ${pattern.lastIndex}`);
+        prova = testo.match(pattern);
+        console.log(`prova: ${prova}`);
+        console.log(`lastIndex: ${pattern.lastIndex}`);
+
+    </script>
+
+</body>
+
+</html>

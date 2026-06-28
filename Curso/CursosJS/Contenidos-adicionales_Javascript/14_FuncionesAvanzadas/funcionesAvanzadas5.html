@@ -1,0 +1,38 @@
+<!doctype html>
+
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Funciones avanzadas 4</title>
+    <meta name="description" content="Funciones avanzadas">
+</head>
+
+<body>
+
+    <script type="text/javascript">
+
+        function miFuncionD() {
+            //'use strict';
+            return this;
+        }
+
+        console.log(`This per miFuncionD=${miFuncionD()}`);
+
+        const miFuncionE = function () {
+            //'use strict';
+            return this;
+        };
+        console.log(`This para miFuncionE=${miFuncionE()}`);
+
+        let miFuncionF = () => {
+            //'use strict';
+            return this;
+        };
+        console.log(`This para miFuncionF=${miFuncionF()}`);
+
+    </script>
+
+</body>
+
+</html>

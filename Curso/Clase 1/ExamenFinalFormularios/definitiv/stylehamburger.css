@@ -1,0 +1,476 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --radio-todo: 8px;
+  }
+/* body de la pantalla principal */
+body {
+    line-height: 1.6;
+    background-color: rgba(224, 222, 222, 0.6);
+    background-image: url(https://jhasenstudio.com/wp-content/uploads/2024/12/web-corporativa.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    background-blend-mode: overlay;
+    z-index: 10;
+    font-family: Arial;
+    height: 900px;
+    overflow: hidden;
+    margin-bottom: -220px;
+}
+ h1 {
+    margin: 90px auto;
+    text-align: center;
+    font-family: "Stalinist One", sans-serif;
+  }
+
+.iframe-container {
+    height: calc(100vh - 60px);
+    width: 100%;
+}
+iframe {
+    width: 100%;
+    height: 100%;
+    border:none;
+}
+
+/*estilo del navbar / menu */
+.navbar {
+    background: linear-gradient(36deg, rgba(55, 6, 71, 1) 0%, rgba(92, 48, 128, 1) 50%);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar-brand {
+    width: 70px;
+    height: 60px;
+
+}
+
+.navbar-brand img {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+
+}
+
+/*menu*/
+.navbar-nav {
+    display: flex;
+    list-style: none;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    font-size: medium;
+    color: white;
+    text-decoration: none;
+    padding: 20px 15px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: orangered;
+}
+
+/* menu desplegable */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    width: 200px;
+    list-style: none;
+    box-shadow: 0 3px 5px black;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+
+}
+
+.dropdown-item {
+    border-bottom: 1px solid antiquewhite;
+}
+
+.dropdown-link {
+    color: #333;
+    text-decoration: none;
+    padding: 12px 15px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-link:hover {
+    background-color: orangered;
+    color: whitesmoke;
+}
+
+/* al pasar el raton se despliega y se hace visible el desplegable */
+.nav-item:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+/*checkbox para menu movil (hamburger) inicialmene oculto */
+.navbar-toggle {
+    display: none;
+}
+/* Diseño del icono de hamburguesa (las 3 rayitas) */
+.toggle-label {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    color: white;
+    position: absolute;
+    gap: 5px; /* espacio entre las rayitas */
+    right: 20px;
+    top: 15px;
+    z-index: 1001;
+}
+.toggle-label span {
+    width: 30px;
+    height: 4px;
+    background: white;
+    border-radius: 2px;
+     z-index: 1002;
+}
+/*Hacemos que las lineas del menu hamburguesa giren */
+#navbarToggle:checked ~ label span{
+     &:nth-child(1) {
+      transform: translateY(9px) rotate(45deg);
+    }
+    &:nth-child(2) {
+      opacity: 0;
+    }
+    &:nth-child(3) {
+      transform: translateY(-9px)rotate(-45deg);
+    }
+  }
+
+
+.pie  {
+    /* background: linear-gradient(36deg, rgba(55, 6, 71, 1) 0%, rgba(92, 48, 128, 1) 50%); */
+     width: 100%;
+    z-index: 1002;
+    height: 220px;
+    padding: -30px;
+    margin-bottom: -220px;
+    background: black;
+    color: white;
+    text-align: center;
+}
+.pie .enlaces {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+.pie_link {
+    margin-top: -5px;
+    padding-bottom: 5px;
+}
+.pie .enlaces a{
+    text-decoration: none;
+    color: white;
+}
+.pie .enlaces a:hover {
+    font-weight: bold;
+    color: orangered;
+}
+/* footer a {
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+/*-----------------------------------------------------------*/
+/* pagina de inicio html */
+/*-----------------------------------------------------------*/
+
+.principal {
+    margin-top: 70px;
+    height: 500px;
+}
+.texto {
+
+    text-align: center;
+    color: black;
+    margin-top: 20%;
+    z-index: 1;
+}
+.texto h2 {
+    font-family: "Stalinist One", sans-serif;
+    font-size: 2.6em;
+    color: black;
+    text-shadow: 0px 2px 6px white;
+    margin-bottom: 20px;
+}
+.contacta {
+    margin-left: 50%;
+    margin-top: 20px;
+}
+.contacta a {
+    text-decoration: none;
+    color:aliceblue;
+}
+.contacta button {
+    background: rgb(187, 122, 3);
+    padding: 10px 10px;
+    border-radius: 9px;
+}
+.contacta button:hover {
+    transform: rotate(-7deg) scale(117%);
+    background: black;
+
+}
+/*-----------------------------------------------------------*/
+/* pagina de Servicios */
+/*-----------------------------------------------------------*/
+.columnas_titulo {
+    text-align: center;
+}
+.columnas_texto {
+    margin-left: 10px;
+
+}
+.columnas_lista {
+    margin-top: 10px;
+    margin-left: 35px;
+
+}
+
+/*-----------------------------------------------------------*/
+/* pagina de contacta section*/
+/*-----------------------------------------------------------*/
+#contacta{
+    background: #a1a1a1;
+    background-color: rgba(224, 222, 222, 0.6);
+    background-image: url(https://images.unsplash.com/photo-1614703524015-037a6d681848?q=80&w=806&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-blend-mode: overlay;
+}
+.container {
+    display: flex;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  label {
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+    /* Primera letra en mayuscula */
+  #nombre {
+    text-transform: capitalize;
+  }
+
+  input,
+  select {
+    padding: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-color: #2633D1;
+    border-radius: var(--radio-todo);
+  }
+.formulario {
+    flex: 1;
+    border-radius: var(--radio-todo);
+    background: rgb(244, 246, 247);
+    height: 630px;
+    margin-left: 10px;
+    margin-top: -35px;
+    font-family: "Nunito", sans-serif;
+    box-shadow: 0px 3px 5px 1px rgb(44, 44, 44);
+
+  }
+
+  /*contenedor donde se encuentra nombre y apellido */
+  .datos {
+    display: flex;
+    gap: 20px;
+
+  }
+
+  /*esto es el nombre, el apellido...*/
+  .escribe {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    justify-content: space-around;
+
+  }
+
+  .comenta {
+    display: flex;
+    flex-direction: row;
+
+  }
+
+  textarea {
+    height: 200px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-color: #2633D1;
+    border-radius: var(--radio-todo);
+  }
+
+  .enviar {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+
+  #submit {
+    background: #2633D1;
+    color: white;
+    width: 100%;
+    padding: 15px;
+    font-size: larger;
+    border-radius: var(--radio-todo);
+  }
+
+  #submit:hover {
+    width: 98%;
+    background: #5E6AF2;
+    font-weight: bolder;
+    color: #9D9EA1;
+  }
+
+  #submit:active {
+    width: 95%;
+    font-size: medium;
+    color: black;
+  }
+
+  input:user-invalid {
+    border-color: red;
+    background: palevioletred;
+  }
+
+  input:user-valid {
+    background: rgba(157, 243, 157, 0.705);
+  }
+
+  .mapa {
+    flex: 1;
+    width: 50%;
+    height: 630px;
+    margin-right: 10px;
+    margin-top: -35px;
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--radio-todo);
+    box-shadow: 0px 3px 5px 1px rgb(44, 44, 44);
+  }
+
+  .mapa iframe {
+    border-radius: var(--radio-todo);
+    height: 100%;
+    box-shadow: 0px 3px 5px 1px rgb(44, 44, 44);
+  }
+/* .toggle-label::before {
+    content: "🟰";
+} */
+
+/*-----------------------------------------------------------*/
+/* pagina de articulo */
+/*-----------------------------------------------------------*/
+.columnas {
+    gap:20px;
+    box-shadow: 0px 2px 6px;
+    border-radius: 10px;
+}
+.columnas img {
+     width: 100%;
+    height: 300px;
+    object-fit: cover;
+    box-shadow: 0px 2px 6px;
+    border-radius: 10px;
+
+}
+.columnas a {
+    text-decoration: none;
+    font-weight: bold;
+    color: red;
+}
+/*-----------------------------------------------------------*/
+/* responsive para móvil*/
+/*-----------------------------------------------------------*/
+@media (max-width: 600px) {
+    .navbar-container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+    }
+
+    /* .toggle-label {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 0;
+    } */
+    .toggle-label {
+        display: flex;
+    }
+    .navbar-nav {
+        flex-direction: column;
+        width: 100%;
+        /* oculta el menu */
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+    }
+
+    .navbar-toggle:checked~.navbar-nav {
+        /*muestra el menu al hacer clic */
+        max-height: 500px;
+    }
+    .navbar-toggle:checked~toggle-label {
+        transform: rotate(90deg);
+    }
+
+    .nav-item {
+        width: 100%;
+    }
+
+    .nav-link {
+        padding: 15px 20px;
+    }
+
+    .dropdown-menu {
+        position: static;
+        width: 100%;
+        opacity: 1;
+        visibility: visible;
+        max-height: 0;
+        overflow: hidden;
+    }
+    .nav-item:hover .dropdown-menu {
+        /*muestra el submenu */
+        max-height: 500px;
+    }
+}

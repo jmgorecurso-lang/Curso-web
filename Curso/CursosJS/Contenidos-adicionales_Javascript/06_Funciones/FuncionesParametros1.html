@@ -1,0 +1,32 @@
+<!doctype html>
+
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title>HolaMundo</title>
+  <meta name="description" content="Funciones">
+</head>
+
+<body>
+
+  <p id="output"></p>
+  <img id="carita" />
+
+  <script type="text/javascript">
+    function cuantosDías(año, mes, día, NombreEvento) {      const hoy = new Date();      const milsegEnUnDía = 1000 * 60 * 60 * 24; // los milisegundos de un día      // indico a media noche la fecha de hoy, de no ser así la resta entre ambas       fechas no nos dará la hora correcta      hoy.setHours(0, 0, 0, 0);      const fechaEvento = new Date(año, mes - 1, día);
+      console.log (fechaEvento);
+      console.log (hoy);
+
+      const diferenciaHoras = Math.abs(fechaEvento.getTimezoneOffset() / 60)       - Math.abs(hoy.getTimezoneOffset() / 60);      hoy.setHours(hoy.getHours() - diferenciaHoras); 
+
+      console.log(fechaEvento.getTimezoneOffset() / 60)
+
+      console.log (fechaEvento);
+      console.log (hoy);
+
+      if (fechaEvento > hoy) {        return `Faltan ${(fechaEvento.getTime() - hoy.getTime()) /         milsegEnUnDía} días para ${NombreEvento}`;      } else {        return 'La fecha ya pasó'      }    }    document.getElementById('output').innerHTML = cuantosDías(2017, 12, 25,     'Navidad');  </script>
+
+</body>
+
+</html>

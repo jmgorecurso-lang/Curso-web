@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estiloV2.css">
+  <link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
+  <title>Motos</title>
+</head>
+
+<body>
+  <h1 id="titulo">Clase 13v2| CARRUSEL MOTOS GOD</h1>
+  <div class="carrusel-container">
+    <div class="main-image-container">
+      <img id="mainImage" src="" alt="Motaca">
+    </div>
+    <div class="carrusel-nav">
+      <button class="carrusel-btn prev-btn" id="prev">&#10094;</button>
+      <button class="carrusel-btn next-btn" id="next">&#10095;</button>
+
+    </div>
+  </div>
+  <!-- contendor informacion-->
+  <div class="current-info" id="currentInfo">
+    <div id="currentName"></div>
+    <div id="currentPrice"></div>
+  </div>
+  <!-- contenedor miniaturas-->
+  <div class="thumbnail-container">
+    <!--imagen 1-->
+    <div class="thumbnail-item active" data-full="https://images.unsplash.com/photo-1711156396140-78aa74547eef?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" data-name="Harley Davidson Iron 883" data-price="12000€">
+      <img src=https://images.unsplash.com/photo-1711156396140-78aa74547eef?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="harley">
+      <div class="thumbnail-info">
+        <div class="thumbnail-name">HD Iron 883</div>
+        <div class="thumbnail-price">12000€</div>
+      </div>
+    </div>
+    <!--Imagen 2-->
+    <div class="thumbnail-item active" data-full="https://images.unsplash.com/photo-1635468324938-3304f24288d6?q=80&w=1107&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" data-name="Yamaha DragStar 650" data-price="8000€">
+      <img src="https://images.unsplash.com/photo-1635468324938-3304f24288d6?q=80&w=1107&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="yamaha">
+      <div class="thumbnail-info">
+        <div class="thumbnail-name">Yamaha DragStar 650</div>
+        <div class="thumbnail-price">8000€</div>
+      </div>
+    </div>
+
+    <!--Imagen 3-->
+    <div class="thumbnail-item active" data-full="https://images.unsplash.com/photo-1558981285-6f0c94958bb6?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" data-name="Harley Davidson Street Bob" data-price="22000€">
+      <img src="https://images.unsplash.com/photo-1558981285-6f0c94958bb6?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="harley">
+      <div class="thumbnail-info">
+        <div class="thumbnail-name">HD Street Bob</div>
+        <div class="thumbnail-price">22000€</div>
+      </div>
+    </div>
+
+    <!--Imagen 4-->
+    <div class="thumbnail-item active" data-full="https://images.unsplash.com/photo-1610229953140-d6c35bc7fa65?q=80&w=1090&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" data-name="Harley Davidson Breakout" data-price="28000€">
+      <img src="https://images.unsplash.com/photo-1610229953140-d6c35bc7fa65?q=80&w=1090&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="harley">
+      <div class="thumbnail-info">
+        <div class="thumbnail-name">HD Breakout</div>
+        <div class="thumbnail-price">28000€</div>
+      </div>
+    </div>
+
+    <!--Imagen 5-->
+    <div class="thumbnail-item active" data-full="https://images.unsplash.com/photo-1614888441179-9e21cfd014d9?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" data-name="Harley Davidson Vrod" data-price="22000€">
+      <img src="https://images.unsplash.com/photo-1614888441179-9e21cfd014d9?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="harley">
+      <div class="thumbnail-info">
+        <div class="thumbnail-name">HD Vrod</div>
+        <div class="thumbnail-price">22000€</div>
+      </div>
+    </div>
+
+    <!--Imagen 6-->
+    <div class="thumbnail-item active" data-full="https://images.unsplash.com/photo-1760282341740-c8fe0467a627?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" data-name="Victory Vegas 8-Ball" data-price="18000€">
+      <img src="https://images.unsplash.com/photo-1760282341740-c8fe0467a627?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Victory">
+      <div class="thumbnail-info">
+        <div class="thumbnail-name">Victory Vegas 8-Ball</div>
+        <div class="thumbnail-price">18000€</div>
+      </div>
+    </div>
+
+  </div>
+  <script src="scriptV2.js"></script>
+</body>
+</html>

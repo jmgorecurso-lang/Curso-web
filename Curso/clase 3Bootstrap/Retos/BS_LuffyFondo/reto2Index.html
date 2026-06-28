@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Latest compiled and minified CSS -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script src="script_sessions1_bs.js" defer></script>
+  <!-- SCRIPTS INDEPENDIENTES (con async - no necesitan orden) -->
+<style>
+ .card-img-overlay {
+  display:flex ;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
+ .card:hover .card-img-overlay {
+    border: solid 2px;
+    opacity: 1 !important ; /*Al estar en otra capa hay que usar !important */
+      }
+.btn{
+  transform: scale(120%);
+
+}
+</style>
+  <title>Reto 2 Overlay</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1713065539607-379fb37ef371?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDd8fHRlcnJvcnxlbnwwfDF8MHx8fDA%3D"  alt="">
+      <div class="card-img-overlay opacity-0">
+        <h2 class="card-title">Pinhead</h2>
+        <p class="card-text text-justify text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis eos recusandae fuga laborum earum eaque iure molestias dolorum ipsa, repudiandae, nesciunt quas provident culpa dolores? Voluptates incidunt similique ullam doloribus./p>
+        <a href="#" data-bs-toggle="modal" data-bs-target="#miModal" class="btn btn-danger">Su Perfil</a>
+      </div>
+    </div>
+
+    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#miModal">
+    Open modal
+    </button>
+    <div class="modal fade" id="miModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="model-header">
+          <h2 class="modal-title">Perfil Pinhead</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <!-- body del modal-->
+        <div class="card-text">
+          <img src="https://gbaike-image.cdn.bcebos.com/bf096b63f6246b600c339893fba20d4c510fd8f90498/bf096b63f6246b600c339893fba20d4c510fd8f90498_url?x-bce-process=image/format,f_auto/resize,m_lfit,w_400,limit_1pin" alt="" width="200px">
+          <ul class="datos">
+            <li>🗣️Nombre:</li>
+            <li>🪓Profesion:</li>
+            <li>♨️Ubicacion:</li>
+            <li>🔕Telefono:</li>
+            <li>💀Habilidades:</li>
+          </ul>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cierra</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,146 @@
+/*style items products tecnology*/
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu-item {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+}
+
+.menu-item img {
+    width: 100%;
+    border-radius: 8px;
+    height: 180px;
+    object-fit: cover;
+
+}
+
+h3 {
+    color: #2c3e50;
+    margin: 15px 0 10px;
+    font-size: 1.2em;
+}
+
+.item-description {
+    color: #7f8c8d;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.item-footer {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-top: 15px;
+    border-top: 1px solid #ecf0f1;
+    padding-top: 15px;
+}
+
+.price {
+    font-weight: bold;
+    color: #F5071B;
+    font-size: 1.1em;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.add-to-cart {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart:hover {
+    background-color: #2980b9;
+}
+
+.section-title {
+    text-align: center;
+    color: #2c3e50;
+    padding: 30px 0 10px;
+    font-size: 2em;
+    margin: 0;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #7f8c8d;
+    margin-bottom: 30px;
+    font-weight: normal;
+}
+
+@media(max-width:768px) {
+    .menu-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+        padding: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .add-to-cart{
+       position:absolute;
+       left: 40%;
+
+    }
+
+
+}
+
+@media(max-width:550px) {
+    .menu-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 25px;
+        padding: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .add-to-cart{
+       position:absolute;
+       left: 40%;
+
+    }
+
+}
+
+
+.price {
+    position: absolute;
+    top: -5px;
+    right: 1%;
+    transform: rotate(15deg);
+    padding: 2px;
+    background: gray;
+    border-radius: 5px;
+    box-shadow: 2px 2px rgb(100, 96, 96);
+
+}

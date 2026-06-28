@@ -1,0 +1,13 @@
+{
+  "name": "mi-proyecto",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "lite-server"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.0"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}

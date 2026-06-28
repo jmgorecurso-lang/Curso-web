@@ -1,0 +1,29 @@
+<!doctype html>
+
+<html lang="it">
+
+<head>
+  <meta charset="utf-8">
+  <title>Objetos 2</title>
+  <meta name="description" content="Objetos">
+</head>
+
+<body>
+
+  <p id="output"></p>
+  <p id="output2"></p>
+  <script type="text/javascript">
+    let objeto = {
+      número: 123,
+      color: 'rojo',
+      descripción: function () {
+        return 'Soy un objeto rojo con el número 123';
+      }
+    };
+    document.getElementById('output').innerHTML = JSON.stringify(objeto);
+    document.getElementById('output2').innerHTML = objeto.descripción();
+  </script>
+
+</body>
+
+</html>

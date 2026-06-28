@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="estiloR3.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script src="scriptR3_bs.js" defer></script>
+  <!-- SCRIPTS INDEPENDIENTES (con async - no necesitan orden) -->
+  <!-- <script async src="localiza.js"></script> -->
+  <title>Reto 3 Comida</title>
+</head>
+
+<body>
+  <div class="contenedor">
+    <h1>Reto 3 Comida Rapida</h1>
+
+    <div class="container rounded-3">
+      <!-- tres cards-->
+      <div class="row text-center">
+        <div class="col-md-6 col-lg-4 rounded-3 p-1">
+          <div class="card">
+            <img class="fluid" src="https://plus.unsplash.com/premium_photo-1675283476222-6a1a01d6a0ba?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8aGFtYnVyZ3Vlc2ElMjBnb3VybWV0fGVufDB8MHwwfHx8MA%3D%3D" alt="">
+            <div class="card-img-overlay opacity-0">
+              <i class="fa-solid fa-eye" id="ojo"></i>
+              <p class="detalles text-white">🍔 Carne * Queso * Lechuga * Tomate</p>
+
+              <h4><span class="badge rounded-pill bg-warning" data-bs-toggle="modal" data-bs-target="#hamburg">¡ Click para más detalles!</span></h4>
+
+            </div>
+            <div class="card-body bg-light">
+              <h3 class="text text-dark">🍔 Mega Hamburguesa</h3>
+              <p class="text text-dark">Doble carne, doble queso y patatas fritas</p>
+              <button class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#hamburg"><i class="fa-solid fa-circle-exclamation"></i> Ver detalles</button>
+            </div>
+          </div>
+          <!--Modal de la hamburger-->
+          <div class="modal" id="hamburg">
+            <div class="modal-dialog bg-light">
+              <div class="modal-content">
+                <div class="modal-titulo bg-dark">
+                  <h2 class="titulo text-white"> Mega Hamburguesa</h2>
+                  <!-- boton de la x para cerrar-->
+
+                </div>
+                <div class="boton-cierre">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <!--el contenido del modal-->
+                <div class="card-text">
+                  <img class="fluid mx-auto d-block" src="https://plus.unsplash.com/premium_photo-1675283476222-6a1a01d6a0ba?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8aGFtYnVyZ3Vlc2ElMjBnb3VybWV0fGVufDB8MHwwfHx8MA%3D%3D" alt="" width="450px">
+                  <h3 class="descripcion">Descripcion completa</h3>
+                  <p>Jugosa Hamburguesa con dos carnes de res (180g c/u), queso cheddar fundido, lechuga, tomate y cebolla moradas frescas, junto con la salsa especial de la casa</p>
+                  <hr>
+                </div>
+                <ul class="datos">
+                  <li><strong>Calorias:</strong>850 kcal</li>
+                  <li><strong>Precio:</strong>7.99€</li>
+                  <li><strong>Entregas:</strong>20-25 min</li>
+                  <li><strong>Alergenos:</strong>Gluten, lácteos</li>
+                </ul>
+
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-success btn-lg" onclick="ventana()"><i class="fa-solid fa-cart-arrow-down"></i>Agregar al carrito</button>
+                  <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cerrar</button>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- ******************************PIZZA**********************************-->
+        </div>
+        <div class="col-md-6 col-lg-4 rounded-3 p-1">
+          <div class="card">
+            <img class="fluid" src="https://images.unsplash.com/photo-1708649783117-dcf8e76ed15f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTA3fHxwaXp6YSUyMG5hcG9sZXRhbmF8ZW58MHwwfDB8fHww" alt="">
+            <div class="card-img-overlay opacity-0">
+              <i class="fa-solid fa-eye" id="ojo1"></i>
+              <p class="detalles text-white">🍕 Masa * Queso * Peperoni * Tomate</p>
+
+              <h4><span class="badge rounded-pill bg-warning" data-bs-toggle="modal" data-bs-target="#pizza">¡ Click para más detalles!</span></h4>
+
+            </div>
+            <div class="card-body bg-light">
+              <h3 class="text text-dark">🍕 Pizza Napolitana</h3>
+              <p class="text text-dark">Masa fina, 8 porciones familiares</p>
+              <button class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#pizza"><i class="fa-solid fa-circle-exclamation"></i> Ver detalles</button>
+            </div>
+
+          </div>
+          <!--Modal de la Pizza-->
+          <div class="modal" id="pizza">
+            <div class="modal-dialog bg-light">
+              <div class="modal-content">
+                <div class="modal-titulo bg-dark">
+                  <h2 class="titulo text-white"> Pizza Napolitana</h2>
+                  <!-- boton de la x para cerrar-->
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <!--el contenido del modal-->
+                <div class="card-text">
+                  <img class="fluid mx-auto d-block" src="https://images.unsplash.com/photo-1708649783117-dcf8e76ed15f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTA3fHxwaXp6YSUyMG5hcG9sZXRhbmF8ZW58MHwwfDB8fHww" alt="" width="450px">
+                  <h3 class="descripcion">Descripcion completa</h3>
+                  <p>Masa tierna y delgada pero bordes altos, es la versión propia de la cocina napolitana de la pizza redonda</p>
+                  <hr>
+                  <ul class="datos">
+                    <li><strong>Calorias:</strong>850 kcal</li>
+                    <li><strong>Precio:</strong>9.99€</li>
+                    <li><strong>Entregas:</strong>20-25 min</li>
+                    <li><strong>Alergenos:</strong>Gluten, lácteos</li>
+                  </ul>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-success btn-lg" onclick="ventana()"><i class="fa-solid fa-cart-arrow-down"></i>Agregar al carrito</button>
+                  <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cerrar</button>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- ******************************TACOS**********************************-->
+        </div>
+        <div class="col-md-6 col-lg-4 rounded-3 p-1">
+          <div class="card">
+            <img class="fluid" src="https://plus.unsplash.com/premium_photo-1681406995031-fe952f1e0858?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8dGFjb3N8ZW58MHwwfDB8fHww" alt="">
+            <div class="card-img-overlay opacity-0">
+              <i class="fa-solid fa-eye" id="ojo3"></i>
+              <p class="detalles text-white">🌮 Carne * Cebolla * Cilantro * Piña</p>
+
+              <h4><span class="badge rounded-pill bg-warning" data-bs-toggle="modal" data-bs-target="#tacos">¡ Click para más detalles!</span></h4>
+
+            </div>
+            <div class="card-body bg-light">
+              <h3 class="text text-dark">🌮 Tacos al Pastor</h3>
+              <p class="text text-dark">3 tacos con limones y salsas aparte</p>
+              <button class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#tacos"><i class="fa-solid fa-circle-exclamation"></i> Ver detalles</button>
+            </div>
+
+          </div>
+
+          <!--Modal de los tacos-->
+          <div class="modal" id="tacos">
+            <div class="modal-dialog bg-light">
+              <div class="modal-content">
+                <div class="modal-titulo bg-dark">
+                  <h2 class="titulo text-white"> Tacos al Pastor</h2>
+                  <!-- boton de la x para cerrar-->
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <!--el contenido del modal-->
+                <div class="card-text">
+                  <img class="fluid mx-auto d-block" src="https://plus.unsplash.com/premium_photo-1681406995031-fe952f1e0858?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8dGFjb3N8ZW58MHwwfDB8fHww" alt="" width="450px">
+                  <h3 class="descripcion">Descripcion completa</h3>
+                  <p>Tacos de maiz con carne de cerdo al pastor, marinada con piña, cebolla, cilantro y salsa al gusto</p>
+                  <hr>
+                  <ul class="datos">
+                    <li><strong>Calorias:</strong>540 kcal</li>
+                    <li><strong>Precio:</strong>5.99€</li>
+                    <li><strong>Entregas:</strong>20-25 min</li>
+                    <li><strong>Picante:</strong>Media (ajustable)</li>
+                  </ul>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-success btn-lg" onclick="ventana()"><i class="fa-solid fa-cart-arrow-down"></i>Agregar al carrito</button>
+                  <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cerrar</button>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+    </div>
+
+  </div>
+
+  </div>
+</body>
+</html>

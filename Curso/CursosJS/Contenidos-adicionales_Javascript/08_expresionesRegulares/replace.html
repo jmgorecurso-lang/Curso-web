@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+</head>
+
+<body>
+  
+  <p id="output"></p>
+  <script>
+    let patron = /(\w+)\s(\w+)/;
+    let texto = 'Nombre: Alessandra Salvaggio 1973';
+    
+    //let nuovoTesto = texto.replace(patron, '$2, $1'); //invierte nombre y apellido, es decir, la primera parte de la cadena con la segunda
+    //let nuevoTexto = texto.replace(patron, '$2'); // mantiene solo el apellido
+    // let nuevoTexto = texto.replace(patron, '$1, Apellido: $2');
+    //let nuevoTexto = texto.replace(patron, '$$'); //escribe el símbolo del dólar
+    // let nuevoTexto = texto.replace(patron, '$& cognome'); //vuelve a escribir toda la parte que corresponde  a la expresión regular: Alessandra Salvaggio
+    let nuevoTexto = texto.replace(patron, '$`uffa'); //rvuelve a escribir toda la parte que corresponde  a la expresión regular: John Smith
+    console.log(nuevoTexto);    
+  </script>
+
+</body>
+
+</html>

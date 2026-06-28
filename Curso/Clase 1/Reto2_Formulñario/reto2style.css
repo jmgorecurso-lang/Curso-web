@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 800px;
+    margin: 0 auto;
+    /* Centramos */
+
+    border: solid;
+
+}
+
+header {
+    display: flex;
+    background: white;
+    box-shadow: 1px 0px 2px black;
+}
+
+header img {
+    width: 200px;
+    margin-left: -25px;
+    margin-top: -45px;
+}
+
+header .texto {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+header .texto p {
+    margin-top: 10px;
+    font-size: large;
+}
+
+form {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    justify-content: space-around;
+
+
+}
+
+label {
+    margin: 12px;
+    font-size: large;
+    font-weight: bold;
+}
+
+input {
+    margin: 12px;
+    padding: 5px;
+    border: groove 1px black;
+    border-radius: 5px;
+    padding: 10px;
+
+}
+
+input:user-valid {
+    border-color: rgb(67, 241, 67);
+}
+
+input:user-invalid {
+    border-color: red;
+    box-shadow: 1px 1px 3px red;
+}
+
+.cursos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+select {
+    padding: 10px;
+    margin-left: 12px;
+    border-radius: 5px;
+    width: 97%
+}
+
+#submit {
+      margin-top: 35px;
+      background: blue;
+      color: white;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: large;
+      margin-bottom: 30px;
+    }
+
+    #submit:hover {
+      transform: scale(105%);
+      background: rgb(101, 101, 238);
+    }

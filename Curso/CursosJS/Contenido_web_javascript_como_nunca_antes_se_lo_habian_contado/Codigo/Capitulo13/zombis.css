@@ -1,0 +1,30 @@
+body {
+    background-image: url("Imagenes/fondo_zombis.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+button {
+    border: 0px;
+    color: white;
+    background-color: inherit;
+    font-weight: bolder;
+    font-size: 1.5em;
+    font-family: Times, serif;
+}
+h3 {
+    display: inline;
+    color: white;
+}
+#puntuacion {
+    float: left;
+}
+#tiempo {
+    float: right;
+}

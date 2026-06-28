@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<style>
+  /* -----------------------------------------------------------
+     DEFINICIÓN DE VARIABLES (EL "CEREBRO" DEL DISEÑO)
+  ----------------------------------------------------------- */
+  :root {
+    /* 1. COLORES */
+    --color-primario: #6366f1;    /* Azul índigo moderno */
+    --color-acento: #f43f5e;      /* Rosa vibrante para resaltar */
+    --color-fondo: #f8fafc;       /* Gris casi blanco */
+    --color-texto: #1e293b;       /* Gris oscuro para lectura */
+    --blanco: #ffffff;
+
+    /* 2. TIPOGRAFÍAS */
+    --fuente-base: 'Segoe UI', system-ui, sans-serif;
+    --fuente-titulo: 'Georgia', serif;
+    --peso-negrita: 700;
+    --interlineado: 1.6;
+
+    /* 3. TAMAÑOS Y ESPACIOS */
+    --espaciado-base: 1.5rem;       /* 16px aprox */
+    --radio-borde: 16px;          /* Curvatura de las esquinas */
+    --ancho-tarjeta: 350px;
+
+    /* 4. SOMBRAS Y ANIMACIONES */
+    --sombra-suave: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    --sombra-fuerte: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
+    --transicion-rapida: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* 5. CÁLCULOS (Usando variables previas) */
+    --padding-doble: calc(var(--espaciado-base) * 2);
+    --fuente-grande: calc(var(--espaciado-base) * 1.5);
+  }
+
+  /* -----------------------------------------------------------
+     APLICACIÓN DEL ESTILO
+  ----------------------------------------------------------- */
+  body {
+    background-color: var(--color-fondo);
+    font-family: var(--fuente-base);
+    line-height: var(--interlineado);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .tarjeta {
+    background-color: var(--blanco);
+    width: var(--ancho-tarjeta);
+    padding: var(--padding-doble); /* Uso de CÁLCULO */
+    border-radius: var(--radio-borde);
+    box-shadow: var(--sombra-suave); /* Uso de SOMBRA */
+    transition: transform var(--transicion-rapida), box-shadow var(--transicion-rapida); /* Uso de ANIMACIÓN */
+    text-align: center;
+  }
+
+  /* Efecto al pasar el ratón */
+  .tarjeta:hover {
+    transform: translateY(-10px); /* Sube la tarjeta */
+    box-shadow: var(--sombra-fuerte); /* La sombra se intensifica */
+  }
+
+  h1 {
+    font-family: var(--fuente-titulo); /* Uso de TIPOGRAFÍA */
+    font-size: var(--fuente-grande);    /* Uso de CÁLCULO */
+    color: var(--color-primario);       /* Uso de COLOR */
+    margin-bottom: var(--espaciado-base);
+  }
+
+  p {
+    color: var(--color-texto);
+    margin-bottom: var(--padding-doble);
+  }
+
+  .boton {
+    background-color: var(--color-acento); /* Uso de COLOR DE ACENTO */
+    color: var(--blanco);
+    padding: var(--espaciado-base) var(--padding-doble);
+    border: none;
+    border-radius: calc(var(--radio-borde) / 2); /* CÁLCULO: bordes menos redondeados que la tarjeta */
+    font-weight: var(--peso-negrita);
+    cursor: pointer;
+    transition: filter var(--transicion-rapida);
+  }
+
+  .boton:hover {
+    filter: brightness(1.2); /* Aclara el botón un poco */
+  }
+</style>
+</head>
+<body>
+
+  <div class="tarjeta">
+    <h1>Diseño con Variables</h1>
+    <p>Este componente utiliza variables CSS para controlar colores, fuentes, sombras y cálculos matemáticos complejos de forma centralizada.</p>
+    <button class="boton">¡Suscribirse!</button>
+  </div>
+
+</body>
+</html>

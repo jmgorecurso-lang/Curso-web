@@ -1,0 +1,29 @@
+<!doctype html>
+
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title>HolaMundo</title>
+  <meta name="description" content="Funciones">
+</head>
+
+<body>
+
+  <p id="output"></p>
+  <img id="carita" />  <script type="text/javascript">    
+    function esFinDeSemana() {      const día = new Date().getDay();
+      //return día === 0 || día === 6;
+      if (día === 0 || día === 6) return true;
+      else return false 
+    }
+
+    const valorSrc = esFinDeSemana()  ? 'CaritaFeliz.png' : 'CaritaTriste.png';const messaggio = esFinDeSemana() ? 'Diviértete' : 'Venga, que ya falta poco';
+
+    document.getElementById('carita').src = valorSrc;    document.getElementById('output').innerHTML = mensaje;
+
+  </script>
+
+</body>
+
+</html>

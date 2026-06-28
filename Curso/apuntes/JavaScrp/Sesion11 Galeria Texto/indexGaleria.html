@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estiloGaleria.css">
+  <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div class="gallery-container">
+    <h1 id="titulo">Sesion 11 - Evento MouseOver & Dataset (data-*)</h1>
+    <h2>Galeria de Imagenes Interectiva</h2>
+    <!-- Contenedor principal para la imagen grande-->
+    <div class="main-image-container">
+      <img id="mainImage" src="images/1360346.jpeg" alt="">
+       <!-- contenedor para la informacion de la imagen-->
+     <div class="image-info">
+      <div class="image-title" id="imageTitle"> </div>
+      <div class="image-description" id="imageDescription"> </div>
+
+     </div>
+
+    </div>
+
+    <!-- contenedor para las miniaturas-->
+    <div class="thumbnails">
+      <img src="images/1360346.jpeg" alt="Miniatura 1"  data-full="images/1360346.jpeg" data-title="Shelby Super Snake" data-description="El Shelby Super Snake es una versión extrema y de edición limitada basada en el Ford Mustang. Con un motor V8  que supera los 830 caballos de fuerza">
+      <img src="images/159411.jpg" alt="Miniatura 2" data-full="images/159411.jpg" data-title="Ford Mustang Fastback" data-description="El Ford Mustang Fastback es un icónico deportivo, potente V8, con tracción trasera">
+      <img src="images/485735.jpg" alt="Miniatura 3" data-full="images/485735.jpg" data-title="Dodge Challenger" data-description="Dodge Challenger SRT Hellcat, un  V8 6.2L sobrealimentado capaz de rendir 707 CV ">
+      <img src="images/592348.jpg" alt="Miniatura 4" data-full="images/592348.jpg" data-title="Shelby Super Snake" data-description="El Shelby Super Snake es una versión extrema y de edición limitada basada en el Ford Mustang. Con un motor V8  que supera los 830 caballos de fuerza">
+      <img src="images/599420.jpg" alt="Miniatura 5" data-full="images/599420.jpg" data-title="Dodge Challenger" data-description="Dodge Challenger SRT Hellcat, un  V8 6.2L sobrealimentado capaz de rendir 707 CV">
+      <img src="images/695834.jpeg" alt="Miniatura 6" data-full="images/695834.jpeg" data-title="Shelby Mustang GT 350" data-description="Equipado con un motor V8 atmosférico de 5.2 litros que rinde a 526CV.">
+      <img src="images/741550.jpg" alt="Miniatura 7" data-full="images/741550.jpg" data-title="Chevrolet Chevelle 1966" data-description="equipaba un motor V8 de 6.5 litros (396 pulgadas cúbicas) con varias opciones de potencia, alcanzando hasta 375 CV.">
+      <img src="images/805395.jpg" alt="Miniatura 8" data-full="images/805395.jpg" data-title="Chevrolet Camaro SS" data-description="el muscle car de Chevrolet">
+      <img src="images/859820.jpg" alt="Miniatura 9" data-full="images/859820.jpg" data-title="Shelby Super Snake" data-description="El Shelby Super Snake es una versión extrema y de edición limitada basada en el Ford Mustang. Con un motor V8  que supera los 830 caballos de fuerza">
+      <img src="images/911497.jpg" alt="Miniatura 10" data-full="images/911497.jpg" data-title="Ford Mustang Hot-Rod" data-description="Un clasico muscle car">
+
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

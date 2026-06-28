@@ -1,0 +1,32 @@
+<main class="container mt-4">
+
+    <div class="row">
+        <div class="col-12">
+            <table class="table" *ngIf="cargado">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Nombre</th>
+                        <th>Dirección</th>
+                    </tr>
+                </thead>
+                <tbody *ngIf="listaCanchas.length > 0">
+                    <tr *ngFor="let c of listaCanchas">
+                        <td>{{c.id}}</td>
+                        <td>{{c.nombre}}</td>
+                        <td>{{c.direccion}}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="alert alert-warning" *ngIf="listaCanchas.length === 0 && cargado">
+                <i class="fas fa-sad-cry"></i>
+                No tenemos canchitas en la base de datos
+            </div>
+            <div class="alert alert-info text-center" *ngIf="!cargado">
+                Cargando...
+            </div>
+        </div>
+    </div>
+
+
+</main>

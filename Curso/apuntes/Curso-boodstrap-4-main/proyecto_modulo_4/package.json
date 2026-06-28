@@ -1,0 +1,11 @@
+{
+  "name": "proyecto-bootstrap",
+  "version": "1.0.0",
+  "scripts": {
+    "scss": "node-sass -o css/ scss/",
+    "build": "xcopy . distri /E /I /Y"
+  },
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}

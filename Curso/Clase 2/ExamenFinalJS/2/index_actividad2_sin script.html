@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Señales de Tránsito Interactivas</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #2c3e50, #4ca1af);
+            color: #333;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            color: white;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .signals-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .signal {
+            width: 200px;
+            height: 220px;
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .signal:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .signal.active {
+            border: 3px solid #ff9800;
+            box-shadow: 0 0 20px rgba(255, 152, 0, 0.5);
+        }
+
+        .signal-img {
+            width: 100%;
+            height: 140px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+            background: #f8f9fa;
+        }
+
+        .signal-img img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        .signal-name {
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+            background: #e9ecef;
+            color: #495057;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .explanation-panel {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            margin-top: 30px;
+            min-height: 180px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .explanation-title {
+            font-size: 1.5rem;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            text-align: center;
+            border-bottom: 2px solid #4ca1af;
+            padding-bottom: 10px;
+        }
+
+        .explanation-content {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        .default-message {
+            text-align: center;
+            color: #6c757d;
+            font-style: italic;
+        }
+
+        .instructions {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: 0 auto 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            color: white;
+            margin-top: 40px;
+            padding: 20px;
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            .signals-container {
+                gap: 15px;
+            }
+
+            .signal {
+                width: 160px;
+                height: 190px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .explanation-panel {
+                padding: 15px;
+                min-height: 200px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Señales de Tránsito Interactivas</h1>
+            <p class="subtitle">Pasa el cursor sobre cada señal para conocer su significado</p>
+        </header>
+
+        <div class="instructions">
+            <p>🔍 Coloca el mouse sobre cualquiera de las señales para ver su explicación en el panel inferior.</p>
+        </div>
+
+        <div class="signals-container">
+            <!-- Señal 1 -->
+            <div class="signal">
+                <div class="signal-img">
+                    <img src="https://images.unsplash.com/photo-1520716963369-9b24de965de4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c2UlQzMlQjFhbCUyMHN0b3B8ZW58MHwwfDB8fHww" data-info="Debes detener completamente tu vehículo en intersecciones o cruces de peatones. Debes parar siempre y ceder el paso a los vehículos de la vía transversal." alt="Señal de Stop">
+                </div>
+                <div class="signal-name">Señal de Stop</div>
+            </div>
+
+            <!-- Señal 2 -->
+            <div class="signal">
+                <div class="signal-img">
+                    <img src="https://images.unsplash.com/photo-1779283843465-f070f9ce4d47?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHNlJUMzJUIxYWwlMjBjZWRhJTIwZWwlMjBwYXNvfGVufDB8MHwwfHx8MA%3D%3D" data-info="Debes reducir la velocidad y ceder el prioridad a los vehículos (y peatones) que circulan por la vía a la que te aproximas o te incorporas." alt="Señal de Ceda el Paso">
+                </div>
+                <div class="signal-name">Señal de Ceda el Paso</div>
+            </div>
+            <!-- Señal 3 -->
+            <div class="signal">
+                <div class="signal-img">
+                    <img src="https://images.unsplash.com/photo-1704892668622-0c55757ce47f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fGRpcmVjY2lvbiUyMHByb2hpYmlkYXxlbnwwfDB8MHx8fDA%3D"  data-info="Está totalmente prohibido el acceso a vehículos en ese sentido. Colocada al inicio de una calle o calzada, avisa a los conductores que la vía solo está permitida para el sentido contrario" alt="Prohibido el paso">
+                </div>
+                <div class="signal-name">Prohibido el paso</div>
+            </div>
+
+            <!-- Señal 4 -->
+            <div class="signal">
+                <div class="signal-img">
+                    <img src="https://media.istockphoto.com/id/1543543991/es/foto/carretera-de-campo.webp?a=1&b=1&s=612x612&w=0&k=20&c=L47HK2mlBFR9o0_xkFsWK9KmQ3WJS5K4I5gBauDNbfk=" data-info="Prohíbe superar la velocidad indicada en la señal" alt="Limite de Velocidad">
+                </div>
+                <div class="signal-name">Limite de Velocidad</div>
+            </div>
+
+            <!-- Señal 5 -->
+            <div class="signal">
+                <div class="signal-img">
+                    <img src="https://images.unsplash.com/photo-1708941273564-6c9683e0a033?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHNlJUMzJUIxYWwlMjBjdXJ2YSUyMHBlbGlncm9zYXxlbnwwfDB8MHx8fDA%3D" data-info="Nos avisa a los conductores sobre la proximidad de un giro pronunciado en la vía, obligándolos a reducir la velocidad para evitar accidentes." alt="Curva Peligrosa">
+                </div>
+                <div class="signal-name">Curva Peligrosa</div>
+            </div>
+        </div>
+
+        <!-- Panel de explicación único -->
+        <div class="explanation-panel">
+            <div class="default-message">
+                <p></p>
+            </div>
+            <div class="explanation-content-wrapper" style="display: none;">
+                <h3 class="explanation-title"></h3>
+                <p class="explanation-content"></p>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2026 Señales de Tráfico interactivas. Practica final 2.0</p>
+        </footer>
+    </div>
+    <script src="scriptAct2.js"></script>
+
+
+</body>
+</html>

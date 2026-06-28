@@ -1,0 +1,72 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .container {
+            display: grid;
+            gap: 10px;
+            padding: 10px;
+            height: 100vh;
+        }
+
+        .container>* {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            background-color: #333;
+            padding: 20px;
+        }
+
+        /* Mobile */
+        .container {
+            grid-template:
+                "header"
+                "menu"
+                "hero"
+                "main"
+                "banner"
+                "extra"
+                "image";
+        }
+
+        .header { grid-area: header; background-color: #FF5733; }
+        .menu { grid-area: menu; background-color: #33A1FF; }
+        .hero { grid-area: hero; background-color: #8E44AD; }
+        .main { grid-area: main; background-color: #F1C40F; color: #333; }
+        .banner { grid-area: banner; background-color: #2ECC71; }
+        .extra { grid-area: extra; background-color: #16A085; }
+        .image { grid-area: image; background-color: #E74C3C; }
+
+        /* Tablet */
+        @media (min-width: 768px) {
+            .container {
+                grid-template:
+                    "header header header"
+                    "hero hero hero"
+                    "menu main main"
+                    "menu banner banner"
+                    "menu extra extra"
+                    "menu image image";
+            }
+        }
+
+        /* Desktop */
+        @media (min-width: 1024px) {
+            .container {
+                grid-template:
+                    "header menu menu menu"
+                    "hero hero hero hero"
+                    "main main . image"
+                    "main main . extra"
+                    "banner banner banner banner";
+            }
+        }

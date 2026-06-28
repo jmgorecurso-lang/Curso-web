@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Canvas</title>
+</head>
+
+<body>
+
+    <canvas width="500" height="500" id="miCanvas" style="border: solid"></canvas>
+
+    <script>const miCanvas = document.getElementById('miCanvas');const context = miCanvas.getContext('2d');//creo el degradadoconst degradadoLineal = context.createLinearGradient(250,0,250,500);//defino los colores del degradadodegradadoLineal.addColorStop(0, 'red');degradadoLineal.addColorStop(0.5, 'blue');degradadoLineal.addColorStop(0.8, 'green');// defino el degradado como rellenocontext.fillStyle = degradadoLineal;context.strokeStyle="#0000ff";context.beginPath();context.arc(250,250,200,0,Math.PI*2,true);context.stroke();context.fill();</script>
+
+</body>
+
+</html>
